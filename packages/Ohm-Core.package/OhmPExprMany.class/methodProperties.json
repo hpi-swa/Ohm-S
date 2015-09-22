@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"expressionName" : "pre 12/3/2014 16:56",
+		"newOn:minimalMatches:" : "pre 12/3/2014 14:20",
+		"newPlusOn:" : "pre 6/3/2015 14:02",
+		"newStarOn:" : "pre 6/3/2015 14:02" },
+	"instance" : {
+		"arity" : "pre 1/6/2015 15:28",
+		"asActionBindingName" : "pre 6/1/2015 14:52",
+		"assertChoicesHaveUniformArity:" : "pre 1/19/2015 15:45",
+		"doEval:" : "pre 4/23/2015 14:01",
+		"innerNodesAt:" : "pre 4/24/2015 13:10",
+		"min" : "pre 12/3/2014 14:15",
+		"min:" : "pre 12/3/2014 14:15",
+		"nodesResultingInCST" : "pre 6/1/2015 14:50",
+		"putRow:intoColumns:" : "pre 1/6/2015 15:35",
+		"term" : "pre 12/3/2014 14:15",
+		"term:" : "pre 12/3/2014 14:15",
+		"totalNumberOfExpressions" : "pre 7/23/2015 16:44",
+		"weightedComplexity" : "pre 7/23/2015 16:57" } }

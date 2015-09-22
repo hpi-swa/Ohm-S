@@ -1,0 +1,4 @@
+accessing
+lineNumber
+
+	^ lineNumber 

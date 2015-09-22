@@ -1,0 +1,118 @@
+as yet unclassified
+ohmGrammarDefinition
+
+	^ 'Ohm {
+
+  Grammars
+    = Grammar*
+
+  Grammar
+    = GrammarHeader ''{'' Rule* ''}''
+
+  GrammarHeader
+    = GrammarName SuperGrammar?
+
+  GrammarName
+    = ident ''.'' ident -- qualified
+    | ident           -- unqualified
+
+  SuperGrammar
+    = ''<:'' ident ''.'' ident  -- qualified
+    | ''<:'' ident              -- unqualified
+
+  Rule
+    = ident ruleDescr? ''=''  Alt  -- define
+    | ident ruleDescr? '':='' Alt  -- override
+    | ident            ''+='' Alt  -- extend
+
+  Alt
+    = Term ''|'' Alt  -- rec
+    | Term
+
+  Term
+    = Seq caseName -- inline
+    | Seq
+
+  Seq
+    = Iter*
+
+  Iter
+    = Pred ''*''  -- star
+    | Pred ''+''  -- plus
+    | Pred ''?''  -- opt
+    | Pred
+
+  Pred
+    = ''~'' Base  -- not
+    | ''&'' Base  -- lookahead
+    | Base
+
+  Base
+    = ident ~(ruleDescr? ''='' | '':='' | ''+='')  -- application
+    | (keyword | string | regExp | number)   -- prim
+    | ''('' Alt '')''                            -- paren
+    | ''['' Alt '']''                            -- listy
+    | ''{'' ''...''? ''}''                         -- obj
+    | ''{'' Props ('','' ''...'')? ''}''             -- objWithProps
+
+  Props
+    = Prop '','' Props  -- rec
+    | Prop            -- base
+
+  Prop
+    = (name | string) '':'' Base
+
+  ruleDescr  -- rule description for use in error messages
+    = ''--'' ruleDescrText ''\n''
+
+  ruleDescrText
+    = (~''\n'' _)*
+
+  caseName
+    = ''--'' (~''\n'' space)* name (~''\n'' space)* (''\n'' | &''}'')
+
+  name  -- name
+    = nameFirst nameRest*
+
+  nameFirst
+    = ''_''
+    | letter
+
+  nameRest
+    = ''_''
+    | ''-''
+    | alnum
+
+  ident  -- identifier
+    = ~keyword name
+
+  keyword
+    = ''undefined'' ~nameRest  -- undefined
+    | ''null'' ~nameRest       -- null
+    | ''true'' ~nameRest       -- true
+    | ''false'' ~nameRest      -- false
+
+  string  -- string literal
+    = ''\'''' sChar* ''\''''
+
+  sChar
+    = ''\\x'' hexDigit hexDigit                    -- hexEscape
+    | ''\\u'' hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
+    | ''\\'' _                                     -- escape
+    | ~''\'''' ~''\n'' _
+
+  regExp  -- regular expression
+    = ''/'' reCharClass ''/''
+
+  reCharClass
+    = ''\\p{'' /[A-Za-z]/+ ''}''    -- unicode
+    | ''['' (''\\]'' | ~'']'' _)* '']'' -- ordinary
+
+  number  -- number
+    = ''-''? digit+
+
+  space
+   += ''//'' (~''\n'' _)* ''\n''  -- singleLine
+    | ''/*'' (~''*/'' _)* ''*/''  -- multiLine
+
+}'

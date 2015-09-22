@@ -1,0 +1,4 @@
+evaluation
+asString
+
+	self subclassResponsibility 

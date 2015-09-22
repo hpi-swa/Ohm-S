@@ -1,0 +1,4 @@
+accessing
+newRule
+
+	^ self item

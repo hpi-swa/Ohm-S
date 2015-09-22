@@ -1,0 +1,4 @@
+accessing
+isInlineRule 
+
+	^ true

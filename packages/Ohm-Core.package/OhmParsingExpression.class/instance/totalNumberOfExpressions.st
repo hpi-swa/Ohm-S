@@ -1,0 +1,4 @@
+accessing
+totalNumberOfExpressions
+
+	^ 1

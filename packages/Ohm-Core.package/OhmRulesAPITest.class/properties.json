@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmRulesAPITest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

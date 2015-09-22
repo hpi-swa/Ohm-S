@@ -1,0 +1,4 @@
+accessing
+predefinedNamespace
+
+	^ predefinedNamespace

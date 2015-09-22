@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Grammars-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"structure" ],
+	"name" : "OhmCheckStructure",
+	"pools" : [
+		 ],
+	"super" : "OhmSemanticAction",
+	"type" : "normal" }

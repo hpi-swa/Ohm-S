@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"counter" ],
+	"name" : "OhmAttributeGenerationTestSimpleSynthesizedAttribute",
+	"pools" : [
+		 ],
+	"super" : "OhmSynthesizedAttribute",
+	"type" : "normal" }

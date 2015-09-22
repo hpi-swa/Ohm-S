@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"newOn:" : "pre 1/21/2015 10:28",
+		"on:" : "pre 1/21/2015 10:28" },
+	"instance" : {
+		"asString" : "pre 12/3/2014 15:28",
+		"atEnd" : "pre 12/3/2014 08:48",
+		"contentStream" : "pre 12/3/2014 08:47",
+		"contentStream:" : "pre 12/3/2014 08:47",
+		"contents:" : "pre 12/10/2014 10:30",
+		"contentsFrom:to:" : "pre 1/5/2015 15:02",
+		"currentIntervalFrom:" : "pre 1/6/2015 10:57",
+		"currentPositionInfo" : "pre 12/10/2014 11:34",
+		"getMemoizedResultFor:" : "pre 12/10/2014 10:31",
+		"getState" : "pre 12/3/2014 08:49",
+		"initialize" : "pre 12/10/2014 10:28",
+		"isStringStream" : "pre 1/20/2015 20:21",
+		"matchExactly:" : "pre 12/11/2014 13:20",
+		"matchRegex:" : "pre 1/7/2015 10:50",
+		"matchString:" : "pre 12/4/2014 21:47",
+		"memoizeLeftRecursionFor:at:" : "pre 1/26/2015 12:46",
+		"memoizeLeftRecursionResult:hasMatched:at:for:withFailures:" : "pre 1/20/2015 16:28",
+		"memoizeResult:hasMatched:at:for:withFailures:" : "pre 1/20/2015 16:28",
+		"next" : "pre 4/22/2015 14:50",
+		"positionInfo" : "pre 12/4/2014 21:57",
+		"positionInfo:" : "pre 12/4/2014 21:57",
+		"positionInfoAt:" : "pre 12/10/2014 11:40",
+		"setState:" : "pre 12/3/2014 08:49" } }

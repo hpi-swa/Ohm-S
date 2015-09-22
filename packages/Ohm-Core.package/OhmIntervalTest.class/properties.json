@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"testInterval" ],
+	"name" : "OhmIntervalTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

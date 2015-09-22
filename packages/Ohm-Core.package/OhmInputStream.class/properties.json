@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"contentStream",
+		"positionInfo" ],
+	"name" : "OhmInputStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

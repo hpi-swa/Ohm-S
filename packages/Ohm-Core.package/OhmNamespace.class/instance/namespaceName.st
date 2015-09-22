@@ -1,0 +1,4 @@
+accessing
+namespaceName
+
+	^ self packageName  

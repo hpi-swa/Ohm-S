@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"newForRule:withInvolvedRules:" : "pre 12/10/2014 18:27" },
+	"instance" : {
+		"hasMatched" : "pre 1/26/2015 12:26",
+		"hasMatched:" : "pre 1/26/2015 12:26",
+		"initialize" : "pre 1/26/2015 12:26",
+		"involvedRules" : "pre 12/10/2014 18:27",
+		"involvedRules:" : "pre 12/10/2014 18:27",
+		"isInvolvedRule:" : "pre 12/10/2014 18:33",
+		"ruleName" : "pre 12/10/2014 18:27",
+		"ruleName:" : "pre 12/10/2014 18:27" } }

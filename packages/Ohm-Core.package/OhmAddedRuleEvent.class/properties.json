@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"addedRule",
+		"grammarAddedTo" ],
+	"name" : "OhmAddedRuleEvent",
+	"pools" : [
+		 ],
+	"super" : "AddedEvent",
+	"type" : "normal" }

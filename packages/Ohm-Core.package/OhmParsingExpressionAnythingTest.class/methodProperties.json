@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAnythingArity" : "pre 1/6/2015 15:00",
+		"testAnythingMatchesAnything" : "pre 12/3/2014 14:07",
+		"testAnythingProducesIntervals" : "pre 1/5/2015 15:50",
+		"testAnythingProducesNodes" : "pre 1/7/2015 09:25",
+		"testCreateAnAnything" : "pre 12/3/2014 09:11" } }

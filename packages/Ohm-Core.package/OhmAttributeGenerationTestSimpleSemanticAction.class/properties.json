@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"counter" ],
+	"name" : "OhmAttributeGenerationTestSimpleSemanticAction",
+	"pools" : [
+		 ],
+	"super" : "OhmAttributes",
+	"type" : "normal" }

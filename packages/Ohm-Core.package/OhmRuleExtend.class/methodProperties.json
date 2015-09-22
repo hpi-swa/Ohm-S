@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"newNamed:body:" : "pre 4/20/2015 10:00",
+		"newNamed:body:superGrammar:" : "pre 1/19/2015 14:29" },
+	"instance" : {
+		"baseRule" : "pre 4/20/2015 09:41",
+		"baseRule:" : "pre 4/20/2015 09:41",
+		"dispatchedBodyOn:" : "pre 4/22/2015 15:11",
+		"installInto:" : "pre 4/20/2015 09:41",
+		"performChecksFor:" : "pre 4/22/2015 16:35" } }

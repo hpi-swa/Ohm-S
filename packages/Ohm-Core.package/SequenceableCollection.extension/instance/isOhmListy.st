@@ -1,0 +1,4 @@
+*Ohm-Core
+isOhmListy 
+
+	^ true

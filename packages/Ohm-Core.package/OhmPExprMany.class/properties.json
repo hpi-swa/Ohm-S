@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-ParsingExpressions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"term",
+		"min" ],
+	"name" : "OhmPExprMany",
+	"pools" : [
+		 ],
+	"super" : "OhmParsingExpression",
+	"type" : "normal" }

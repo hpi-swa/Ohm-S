@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addNodeNamed:startedAt:withChildren:" : "pre 1/13/2015 14:14",
+		"bindings" : "pre 1/13/2015 12:42",
+		"bindingsStack" : "pre 1/13/2015 12:43",
+		"bindingsStack:" : "pre 1/13/2015 12:42",
+		"grammar" : "pre 1/13/2015 10:40",
+		"grammar:" : "pre 1/13/2015 10:40",
+		"initialize" : "pre 1/21/2015 10:31",
+		"inputStream" : "pre 1/13/2015 12:35",
+		"inputs" : "pre 1/13/2015 12:33",
+		"inputs:" : "pre 1/13/2015 12:34",
+		"isSyntactic" : "pre 1/13/2015 10:40",
+		"isSyntactic:" : "pre 1/13/2015 10:40",
+		"popBindings" : "pre 1/13/2015 12:41",
+		"popInput" : "pre 1/13/2015 12:34",
+		"pushBindings:" : "pre 1/13/2015 12:41",
+		"pushInput:" : "pre 1/13/2015 12:33",
+		"recordFailureOf:at:" : "pre 1/20/2015 16:00",
+		"recordFailures:" : "pre 1/20/2015 16:01",
+		"rightmostFailure" : "pre 1/20/2015 15:57",
+		"rightmostFailure:" : "pre 1/20/2015 15:57",
+		"shouldRecordFailures" : "pre 1/20/2015 15:57",
+		"shouldRecordFailures:" : "pre 1/20/2015 15:57" } }

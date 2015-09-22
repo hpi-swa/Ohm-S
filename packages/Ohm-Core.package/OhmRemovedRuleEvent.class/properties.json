@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmRemovedRuleEvent",
+	"pools" : [
+		 ],
+	"super" : "RemovedEvent",
+	"type" : "normal" }

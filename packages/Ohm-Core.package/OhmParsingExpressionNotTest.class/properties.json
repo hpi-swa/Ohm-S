@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmParsingExpressionNotTest",
+	"pools" : [
+		 ],
+	"super" : "OhmParsingExpressionTest",
+	"type" : "normal" }

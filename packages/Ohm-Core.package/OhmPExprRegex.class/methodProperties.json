@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"expressionName" : "pre 12/4/2014 10:32",
+		"newOn:" : "pre 1/21/2015 10:10" },
+	"instance" : {
+		"asExpected:" : "pre 1/21/2015 10:05",
+		"asString" : "pre 5/13/2015 19:51",
+		"debugNodeString" : "pre 5/14/2015 21:04",
+		"matchInput:" : "pre 1/7/2015 10:51",
+		"regex" : "pre 12/4/2014 10:28",
+		"regex:" : "pre 12/4/2014 10:28",
+		"regexString" : "pre 1/21/2015 10:05",
+		"regexString:" : "pre 1/21/2015 10:05" } }

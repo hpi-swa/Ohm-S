@@ -1,0 +1,18 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hasMatched",
+		"node",
+		"position",
+		"involvedRules",
+		"failureDescriptor" ],
+	"name" : "OhmInputMemoizedResult",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

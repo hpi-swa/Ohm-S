@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		"OhmInstance",
+		"isLoading" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmGrammarSmalltalkProxy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

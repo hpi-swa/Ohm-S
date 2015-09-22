@@ -1,0 +1,4 @@
+accessing
+beforeFailureDescriptor
+
+	^ beforeFailureDescriptor

@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"grammarName" ],
+	"name" : "OhmDuplicateGrammarDefinitionError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

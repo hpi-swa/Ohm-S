@@ -1,0 +1,4 @@
+expressions
+fail
+
+	^ OhmPExprFail new
