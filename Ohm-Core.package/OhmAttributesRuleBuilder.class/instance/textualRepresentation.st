@@ -1,4 +1,0 @@
-accessing
-textualRepresentation
-
-	^ textualRepresentation

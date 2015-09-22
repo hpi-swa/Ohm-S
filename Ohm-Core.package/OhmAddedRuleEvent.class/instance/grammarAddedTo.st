@@ -1,4 +1,0 @@
-accessing
-grammarAddedTo
-
-	^ self itemClass

@@ -1,4 +1,0 @@
-accessing
-arity
-
-	^ 0

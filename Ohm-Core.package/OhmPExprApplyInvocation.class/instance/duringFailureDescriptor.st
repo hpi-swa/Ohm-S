@@ -1,4 +1,0 @@
-accessing
-duringFailureDescriptor
-
-	^ duringFailureDescriptor

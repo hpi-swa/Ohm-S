@@ -1,4 +1,0 @@
-evaluation
-terminalExpression: aNode
-
-	^ self

@@ -1,4 +1,0 @@
-accessing
-fixtureStream
-
-	^ fixtureStream

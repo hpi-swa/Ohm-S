@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testCreateAString" : "pre 12/3/2014 10:23",
-		"testStringArity" : "pre 1/6/2015 15:15",
-		"testStringMatchesItsString" : "pre 1/13/2015 14:44",
-		"testStringProducesIntervals" : "pre 1/5/2015 15:45",
-		"testStringProducesPrimitiveNodes" : "pre 1/7/2015 10:44" } }

@@ -1,4 +1,0 @@
-accessing
-superGrammar
-
-	^ superGrammar

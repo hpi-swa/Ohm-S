@@ -1,4 +1,0 @@
-evaluation
-asActionBindingName 
-
-	^ 'primitive'

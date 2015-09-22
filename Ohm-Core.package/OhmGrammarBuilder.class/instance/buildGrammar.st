@@ -1,4 +1,0 @@
-build-instructions
-buildGrammar
-
-	^ grammar

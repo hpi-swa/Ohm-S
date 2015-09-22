@@ -1,4 +1,0 @@
-stream
-isStringStream
-
-	^ true

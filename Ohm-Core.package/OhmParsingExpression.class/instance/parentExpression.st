@@ -1,4 +1,0 @@
-accessing
-parentExpression
-	
-	^ parent

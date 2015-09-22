@@ -1,4 +1,0 @@
-*Ohm-Core
-ohmInputStreamClass
-
-	^ OhmCollectionInputStream

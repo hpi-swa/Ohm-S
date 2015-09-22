@@ -1,4 +1,0 @@
-accessing
-failureDescriptor
-
-	^ failureDescriptor

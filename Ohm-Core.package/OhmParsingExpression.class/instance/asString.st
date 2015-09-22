@@ -1,4 +1,0 @@
-evaluation
-asString
-
-	self subclassResponsibility 

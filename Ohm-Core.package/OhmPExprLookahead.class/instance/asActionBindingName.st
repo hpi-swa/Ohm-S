@@ -1,4 +1,0 @@
-accessing
-asActionBindingName 
-
-	^ 'lookahead'

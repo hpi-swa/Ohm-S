@@ -1,4 +1,0 @@
-accessing
-totalNumberOfExpressions
-
-	^ 1

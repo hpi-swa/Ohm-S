@@ -1,4 +1,0 @@
-accessing
-nodesResultingInCST
-
-	^ { self term }

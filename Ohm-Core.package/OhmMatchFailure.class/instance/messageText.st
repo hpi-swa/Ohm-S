@@ -1,4 +1,0 @@
-accessing
-messageText
-
-	^ self message

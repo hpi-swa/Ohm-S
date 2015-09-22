@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testCreateALookahead" : "pre 6/3/2015 14:05",
-		"testLookAheadArity" : "pre 1/6/2015 15:09",
-		"testLookaheadCreatesNoOwnNodes" : "pre 1/7/2015 10:06",
-		"testLookaheadMatchesAndDoesNotMove" : "pre 12/3/2014 15:38" } }

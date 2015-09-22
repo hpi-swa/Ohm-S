@@ -1,4 +1,0 @@
-checks
-assertChoicesHaveUniformArity: ruleName
-
-	^ true

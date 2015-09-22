@@ -1,4 +1,0 @@
-accessing
-grammarString
-
-	^ grammarString
