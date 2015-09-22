@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UniqueInstance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"eventSource",
+		"silenceLevel" ],
+	"name" : "OhmChangeNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

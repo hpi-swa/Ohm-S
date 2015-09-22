@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"activeRules" : "pre 12/10/2014 11:33",
+		"activeRules:" : "pre 12/10/2014 11:33",
+		"currentLeftRecursion" : "pre 12/10/2014 21:05",
+		"determineRulesInvolvedInLeftRecursion:" : "pre 12/10/2014 18:55",
+		"endLeftRecursion" : "pre 12/10/2014 18:24",
+		"enter:" : "pre 12/10/2014 18:20",
+		"forRule:memoizeResult:" : "pre 12/10/2014 10:34",
+		"initialize" : "pre 12/10/2014 18:24",
+		"isCurrentLeftRecursion:" : "pre 12/10/2014 18:51",
+		"isInvolvedRule:" : "pre 12/10/2014 18:59",
+		"leave:" : "pre 12/10/2014 18:21",
+		"leftRecursionStack" : "pre 12/10/2014 17:43",
+		"leftRecursionStack:" : "pre 12/10/2014 17:43",
+		"memoizedResultFor:" : "pre 12/10/2014 18:52",
+		"memoizedResultFor:ifAbsent:" : "pre 12/10/2014 21:13",
+		"memoizedResults" : "pre 12/10/2014 10:32",
+		"memoizedResults:" : "pre 12/10/2014 10:32",
+		"startLeftRecursion:" : "pre 1/26/2015 12:41" } }

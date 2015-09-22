@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"actionSelector" ],
+	"name" : "OhmDuplicateActionDeclarationError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

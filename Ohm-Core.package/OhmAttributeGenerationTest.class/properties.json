@@ -1,0 +1,16 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fixtureGrammar",
+		"fixtureRuleFoo",
+		"fixtureRuleBar" ],
+	"name" : "OhmAttributeGenerationTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

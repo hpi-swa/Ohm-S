@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"signalForRule:expectedArity:actualArity:" : "pre 1/19/2015 15:34" },
+	"instance" : {
+		"actual" : "pre 1/19/2015 15:34",
+		"actual:" : "pre 1/19/2015 15:34",
+		"expected" : "pre 1/19/2015 15:34",
+		"expected:" : "pre 1/19/2015 15:34",
+		"messageText" : "pre 4/16/2015 15:25",
+		"ruleName" : "pre 1/19/2015 15:34",
+		"ruleName:" : "pre 1/19/2015 15:34",
+		"signalForRule:expectedArity:actualArity:" : "pre 1/19/2015 15:35" } }

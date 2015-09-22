@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"memoization",
+		"childStack" ],
+	"name" : "OhmInheritedAttribute",
+	"pools" : [
+		 ],
+	"super" : "OhmAttributes",
+	"type" : "normal" }

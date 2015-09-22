@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"position",
+		"expressions" ],
+	"name" : "OhmFailureDescriptor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

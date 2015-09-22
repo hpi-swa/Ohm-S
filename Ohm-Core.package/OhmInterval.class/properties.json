@@ -1,0 +1,16 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stream",
+		"start",
+		"end" ],
+	"name" : "OhmInterval",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

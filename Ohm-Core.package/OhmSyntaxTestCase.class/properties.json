@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Grammars-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"grammar",
+		"startRule" ],
+	"name" : "OhmSyntaxTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

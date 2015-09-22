@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"memoization" ],
+	"name" : "OhmSynthesizedAttribute",
+	"pools" : [
+		 ],
+	"super" : "OhmAttributes",
+	"type" : "normal" }

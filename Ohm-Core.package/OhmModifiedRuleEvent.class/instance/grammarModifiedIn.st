@@ -1,0 +1,4 @@
+accessing
+grammarModifiedIn
+
+	^ self class

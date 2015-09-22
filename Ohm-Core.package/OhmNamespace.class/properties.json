@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmNamespace",
+	"pools" : [
+		 ],
+	"super" : "PackageInfo",
+	"type" : "normal" }

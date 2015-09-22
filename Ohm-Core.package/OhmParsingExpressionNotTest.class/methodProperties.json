@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCreateANot" : "pre 6/3/2015 14:05",
+		"testNotArity" : "pre 6/3/2015 14:05",
+		"testNotCreatesNoNodes" : "pre 4/29/2015 16:11",
+		"testNotMatchesAndDoesNotMove" : "pre 12/3/2014 15:21",
+		"testNotStillMaintainsTheInterval" : "pre 1/6/2015 10:24" } }

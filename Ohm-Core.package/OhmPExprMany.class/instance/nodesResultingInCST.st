@@ -1,0 +1,4 @@
+accessing
+nodesResultingInCST
+
+	^ { self term }

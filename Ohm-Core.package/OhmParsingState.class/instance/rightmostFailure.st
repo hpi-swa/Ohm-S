@@ -1,0 +1,4 @@
+accessing
+rightmostFailure
+
+	^ rightmostFailure

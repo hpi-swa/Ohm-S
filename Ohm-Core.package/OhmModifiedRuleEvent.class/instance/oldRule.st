@@ -1,0 +1,4 @@
+accessing
+oldRule
+
+	^ self oldItem

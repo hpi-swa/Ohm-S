@@ -1,0 +1,14 @@
+as yet unclassified
+testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes
+
+	| g action result |
+	g := OhmGrammar makeGrammar: 'G {
+          foo = bar baz
+          bar = ''a''
+          baz = ''b'' }'.
+
+	action := g synthesizedAttribute: OhmAttributeGenerationTestSimpleSynthesizedAttribute new.
+
+	result := action value: (g matchContents: 'ab' startingFrom: 'foo').
+	self assert: (result first) equals: 1.
+	self assert: (result second) equals: 0.

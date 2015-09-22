@@ -1,0 +1,16 @@
+{
+	"category" : "Ohm-Core-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ruleName",
+		"expected",
+		"why" ],
+	"name" : "OhmRefinementMustBeCompatibleError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

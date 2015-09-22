@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"expressionName" : "pre 12/3/2014 16:56",
+		"newOn:" : "pre 6/3/2015 13:34" },
+	"instance" : {
+		"arity" : "pre 1/6/2015 15:16",
+		"asActionBindingName" : "pre 6/1/2015 14:31",
+		"asExpected:" : "pre 5/28/2015 14:36",
+		"assertChoicesHaveUniformArity:" : "pre 1/19/2015 15:50",
+		"doEval:" : "pre 4/23/2015 14:31",
+		"nodesResultingInCST" : "pre 6/2/2015 15:45" } }

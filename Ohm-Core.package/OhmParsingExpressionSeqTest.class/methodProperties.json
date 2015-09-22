@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAssertSeqArity" : "pre 1/6/2015 15:19",
+		"testCreateASeq" : "pre 12/3/2014 13:47",
+		"testSeqMatchesTheSequenceOfItsTerms" : "pre 12/4/2014 18:27",
+		"testSeqProducesIntervals" : "pre 1/6/2015 17:48",
+		"testSeqProducesNoNodes" : "pre 1/7/2015 10:44" } }

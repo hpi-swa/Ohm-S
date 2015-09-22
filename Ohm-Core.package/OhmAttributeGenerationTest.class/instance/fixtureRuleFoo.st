@@ -1,0 +1,4 @@
+accessing
+fixtureRuleFoo
+
+	^ fixtureRuleFoo

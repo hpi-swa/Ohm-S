@@ -1,0 +1,4 @@
+accessing
+fixtureString
+
+	^ fixtureString

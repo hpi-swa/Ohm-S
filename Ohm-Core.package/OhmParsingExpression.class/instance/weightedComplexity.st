@@ -1,0 +1,5 @@
+accessing
+weightedComplexity
+
+
+	^ 1

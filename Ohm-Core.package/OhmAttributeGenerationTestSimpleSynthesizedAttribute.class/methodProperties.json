@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bar:with:" : "pre 1/21/2015 13:44",
+		"baz:with:" : "pre 1/21/2015 13:44",
+		"counter" : "pre 1/21/2015 13:44",
+		"counter:" : "pre 1/21/2015 13:44",
+		"foo:with:with:" : "pre 1/21/2015 13:55",
+		"initialize" : "pre 1/21/2015 13:49" } }

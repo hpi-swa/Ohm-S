@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmSemanticAction",
+	"pools" : [
+		 ],
+	"super" : "OhmAttributes",
+	"type" : "normal" }

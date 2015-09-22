@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-ParsingExpressions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"regex",
+		"regexString" ],
+	"name" : "OhmPExprRegex",
+	"pools" : [
+		 ],
+	"super" : "OhmPExprPrim",
+	"type" : "normal" }

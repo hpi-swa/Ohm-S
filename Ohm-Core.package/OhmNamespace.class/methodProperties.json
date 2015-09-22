@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"defaultNamespace" : "pre 7/23/2015 19:58",
+		"initialize" : "pre 4/22/2015 16:13",
+		"named:" : "pre 5/28/2015 12:28",
+		"named:ifAbsent:" : "pre 4/21/2015 13:43",
+		"removeNamed:" : "pre 4/21/2015 15:25" },
+	"instance" : {
+		"grammarNamed:" : "pre 4/21/2015 15:34",
+		"grammars" : "pre 4/22/2015 13:35",
+		"hasGrammarNamed:" : "pre 6/9/2015 16:39",
+		"namespaceName" : "pre 4/21/2015 12:53",
+		"register:" : "pre 6/9/2015 16:39" } }

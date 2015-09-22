@@ -1,0 +1,4 @@
+stream
+isStringStream
+
+	^ false

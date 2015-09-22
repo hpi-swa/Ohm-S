@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"expressionName" : "pre 1/5/2015 13:13",
+		"newOn:inMode:" : "pre 1/7/2015 10:25" },
+	"instance" : {
+		"arity" : "pre 1/6/2015 15:27",
+		"asActionBindingName" : "pre 6/1/2015 14:33",
+		"assertChoicesHaveUniformArity:" : "pre 1/19/2015 15:47",
+		"doEval:" : "pre 4/23/2015 14:01",
+		"innerNodesAt:" : "pre 4/24/2015 14:21",
+		"matchMode" : "pre 1/5/2015 13:14",
+		"matchMode:" : "pre 1/5/2015 13:14",
+		"nodesResultingInCST" : "pre 6/1/2015 14:50",
+		"properties" : "pre 1/5/2015 13:14",
+		"properties:" : "pre 1/5/2015 13:14" } }

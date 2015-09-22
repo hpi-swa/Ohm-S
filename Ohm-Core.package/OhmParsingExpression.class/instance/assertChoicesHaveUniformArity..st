@@ -1,0 +1,4 @@
+checks
+assertChoicesHaveUniformArity: ruleName
+
+	^ true

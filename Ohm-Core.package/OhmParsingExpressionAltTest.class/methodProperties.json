@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAltArity" : "pre 1/6/2015 15:03",
+		"testAltMatchesItsTerms" : "pre 12/3/2014 14:07",
+		"testAltProducesIntervals" : "pre 1/5/2015 16:23",
+		"testAltProducesNodes" : "pre 1/7/2015 08:35",
+		"testCreateAnAlt" : "pre 12/3/2014 11:08" } }

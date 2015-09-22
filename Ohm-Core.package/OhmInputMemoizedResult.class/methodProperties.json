@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"newWithResult:andFailures:hasMatched:andInvolvedRules:on:" : "pre 1/20/2015 16:31",
+		"newWithResult:andFailures:hasMatched:on:" : "pre 1/20/2015 16:30" },
+	"instance" : {
+		"failureDescriptor" : "pre 1/20/2015 16:22",
+		"failureDescriptor:" : "pre 1/20/2015 16:22",
+		"hasMatched" : "pre 1/6/2015 16:39",
+		"hasMatched:" : "pre 1/6/2015 16:39",
+		"initialize" : "pre 1/26/2015 12:43",
+		"involvedRules" : "pre 12/10/2014 20:59",
+		"involvedRules:" : "pre 12/10/2014 20:59",
+		"isLeftRecursion" : "pre 1/26/2015 12:39",
+		"node" : "pre 1/6/2015 17:13",
+		"node:" : "pre 1/6/2015 17:13",
+		"position" : "pre 12/4/2014 22:20",
+		"position:" : "pre 12/4/2014 22:20" } }

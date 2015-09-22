@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmInputMemoizedLeftRecursion",
+	"pools" : [
+		 ],
+	"super" : "OhmInputMemoizedResult",
+	"type" : "normal" }

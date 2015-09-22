@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"baseRule" ],
+	"name" : "OhmRuleExtend",
+	"pools" : [
+		 ],
+	"super" : "OhmRule",
+	"type" : "normal" }

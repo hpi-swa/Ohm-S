@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ruleName",
+		"grammarName" ],
+	"name" : "OhmUndeclaredRuleError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }
