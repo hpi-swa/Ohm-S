@@ -1,5 +1,8 @@
 {
 	"class" : {
+		"grammarNamed:" : "pre 9/22/2015 15:07",
+		"hasGrammarNamed:" : "pre 9/22/2015 15:37",
+		"installedGrammars" : "pre 9/22/2015 14:59",
 		"makeAndInstallGrammar:in:" : "pre 4/21/2015 14:34",
 		"makeAndInstallGrammars:in:" : "pre 6/10/2015 17:22",
 		"makeGrammar:" : "pre 4/21/2015 12:46",
@@ -9,7 +12,7 @@
 		"assertAritiesMatch:" : "pre 5/5/2015 17:58",
 		"assertNoDuplicateActions:" : "pre 6/8/2015 16:14",
 		"doesMatch:startingFrom:" : "pre 1/20/2015 15:56",
-		"grammarDefinitionAsString" : "pre 4/22/2015 13:25",
+		"grammarDefinitionAsString" : "pre 9/22/2015 16:03",
 		"grammarDefinitionString" : "pre 5/27/2015 09:31",
 		"grammarHierarchyIncludingSelf" : "pre 8/7/2015 09:37",
 		"grammarName" : "pre 12/3/2014 16:36",

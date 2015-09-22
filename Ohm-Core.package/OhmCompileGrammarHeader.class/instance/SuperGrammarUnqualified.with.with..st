@@ -1,8 +1,7 @@
 actions
 SuperGrammarUnqualified: aNode with: x with: grammarNameNode
 
-	| grammarName ohmNamespace |
+	| grammarName |
 	grammarName := grammarNameNode interval contents.
-	ohmNamespace := self namespace.
 		
-	self grammarToBuild superGrammar: (ohmNamespace grammarNamed: grammarName)
+	self grammarToBuild superGrammar: (OhmGrammar grammarNamed: grammarName)

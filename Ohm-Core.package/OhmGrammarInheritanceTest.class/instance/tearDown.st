@@ -1,5 +1,5 @@
 as yet unclassified
 tearDown
 
-	OhmNamespace removeNamed: 'inheritanceTestNameSpace1'.
-	OhmNamespace removeNamed: 'inheritanceTestNameSpace2'.
+	SystemOrganizer default removeSystemCategory: 'inheritanceTestNameSpace1'.
+	SystemOrganizer default removeSystemCategory: 'inheritanceTestNameSpace2'.

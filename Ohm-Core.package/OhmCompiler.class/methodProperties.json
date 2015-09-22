@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"compileAndInstallGrammarHeader:" : "pre 4/21/2015 10:23",
-		"compileGrammarDefinition:" : "pre 4/21/2015 14:35",
+		"compileAndInstallGrammarHeader:" : "pre 9/22/2015 15:31",
+		"compileGrammarDefinition:" : "pre 9/22/2015 15:32",
 		"compileGrammarDefinition:andInstallIn:" : "pre 4/21/2015 14:34",
 		"compileGrammarDefinition:in:" : "pre 4/21/2015 14:15",
 		"compileGrammarDefinitions:" : "pre 4/21/2015 14:14",
@@ -11,7 +11,7 @@
 		"compileRule:forGrammar:" : "pre 8/4/2015 11:57",
 		"initializeSmalltalkClassFor:" : "pre 8/4/2015 10:56",
 		"installGrammar:" : "pre 4/22/2015 10:09",
-		"installGrammar:intoNamespace:" : "pre 6/9/2015 16:42",
+		"installGrammar:intoNamespace:" : "pre 9/22/2015 15:36",
 		"installRules:into:" : "pre 8/4/2015 11:56",
 		"removeOrphanRulesOf:in:" : "pre 5/15/2015 18:58" },
 	"instance" : {

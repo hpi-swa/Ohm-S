@@ -1,5 +1,5 @@
 as yet unclassified
 setUp
 
-	OhmNamespace named: 'inheritanceTestNameSpace1'.
-	OhmNamespace named: 'inheritanceTestNameSpace2'.
+	PackageInfo named: 'inheritanceTestNameSpace1'.
+	PackageInfo named: 'inheritanceTestNameSpace2'.

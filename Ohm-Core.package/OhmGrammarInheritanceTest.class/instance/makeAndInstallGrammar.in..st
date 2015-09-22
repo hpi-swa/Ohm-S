@@ -1,7 +1,7 @@
 as yet unclassified
-makeAndInstallGrammar: grammarDefinition in: nameSpaceName
+makeAndInstallGrammar: grammarDefinition in: packageName
 
 	SystemChangeNotifier uniqueInstance doSilently: [
-	nameSpaceName 
-		ifNotNil: [ ^ OhmGrammar makeAndInstallGrammar: grammarDefinition in: nameSpaceName ]
-		ifNil: [ ^ self makeGrammar: grammarDefinition ]].
+		packageName 
+			ifNotNil: [ ^ OhmGrammar makeAndInstallGrammar: grammarDefinition in: packageName ]
+			ifNil: [ ^ self makeGrammar: grammarDefinition ]].

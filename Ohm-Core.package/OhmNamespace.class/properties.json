@@ -10,5 +10,5 @@
 	"name" : "OhmNamespace",
 	"pools" : [
 		 ],
-	"super" : "PackageInfo",
+	"super" : "Object",
 	"type" : "normal" }
