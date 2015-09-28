@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state",
+		"cst" ],
+	"name" : "OhmMatchResultTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

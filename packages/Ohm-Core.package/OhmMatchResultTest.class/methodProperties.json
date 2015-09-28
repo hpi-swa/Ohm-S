@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"failedState" : "pre 9/28/2015 15:59",
+		"successfulState" : "pre 9/28/2015 15:57",
+		"testMatchResultClassExists" : "pre 9/28/2015 15:55",
+		"testMatchResultCreatesFailureOnFailedState" : "pre 9/28/2015 15:58",
+		"testMatchResultCreatesResultOnSuccessfulState" : "pre 9/28/2015 15:58" } }

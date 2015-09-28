@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state" ],
+	"name" : "OhmMatchResult",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
