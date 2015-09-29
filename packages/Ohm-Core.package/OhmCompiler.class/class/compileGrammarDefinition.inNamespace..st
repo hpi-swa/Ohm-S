@@ -1,5 +1,5 @@
 compiling
-compileGrammarDefinition: textualRepresentation andInstallIn: namespaceName
+compileGrammarDefinition: textualRepresentation inNamespace: namespaceName
 
 	| cst |
 

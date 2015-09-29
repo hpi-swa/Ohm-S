@@ -2,7 +2,7 @@ as yet unclassified
 testNotificationOnAddRule
 
 	| g spy |
-	g := OhmCompiler compileGrammarDefinition: 'Foo { foo = ''foo'' }' andInstallIn: self theTestNamespace namespaceName. 
+	g := OhmCompiler compileGrammarDefinition: 'Foo { foo = ''foo'' }' inNamespace: self theTestNamespace namespaceName. 
 
 	spy := OhmTestSpy new.
 	OhmChangeNotifier uniqueInstance notify: spy ofOhmChangesOfItem: OhmChangeNotifier ruleKind change: #Added using: #ruleAdded:. 

@@ -11,7 +11,7 @@ OhmInstance
 						isLoading := true.
 					 	[OhmInstance := 
 							OhmCompiler compileGrammarDefinition: self serializedGrammar
-											andInstallIn: self packageInfo packageName .
+											inNamespace: self packageInfo packageName .
 						OhmInstance smalltalkPlaceholder: self] 
 							ensure: [isLoading := false].
 					 	OhmInstance]

@@ -3,7 +3,7 @@ testNotificationOnChangeRule
 
 	| g spy |
 	g := OhmCompiler compileGrammarDefinition: 'Foo { foo = ''foo'' }' 
-			andInstallIn: self theTestNamespace namespaceName. 
+			inNamespace: self theTestNamespace namespaceName. 
 
 	spy := OhmTestSpy new.
 	OhmChangeNotifier uniqueInstance 
