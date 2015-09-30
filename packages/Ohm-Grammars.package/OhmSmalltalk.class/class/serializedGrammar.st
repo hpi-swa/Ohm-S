@@ -142,10 +142,10 @@ byteArrayNumber =
 	| (''1''|''2'') digit digit      -- threeDigits
 
 characterLiteral =
-	''$'' (_ | space)
+	''$'' (any | space)
 
 comment =
-	''"'' (~''"'' (_ | '' '' | ''\n''))* ''"''
+	''"'' (~''"'' (any | '' '' | ''\n''))* ''"''
 
 constantReference =
 	''true''
@@ -207,7 +207,7 @@ space +=
 	comment
 
 stringLiteral =
-	''\'''' (~''\'''' _ | ''\''\'''')* ''\''''
+	''\'''' (~''\'''' any | ''\''\'''')* ''\''''
 
 symbolInArrayLiteral =
     letter (alnum | '':'')* --plain
