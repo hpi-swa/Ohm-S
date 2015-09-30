@@ -1,7 +1,7 @@
 as yet unclassified
 fixtureGrammar
 
-	^ OhmGrammar makeGrammar: 'G {
+	^ OhmGrammar new: 'G {
             expr = expr ''+'' ''foo''  -- plus
 				| expr ''-'' ''bar'' -- minus
 				| ''foobar'' 		

@@ -2,7 +2,7 @@ as yet unclassified
 testDuplicateActionsAreNotAllowed
 
 	| g |
-	g := OhmGrammar makeGrammar: 'G {
+	g := OhmGrammar new: 'G {
           foo = bar baz
           bar = ''a''
           baz = ''b'' }'.

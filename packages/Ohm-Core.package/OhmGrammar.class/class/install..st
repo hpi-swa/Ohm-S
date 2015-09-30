@@ -1,5 +1,5 @@
 instance creation
-makeAndInstallGrammar: description
+install: description
 
 	| grammar |
 	grammar := OhmCompiler compileGrammarDefinition: description inNamespace: OhmNamespace defaultNamespaceName.

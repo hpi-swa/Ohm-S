@@ -2,7 +2,7 @@ as yet unclassified
 testThrowOnMatch
 
 	| g matching |
-	g := OhmGrammar makeGrammar: 'G { start = 5 }'.
+	g := OhmGrammar new: 'G { start = 5 }'.
 
 	matching := [ g match: 42 startingFrom: 'start' failureAsException: true ].
 

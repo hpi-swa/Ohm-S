@@ -23,7 +23,7 @@ Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remai
 Ohm/S allows to create gramamrs as ordinary objects:
 
 ````Smalltalk
-OhmGrammar makeGrammar: 'G { 
+OhmGrammar new: 'G { 
   start = ''a''
   anotherRule = start start
 }'
@@ -32,7 +32,7 @@ OhmGrammar makeGrammar: 'G {
 The interface also allows grammars to be persisted into the image, similar to the way Smalltalk classes are persisted:
 
 ````Smalltalk
-OhmGrammar makeAndInstallGrammar:  'G { 
+OhmGrammar install:  'G { 
   start = ''a''
   anotherRule = start start
 }'

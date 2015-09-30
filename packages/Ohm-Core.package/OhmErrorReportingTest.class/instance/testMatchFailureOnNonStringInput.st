@@ -3,7 +3,7 @@ testMatchFailureOnNonStringInput
 
 	| g result |
 
-	g := OhmGrammar makeGrammar: 'G { start = 5 }'.
+	g := OhmGrammar new: 'G { start = 5 }'.
 	result := g match: 42 startingFrom: 'start'.
 
 	self should: result failed.

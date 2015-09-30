@@ -5,7 +5,7 @@ testThrowOnMatchContents
 
 	| g matching |
 
-	g := OhmGrammar makeGrammar: 'G { start = ''a'' ''b'' ''c'' ''d'' }'.
+	g := OhmGrammar new: 'G { start = ''a'' ''b'' ''c'' ''d'' }'.
 	
 	matching := [ g matchContents: 'ab' startingFrom: 'start' failureAsException: true ].
 

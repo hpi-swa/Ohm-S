@@ -2,7 +2,7 @@ as yet unclassified
 testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes
 
 	| g action result |
-	g := OhmGrammar makeGrammar: 'G {
+	g := OhmGrammar new: 'G {
           foo = bar baz
           bar = ''a''
           baz = ''b'' }'.

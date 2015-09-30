@@ -1,5 +1,5 @@
 instance creation
-makeGrammar: description
+new: description
 
 	^ OhmCompiler compileGrammarDefinition: description 
 	

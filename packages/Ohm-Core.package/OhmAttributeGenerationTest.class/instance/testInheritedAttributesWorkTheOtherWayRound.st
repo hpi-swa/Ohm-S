@@ -2,7 +2,7 @@ as yet unclassified
 testInheritedAttributesWorkTheOtherWayRound
 
 	| depth g cst collector result |
-	g := OhmGrammar makeGrammar: '
+	g := OhmGrammar new: '
 		G { abcs = ''a'' b ''c''*
 			b = ''b'' }'.
 
