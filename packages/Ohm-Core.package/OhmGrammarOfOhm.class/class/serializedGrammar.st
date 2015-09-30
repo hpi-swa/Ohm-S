@@ -1,6 +1,6 @@
 as yet unclassified
 serializedGrammar
-^ 'Ohm-Grammars.Ohm <: Ohm-Grammars.BaseGrammar {
+^ 'Ohm <: BaseGrammar {
 
 Alt
     = Term ''|'' Alt  -- rec
@@ -22,7 +22,7 @@ GrammarHeader
 
 GrammarName
     = ident ''.'' ident -- qualified
-    | ident           -- unqualified
+    | ident              -- unqualified
 
 Grammars
     = Grammar*
