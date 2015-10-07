@@ -1,6 +1,5 @@
 as yet unclassified
 testSkipSpaces
-	
 	| testInput state |
 	  
 	{' ' . '  ' . '',Character cr . Character tab asString } do: [ :fixtureString |
@@ -9,5 +8,3 @@ testSkipSpaces
 		state pushInput: testInput.
 		self fixtureGrammar skipSpaces: state.
 		self assert: testInput atEnd]
-	
-	

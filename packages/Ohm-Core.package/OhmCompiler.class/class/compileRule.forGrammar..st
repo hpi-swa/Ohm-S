@@ -8,9 +8,8 @@ compileRule: textualRepresentation forGrammar: aGrammar
 		withoutTrailingBlanks , Character cr asString.
 
 	cst := OhmGrammarOfOhm 
-				matchContents: cleanedTextualRepresentation 
-				startingFrom: #Rule
-				failureAsException: true.
+				match: cleanedTextualRepresentation 
+				startingFrom: #Rule.
 	
 	rules := (OhmGrammarOfOhm 
 				semanticAction: OhmCompileRuleAttribute new) 

@@ -5,7 +5,7 @@ assertParsingExpression: pexpr compliesWithNodeFixture: fixtureName fromFixtureS
 	grammar := OhmGrammar newWithName: 'testGrammar' ruleDictionary: (Dictionary newFrom: { #ruleOne => pexpr }).
 	((OhmParsingExpressionFixtures fixturesFor: fixtureSetName) 
 		at: fixtureName) do: [ :aFixture |
-			result := grammar matchContents: (aFixture at: #input) startingFrom: #ruleOne.
+			result := (grammar match: (aFixture at: #input) startingFrom: #ruleOne) cst.
 			self assertNodeTreeOf: result equals: (aFixture at: #expectedTree).].
 
 	

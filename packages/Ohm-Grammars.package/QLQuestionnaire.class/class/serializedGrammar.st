@@ -1,6 +1,6 @@
 as yet unclassified
 serializedGrammar
-^ 'Ohm-Core-Grammars.QLQuestionnaire <: Ohm-Core-Grammars.BaseGrammar {
+^ 'QLQuestionnaire <: BaseGrammar {
 
 Form =
   ''form'' formName ''{'' FormBody ''}''
@@ -12,7 +12,7 @@ FormLine =
   QuestionLine
 
 QuestionLine = 
-  questionIdentifier questionLabel typeIdentifier
+  questionIdentifier '':'' questionLabel typeIdentifier
 
 formName =
   letter alnum*

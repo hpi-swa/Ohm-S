@@ -5,7 +5,7 @@ testFromAnAliveOhmToABoostrapOhm
 	cookedGrammar := (Compiler evaluate: OhmGrammarOfOhm toRecipe) value .
 
 	cst := cookedGrammar 
-		matchContents: OhmGrammarOfOhm ohmGrammarDefinition 		startingFrom: #Grammar.
+		match: OhmGrammarOfOhm ohmGrammarDefinition startingFrom: #Grammar.
 	self shouldnt: cst = false.
 
 	bakedGrammar := (cookedGrammar semanticAction: OhmCompileGrammar new)

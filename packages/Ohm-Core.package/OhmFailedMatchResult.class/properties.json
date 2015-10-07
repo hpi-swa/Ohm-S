@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"failure" ],
 	"name" : "OhmFailedMatchResult",
 	"pools" : [
 		 ],

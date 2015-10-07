@@ -11,6 +11,5 @@ testGrammarParsesCharacterLiterals
 			.	#characterLiteral } }
 		do: [ :t | |r input|
 			input := t first.
-			r := OhmSmalltalk matchContents: input
-									startingFrom: t second.
-			self assert: r MatchedWithContent: input andRuleName: t second.]
+			r := OhmSmalltalk match: input startingFrom: t second.
+			self assert: r cst MatchedWithContent: input andRuleName: t second.]

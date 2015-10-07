@@ -5,5 +5,4 @@
 		"expectedFailures" : "pre 9/28/2015 16:21",
 		"testMatchFailureOnFailedMatch" : "pre 9/30/2015 14:25",
 		"testMatchFailureOnNonStringInput" : "pre 9/30/2015 14:25",
-		"testThrowOnMatch" : "pre 9/30/2015 14:25",
-		"testThrowOnMatchContents" : "pre 9/30/2015 14:25" } }
+		"testThrowOnMatch" : "pre 10/7/2015 14:31" } }

@@ -1,7 +1,10 @@
 evaluation
-value: aNode
+value: inputNode
 
-	| messages ruleName ruleMessageName |
+	| messages ruleName ruleMessageName aNode |
+	inputNode class = OhmMatchResult
+		ifTrue: [aNode := inputNode cst]
+		ifFalse: [aNode := inputNode ].
 	messages := self class allSelectorsBelow: OhmAttributes.
 	ruleName := aNode ruleName asSymbol.
 	ruleMessageName := self class ruleNameToMessageName: ruleName.

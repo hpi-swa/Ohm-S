@@ -4,9 +4,9 @@ testThrowOnMatch
 	| g matching |
 	g := OhmGrammar new: 'G { start = 5 }'.
 
-	matching := [ g match: 42 startingFrom: 'start' failureAsException: true ].
+	matching := [ g match: 42 startingFrom: 'start' ].
 
-	self should: matching raise: OhmMatchFailure.
+	self shouldnt: matching raise: OhmMatchFailure.
 
 	matching 
 		on: OhmMatchFailure

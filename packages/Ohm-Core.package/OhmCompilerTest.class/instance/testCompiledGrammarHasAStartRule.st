@@ -8,5 +8,5 @@ testCompiledGrammarHasAStartRule
 	}'.
 	
 	self assert: 'expr' equals: aGrammar defaultStartRuleName.
-	self shouldnt: (aGrammar match: '2+2') = false.
-	self shouldnt: (aGrammar match: '2').
+	self should: (aGrammar match: '2+2') succeeded.
+	self should: (aGrammar match: '2') failed.

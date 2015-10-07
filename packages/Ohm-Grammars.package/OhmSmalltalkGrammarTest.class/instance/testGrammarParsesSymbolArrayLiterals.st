@@ -13,8 +13,7 @@ testGrammarParsesSymbolArrayLiterals
 		{'#(''asdf'')' 	. {#stringLiteral => '''asdf'''  }  } .
 		{'#(#a #b)' 		. {#symbolLiteral => '#a' . #symbolLiteral => '#b'} } }
 		do: [ :t | |input r| input := t first.
-			r := OhmSmalltalk matchContents: input
-									startingFrom: ruleName.
+			r := (OhmSmalltalk match: input startingFrom: ruleName) cst.
 			self assert: false ~= r.
 			self assert: t second size equals: r children second children size.
 

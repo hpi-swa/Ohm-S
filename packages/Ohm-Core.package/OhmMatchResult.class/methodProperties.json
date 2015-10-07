@@ -1,8 +1,10 @@
 {
 	"class" : {
 		"new:" : "pre 9/28/2015 16:04",
-		"newFor:" : "pre 9/28/2015 16:05" },
+		"newFor:" : "pre 10/7/2015 15:00",
+		"newFor:withResult:startingFrom:" : "pre 10/7/2015 15:22" },
 	"instance" : {
+		"cst" : "pre 10/7/2015 14:47",
 		"failed" : "pre 9/28/2015 16:02",
 		"state" : "pre 9/28/2015 16:05",
 		"state:" : "pre 9/28/2015 16:05",

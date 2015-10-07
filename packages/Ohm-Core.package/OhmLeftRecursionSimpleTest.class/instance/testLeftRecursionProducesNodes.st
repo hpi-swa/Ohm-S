@@ -18,7 +18,7 @@ testLeftRecursionProducesNodes
 	
 
 	| result |
-	result := self fixtureGrammar matchContents: '1234' startingFrom: #number.
+	result := (self fixtureGrammar match: '1234' startingFrom: #number) cst.
 	self assert: 'number' equals: result ruleName.
 
 	result := result children first.

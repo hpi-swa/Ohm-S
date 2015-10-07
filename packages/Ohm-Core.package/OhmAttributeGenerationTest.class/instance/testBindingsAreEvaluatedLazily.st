@@ -9,6 +9,6 @@ testBindingsAreEvaluatedLazily
 
 	action := g semanticAction: OhmAttributeGenerationTestSimpleSemanticAction new.
 
-	result := action value: (g matchContents: 'ab' startingFrom: 'foo').
+	result := action value: (g match: 'ab' startingFrom: 'foo').
 	self assert: (result first) equals: 1.
 	self assert: (result second) equals: 0.

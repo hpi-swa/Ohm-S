@@ -9,7 +9,7 @@ testInheritedAttributesWorkTheOtherWayRound
 	depth := g inheritedAttribute: OhmAttributeGenerationTestInheritedAttribute new.
 	collector := g synthesizedAttribute: (OhmAttributeGenerationTestCollectorAttribute newOn: depth).
 
-	cst := g matchContents: 'abccc' startingFrom: 'abcs'.
+	cst := g match: 'abccc' startingFrom: 'abcs'.
 	result := collector value: cst.
 	
 	result := Dictionary new addAll: result; yourself.
