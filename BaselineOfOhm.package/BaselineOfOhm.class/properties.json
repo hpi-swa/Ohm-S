@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfOhm",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfOhm",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
