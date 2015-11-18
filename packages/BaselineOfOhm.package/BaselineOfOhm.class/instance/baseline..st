@@ -15,7 +15,7 @@ baseline: spec
 				package: 'Ohm-Core' with: [spec requires: #('libraries')];
 				yourself.
 			spec
-				group: 'default' with: #('Ohm-Core');
+				group: 'default' with: #('Ohm-Core' 'Ohm-Grammars');
 				group: 'libraries' with: #('JSON' 'VB-Regex' 'ContextS2-Core');
 				group: 'TravisCI' with: #('Ohm-Core')	];
 				yourself
