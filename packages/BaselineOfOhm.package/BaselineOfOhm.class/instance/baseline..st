@@ -18,6 +18,5 @@ baseline: spec
 			spec
 				group: 'default' with: #('Ohm-Core' 'Ohm-Grammars');
 				group: 'core' with: #('Ohm-Core');
-				group: 'libraries' with: #('JSON' 'VB-Regex' 'ContextS2-Core');
-				group: 'TravisCI' with: #('Ohm-Core')	];
+				group: 'libraries' with: #('JSON' 'VB-Regex' 'ContextS2-Core')];
 				yourself

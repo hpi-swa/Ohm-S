@@ -1,10 +1,6 @@
 language: smalltalk
+sudo: false
 
 smalltalk:
   - Squeak-5.0
   - Squeak-4.6
-
-env:
-  global:
-    - BASELINE=Ohm
-    - PACKAGES="/packages"

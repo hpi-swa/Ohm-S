@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Ohm',
+      #directory : 'packages',
+      #platforms : [ #squeak ]
+    }
+  ]
+}
