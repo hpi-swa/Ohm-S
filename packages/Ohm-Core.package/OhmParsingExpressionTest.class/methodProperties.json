@@ -8,7 +8,7 @@
 		"assertNodeTreeOf:equals:" : "pre 1/7/2015 10:34",
 		"assertParsingExpression:asSyntactic:compliesWithFixture:fromFixtureSet:" : "pre 1/13/2015 13:55",
 		"assertParsingExpression:asSyntactic:compliesWithIntervalFixture:fromFixtureSet:" : "pre 1/6/2015 15:46",
-		"assertParsingExpression:asSyntactic:compliesWithItsFixture:" : "pre 1/5/2015 15:11",
+		"assertParsingExpression:asSyntactic:compliesWithItsFixture:" : "pre 5/12/2016 17:45",
 		"assertParsingExpression:asSyntactic:compliesWithItsIntervalFixture:" : "pre 1/5/2015 15:31",
 		"assertParsingExpression:compliesWithFixture:fromFixtureSet:" : "pre 12/4/2014 18:10",
 		"assertParsingExpression:compliesWithIntervalFixture:fromFixtureSet:" : "pre 1/5/2015 15:24",

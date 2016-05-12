@@ -12,10 +12,11 @@ doEval: state
 
 	result
 		ifFalse: [ input setState: originalInputState.
-				state 
-					addNodeNamed: self class terminalRuleIdentifier
-					startedAt: originalInputState 
-					withChildren: { nil }. ].
+				(1 to: self arity) do: [:n | 
+					state 
+						addNodeNamed: self class terminalRuleIdentifier
+						startedAt: originalInputState 
+						withChildren: {nil}. ] ].
 
 	^ true
 	
