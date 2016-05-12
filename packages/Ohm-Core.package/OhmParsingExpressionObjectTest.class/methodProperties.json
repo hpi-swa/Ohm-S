@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "pre 5/12/2016 16:41",
 		"testCreateAnObject" : "pre 1/5/2015 13:13",
 		"testLenientObjectMatchesDictionaries" : "pre 1/7/2015 10:27",
 		"testLenientObjectProducesRemainderNode" : "pre 1/7/2015 10:32",
