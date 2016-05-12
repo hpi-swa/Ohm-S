@@ -7,6 +7,9 @@ SmalltalkCISpec {
     }
   ],
   #testing : {
-    #categories : [ 'Ohm-*' ]
+    #categories : [ 'Ohm-*' ],
+    #coverage : {
+      #categories : [ 'Ohm-*' ]
+    }
   }
 }
