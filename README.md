@@ -17,7 +17,9 @@ Metacello new
 ```
 
 ## Usage
-Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
+For detailed information and tutorials on the Ohm grammar descriptions please consult [Ohm](https://github.com/cdglabs/ohm). 
+
+In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
 
 ### Persisted and Common Grammar Interface
 Ohm/S allows to create gramamrs as ordinary objects:
