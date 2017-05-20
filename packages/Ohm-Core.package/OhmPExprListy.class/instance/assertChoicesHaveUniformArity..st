@@ -1,4 +1,0 @@
-accessing
-assertChoicesHaveUniformArity: ruleName
-
-	self body assertChoicesHaveUniformArity: ruleName

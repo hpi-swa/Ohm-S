@@ -37,15 +37,8 @@ bootstrapOhmGrammar
 	            {b apply: 'ident' . b not: (b alt: { b seq: {b opt: (b apply: 'ruleDescr') . b prim: '='} . b prim: ':=' . b prim: '+='})}).
 	b addInlineRule: 'Base_prim' as: (b alt: { b apply: 'keyword' . b apply: 'string' . b apply: 'regExp' . b apply: 'number'}).
 	b addInlineRule: 'Base_paren' as: (b seq: {b prim: '(' . b apply: 'Alt' . b prim: ')'}).
-	b addInlineRule: 'Base_listy' as: (b seq: {b prim: '[' . b apply: 'Alt' . b prim: ']'}).
-	b addInlineRule: 'Base_obj' as: (b seq: {b prim: '{' . b opt: (b prim: '...') . b prim: '}'}).
-	b addInlineRule: 'Base_objWithProps' as: (b seq: {b prim: '{' . b apply: 'Props' . b opt: (b seq: {b prim: ',' . b prim: '...'}) . b prim: '}'}).
 	b addRule: 'Base' 
-	   as: ( b alt: { b apply: 'Base_application' . b apply: 'Base_prim' . b apply: 'Base_paren' . b apply: 'Base_listy' . b apply: 'Base_obj' . b apply: 'Base_objWithProps' }).
-	  b addInlineRule: 'Props_rec' as: (b seq: {b apply: 'Prop' . b prim: ',' . b apply: 'Props'}).
-	  b addInlineRule: 'Props_base' as: (b apply: 'Prop').
-	  b addRule: 'Props' as: ( b alt: { b apply: 'Props_rec' . b apply: 'Props_base'}).
-	  b addRule: 'Prop' as: ( b seq: { b alt: {b apply: 'name' . b apply: 'string'} . b prim: ':' . b apply: 'Base'}).
+	   as: ( b alt: { b apply: 'Base_application' . b apply: 'Base_prim' . b apply: 'Base_paren' }).
 	  b addRule: 'ruleDescr' as: ( b seq: { b prim: '--' . b apply: 'ruleDescrText' . b prim: ('',Character cr)}).
 	  b addRule: 'ruleDescrText' as: ( b star: (b seq: {b not: (b prim: ('',Character cr)) . b apply: 'any'})).
 	  b addRule: 'caseName' 

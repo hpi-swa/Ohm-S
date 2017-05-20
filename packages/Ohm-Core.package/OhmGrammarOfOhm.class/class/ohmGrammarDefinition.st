@@ -51,16 +51,6 @@ ohmGrammarDefinition
     = ident ~(ruleDescr? "=" | ":=" | "+=")  -- application
     | (keyword | string | regExp | number)   -- prim
     | "(" Alt ")"                            -- paren
-    | "[" Alt "]"                            -- listy
-    | "{" "..."? "}"                         -- obj
-    | "{" Props ("," "...")? "}"             -- objWithProps
-
-  Props
-    = Prop "," Props  -- rec
-    | Prop            -- base
-
-  Prop
-    = (name | string) ":" Base
 
   ruleDescr  -- rule description for use in error messages
     = "--" ruleDescrText "\n"

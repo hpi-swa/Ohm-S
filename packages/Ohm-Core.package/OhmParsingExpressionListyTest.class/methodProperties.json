@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testCreateAListy" : "pre 12/11/2014 10:20",
-		"testListyArity" : "pre 1/6/2015 15:23",
-		"testListyDoesNotCreateOwnNodes" : "pre 1/7/2015 10:00",
-		"testListyMatchesAList" : "pre 12/11/2014 10:52" } }
