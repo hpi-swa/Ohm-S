@@ -1,9 +1,9 @@
-as yet unclassified
+testing
 testDefineCannotOverride
 	
 	self
-		testOnGrammar: 'G1 { foo = ''foo'' }
-						G2 <: G1 { foo = ''bar'' }' 
+		testOnGrammar: 'G1 { foo = "foo" }
+						G2 <: G1 { foo = "bar" }' 
 		in: 'inheritanceTestNameSpace1'
 		throws: OhmDuplicateRuleDeclarationError
 		andShould: [ :e | self assert: e ruleName equals: 'foo'.

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCreateALookahead
 
 	OhmPExprLookahead newOn: OhmParsingExpression new.

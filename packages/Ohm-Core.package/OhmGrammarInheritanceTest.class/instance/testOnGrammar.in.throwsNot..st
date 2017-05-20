@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testOnGrammar: grammarDescription in: packageName throwsNot: errorType
 
 	SystemChangeNotifier uniqueInstance doSilently: [

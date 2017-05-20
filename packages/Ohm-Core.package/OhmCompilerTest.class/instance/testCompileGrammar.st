@@ -1,9 +1,9 @@
-as yet unclassified
+testing
 testCompileGrammar
 
 	| aGrammar |
 	aGrammar := OhmCompiler compileGrammarDefinition: 'OhmTestingPackage.G1 {
-		expr = number ''+'' number
+		expr = number "+" number
 		number = digit*
 	}'.
 	

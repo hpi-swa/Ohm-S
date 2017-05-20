@@ -2,6 +2,7 @@
 	"class" : {
 		"expressionName" : "pre 12/3/2014 10:25",
 		"listRuleIdentifier" : "pre 1/7/2015 13:57",
+		"newOn:" : "pre 5/20/2017 17:43",
 		"terminalRuleIdentifier" : "pre 1/7/2015 13:57" },
 	"instance" : {
 		"arity" : "pre 1/6/2015 15:00",
@@ -14,7 +15,6 @@
 		"description:" : "pre 1/19/2015 14:28",
 		"doEval:" : "pre 4/23/2015 14:03",
 		"eval:" : "pre 7/23/2015 10:21",
-		"eval: (ohmDebugging)" : "pre 8/31/2015 20:58",
 		"initialize" : "pre 5/28/2015 14:37",
 		"innerNodesAt:" : "pre 5/12/2015 14:08",
 		"isSyntactic:" : "pre 12/4/2014 21:44",
@@ -26,5 +26,6 @@
 		"syntacticRuleHandling:" : "pre 1/13/2015 13:48",
 		"textualRepresentation" : "pre 4/21/2015 13:08",
 		"textualRepresentation:" : "pre 4/15/2015 13:36",
+		"toRecipe" : "pre 5/20/2017 17:42",
 		"totalNumberOfExpressions" : "pre 7/23/2015 16:42",
-		"weightedComplexity" : "pre 7/23/2015 16:56" } }
+		"weightedComplexity" : "pre 5/20/2017 17:41" } }

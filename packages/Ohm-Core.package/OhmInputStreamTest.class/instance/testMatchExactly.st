@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testMatchExactly
 
 	self assert: (self fixtureStream matchExactly: $h).

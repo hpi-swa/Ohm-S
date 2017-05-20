@@ -1,9 +1,9 @@
-as yet unclassified
+testing
 testSemanticActionsTraverseTheTree
 
 	| result testActions |
 	testActions := self fixtureGrammar semanticAction: OhmAttributeGenerationTestAttribute new.
-	result := self fixtureGrammar matchContents: 'foobar' startingFrom: #bar.
+	result := self fixtureGrammar match: 'foobar' startingFrom: #bar.
 	result := testActions value: result.
 
 	self assert: result first equals: #bar.

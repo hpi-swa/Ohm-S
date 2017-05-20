@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testLeftRecursionProducesNodes
 
 	"Structure to be produced:
@@ -14,11 +14,11 @@ testLeftRecursionProducesNodes
                 '4']]);"
 
 	"M { number = numberRec | digit 
-             numberRec = number digit"
+             numberRec = number digit }"
 	
 
 	| result |
-	result := self fixtureGrammar matchContents: '1234' startingFrom: #number.
+	result := (self fixtureGrammar match: '1234' startingFrom: #number) cst.
 	self assert: 'number' equals: result ruleName.
 
 	result := result children first.

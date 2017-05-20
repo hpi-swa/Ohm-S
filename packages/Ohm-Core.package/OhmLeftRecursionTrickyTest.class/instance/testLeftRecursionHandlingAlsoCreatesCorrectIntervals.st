@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testLeftRecursionHandlingAlsoCreatesCorrectIntervals
 
 	" This is the structure which we want to check for intervals:
@@ -15,7 +15,7 @@ testLeftRecursionHandlingAlsoCreatesCorrectIntervals
                         	, '4']]]);"
 
 	| result |
-	result := self fixtureGrammar matchContents: '1234' startingFrom: #tricky.
+	result := (self fixtureGrammar match: '1234' startingFrom: #tricky) cst.
 	"tricky"
 	self assert: 1 equals: result interval start.
 	self assert: 4 equals: result interval end.

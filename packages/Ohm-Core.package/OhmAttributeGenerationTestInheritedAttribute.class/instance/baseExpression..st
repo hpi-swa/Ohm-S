@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 baseExpression: aNode
 
 	self set: 0

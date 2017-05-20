@@ -1,5 +1,4 @@
 accessing
 weightedComplexity
 
-
 	^ 1

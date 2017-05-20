@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesBlockLiterals
 	
 	startRule := #BlockLiteral.

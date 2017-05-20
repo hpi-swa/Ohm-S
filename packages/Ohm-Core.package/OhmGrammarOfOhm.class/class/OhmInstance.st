@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 OhmInstance
 
 	^ OhmInstance ifNil: [ self bootstrapTheOhmGrammar. OhmInstance ]

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGetNextToken
 
 	self assert: self fixtureStream next 

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 on: stringOrText
 
 	^ super on: stringOrText asString

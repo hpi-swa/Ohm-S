@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 makeAndInstallGrammar: grammarDefinition in: packageName
 
 	SystemChangeNotifier uniqueInstance doSilently: [

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testAltArity
 
 	self assert: 0 equals: (OhmPExprAlt newOn: {}) arity.

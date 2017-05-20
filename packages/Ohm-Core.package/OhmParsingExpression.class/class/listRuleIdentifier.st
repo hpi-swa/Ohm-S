@@ -1,4 +1,4 @@
-as yet unclassified
+constants
 listRuleIdentifier
 
 	^ #'_list'

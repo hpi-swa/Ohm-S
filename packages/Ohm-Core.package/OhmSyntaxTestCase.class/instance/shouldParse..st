@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 shouldParse: aString
 
-	self shouldnt: (grammar matchContents: aString startingFrom: startRule) = false
+	self should: (grammar match: aString startingFrom: startRule) succeeded

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testUndefinedSuperGrammar
 
 	self testOnGrammar:  'G1 <: G2 {}' 

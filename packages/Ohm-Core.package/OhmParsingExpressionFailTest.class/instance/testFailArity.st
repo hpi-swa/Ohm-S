@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testFailArity
 
 	self assert: 1 equals: (OhmPExprFail new) arity.

@@ -1,8 +1,8 @@
-as yet unclassified
+asserting
 assertStringsDoNotMatch: inputStrings on: ruleName
 	
 	inputStrings
 		do: [ :input | |r|
-			r := OhmSmalltalk matchContents: input
+			r := OhmSmalltalk match: input
 									startingFrom: ruleName.
-			self assert: false equals: r]
+			self assert: r failed]

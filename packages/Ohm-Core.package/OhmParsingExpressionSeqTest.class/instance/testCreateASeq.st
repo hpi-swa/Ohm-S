@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCreateASeq
 
 	OhmPExprSeq newOn: {}.

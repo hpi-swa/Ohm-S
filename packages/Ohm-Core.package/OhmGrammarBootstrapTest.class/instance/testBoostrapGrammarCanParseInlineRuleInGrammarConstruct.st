@@ -1,6 +1,6 @@
-as yet unclassified
+testing
 testBoostrapGrammarCanParseInlineRuleInGrammarConstruct
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)
-					doesMatch: 'G { foo = ''foo'' -- inlineFoo
-											| ''bar'' }' startingFrom: 'Grammars').
+					doesMatch: 'G { foo = "foo" -- inlineFoo
+											| "bar" }' startingFrom: 'Grammars').

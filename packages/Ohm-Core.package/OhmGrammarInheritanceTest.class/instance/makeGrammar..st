@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 makeGrammar: grammarDefinition
 
-	^ OhmGrammar makeGrammar: grammarDefinition
+	^ OhmGrammar new: grammarDefinition

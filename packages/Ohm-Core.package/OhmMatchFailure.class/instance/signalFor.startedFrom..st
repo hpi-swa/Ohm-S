@@ -1,4 +1,4 @@
-as yet unclassified
+signaling
 signalFor: state startedFrom: startRuleName
 
 	self

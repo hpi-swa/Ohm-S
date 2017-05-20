@@ -1,9 +1,9 @@
-as yet unclassified
+testing #2
 testMatchFailureOnFailedMatch
 
 	| g result |
 
-	g := OhmGrammar makeGrammar: 'G { start = ''a'' ''b'' ''c'' ''d'' }'.
+	g := OhmGrammar new: 'G { start = ''a'' ''b'' ''c'' ''d'' }'.
 	result := g match: 'ab' startingFrom: 'start'.
 
 	self should: result failed.

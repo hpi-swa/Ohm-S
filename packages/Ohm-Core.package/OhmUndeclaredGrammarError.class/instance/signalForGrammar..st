@@ -1,4 +1,4 @@
-accessing
+signaling
 signalForGrammar: grammarName
 
 	self grammarName: grammarName.

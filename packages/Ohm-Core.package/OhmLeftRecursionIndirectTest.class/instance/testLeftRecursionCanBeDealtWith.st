@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testLeftRecursionCanBeDealtWith
 
 	"M { number = foo | digit

@@ -1,4 +1,4 @@
-as yet unclassified
+signaling
 signal: ruleName
 
 	self ruleName: ruleName.

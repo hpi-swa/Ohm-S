@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newOn: numberOrSymbol
 
 	^ (self new)

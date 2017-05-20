@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSemanticActionCanBeCreated
 
 	self fixtureGrammar semanticAction: OhmAttributeGenerationTestAttribute new.

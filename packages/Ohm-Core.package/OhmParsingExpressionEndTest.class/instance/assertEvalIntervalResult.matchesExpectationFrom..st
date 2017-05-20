@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 assertEvalIntervalResult: bindings matchesExpectationFrom: aFixture
 
 	| newBindings |

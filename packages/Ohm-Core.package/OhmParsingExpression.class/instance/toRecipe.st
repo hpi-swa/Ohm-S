@@ -1,0 +1,4 @@
+converting
+toRecipe
+
+	self subclassResponsibility

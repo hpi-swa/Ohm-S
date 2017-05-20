@@ -1,5 +1,5 @@
-as yet unclassified
+testing
 testLeftRecursionCanBeDealtWith
 
-	self fixtureGrammar matchContents: 'foobar + foo' startingFrom: #expr.
+	self fixtureGrammar match: 'foobar + foo' startingFrom: #expr.
 	

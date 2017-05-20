@@ -8,10 +8,10 @@ applyListAttributeOn: aNode
 		grandparent ruleName , 
 		'At' , 
 		(grandparent children indexOf: aNode parent ifAbsent: [ Error signal: 'Broken concrete syntax tree' ]) ,
-		'ForEach'.
+		'ForEach:on:'.
+	actionName := actionName asSymbol.
 
-	messages := self class allSelectorsBelow: OhmAttributes.
-	
+	messages := self class allSelectorsBelow: OhmAttributes.	
 	(messages includes: actionName)
 		ifTrue: [ ^ self dispatch: actionName for: aNode ]
 		ifFalse: [ (messages includes: #listExpression:on:at:)

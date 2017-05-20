@@ -1,4 +1,4 @@
-nil
+accessing
 grammarName
 
 	^ self OhmInstance grammarName

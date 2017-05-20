@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 baz: aNode with: e
 
 	| c |

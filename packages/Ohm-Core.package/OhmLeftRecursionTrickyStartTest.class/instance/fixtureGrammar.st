@@ -1,9 +1,9 @@
-as yet unclassified
+accessing
 fixtureGrammar
 
-	^ OhmGrammar makeGrammar: 'G {
-            expr = expr ''+'' ''foo''  -- plus
-				| expr ''-'' ''bar'' -- minus
-				| ''foobar'' 		
+	^ OhmGrammar new: 'G {
+            expr = expr "+" "foo"  -- plus
+				| expr "-" "bar" -- minus
+				| "foobar" 		
             }'
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesExpression
 	
 	startRule := #Expression.

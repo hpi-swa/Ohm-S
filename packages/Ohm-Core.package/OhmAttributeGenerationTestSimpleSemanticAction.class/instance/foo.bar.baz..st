@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 foo: aNode bar: barExpr baz: bazExpr
 
 	| barResult bazResult |

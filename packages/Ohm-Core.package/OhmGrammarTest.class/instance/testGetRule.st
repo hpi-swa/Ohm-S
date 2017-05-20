@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGetRule
 
 	self assert: self fixtureRuleFoo equals: (self fixtureGrammar ruleNamed: #foo).

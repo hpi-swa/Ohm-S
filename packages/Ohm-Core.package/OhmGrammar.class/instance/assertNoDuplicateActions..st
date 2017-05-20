@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 assertNoDuplicateActions: actionsClass
 
 	| messageHeads messages |

@@ -1,11 +1,11 @@
-as yet unclassified
+testing
 testDuplicateActionsAreNotAllowed
 
 	| g |
-	g := OhmGrammar makeGrammar: 'G {
+	g := OhmGrammar new: 'G {
           foo = bar baz
-          bar = ''a''
-          baz = ''b'' }'.
+          bar = "a"
+          baz = "b" }'.
 
 	self should: [g assertNoDuplicateActions: OhmAttributeGenerationTestDuplicateAttribute]
 		raise: OhmDuplicateActionDeclarationError.

@@ -1,23 +1,23 @@
-as yet unclassified
+testing
 testComplexSerialization
 
 	| g description |
 
 	g := OhmCompiler compileGrammarDefinition: 'G {
-		foo = ''f''
+		foo = "f"
 		Bar = foo | foobaz
 		foobaz =
-			''foo'' ''baz'' --one
-			| ''foobaz'' --two
+			"foo" "baz" --one
+			| "foobaz" --two
 	}'.
 
 	description := 'G <: BaseGrammar {
 
 Bar = foo | foobaz
 
-foo = ''f''
+foo = "f"
 
 foobaz =
-			''foo'' ''baz'' --one
-			| ''foobaz'' --two}'.
+			"foo" "baz" --one
+			| "foobaz" --two}'.
 	self assert: description equals: g grammarDefinitionString.

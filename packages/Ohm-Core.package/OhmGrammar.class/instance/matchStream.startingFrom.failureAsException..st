@@ -14,10 +14,4 @@ matchStream: stream startingFrom: startRuleName failureAsException: exceptionOnF
 		ifFalse: [ self skipSpaces: state.
 				 result := OhmPExprEnd new eval: state. ].
 	
-	result
-		ifTrue: [ | setParents | 
-				setParents := self semanticAction: OhmSetParentAttribute new.
-				setParents value: bindings first.
-				^ bindings first ]
-		ifFalse: [ exceptionOnFailure ifTrue: [ OhmMatchFailure signalFor: state startedFrom: startRuleName ].
-				^ false ]
+	^ OhmMatchResult newFor: state withResult: result startingFrom: startRuleName

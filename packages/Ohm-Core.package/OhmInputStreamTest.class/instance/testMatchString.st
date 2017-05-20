@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testMatchString
 
 	self assert: (self fixtureStream matchString: 'hal').

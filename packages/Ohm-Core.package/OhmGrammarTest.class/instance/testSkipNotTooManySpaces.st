@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSkipNotTooManySpaces
 	
 	| state testInput |

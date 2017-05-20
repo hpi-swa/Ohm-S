@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testAssertSeqArity
 
 	self assert: 0 equals: (OhmPExprSeq newOn: {}) arity.

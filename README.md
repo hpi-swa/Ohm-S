@@ -1,4 +1,6 @@
-# Ohm/S [![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg)](https://travis-ci.org/hpi-swa/Ohm-S)
+# Ohm/S
+[![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg?branch=master)](https://travis-ci.org/hpi-swa/Ohm-S)
+[![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
 
 Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
 
@@ -23,7 +25,7 @@ In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar la
 Ohm/S allows to create gramamrs as ordinary objects:
 
 ````Smalltalk
-OhmGrammar makeGrammar: 'G { 
+OhmGrammar new: 'G { 
   start = ''a''
   anotherRule = start start
 }'
@@ -32,7 +34,7 @@ OhmGrammar makeGrammar: 'G {
 The interface also allows grammars to be persisted into the image, similar to the way Smalltalk classes are persisted:
 
 ````Smalltalk
-OhmGrammar makeAndInstallGrammar:  'G { 
+OhmGrammar install:  'G { 
   start = ''a''
   anotherRule = start start
 }'

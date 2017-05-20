@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 rules
 
 	^ self OhmInstance rules

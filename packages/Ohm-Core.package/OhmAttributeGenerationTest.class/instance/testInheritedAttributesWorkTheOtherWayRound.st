@@ -1,15 +1,15 @@
-as yet unclassified
+testing
 testInheritedAttributesWorkTheOtherWayRound
 
 	| depth g cst collector result |
-	g := OhmGrammar makeGrammar: '
-		G { abcs = ''a'' b ''c''*
-			b = ''b'' }'.
+	g := OhmGrammar new: '
+		G { abcs = "a" b "c"*
+			b = "b" }'.
 
 	depth := g inheritedAttribute: OhmAttributeGenerationTestInheritedAttribute new.
 	collector := g synthesizedAttribute: (OhmAttributeGenerationTestCollectorAttribute newOn: depth).
 
-	cst := g matchContents: 'abccc' startingFrom: 'abcs'.
+	cst := g match: 'abccc' startingFrom: 'abcs'.
 	result := collector value: cst.
 	
 	result := Dictionary new addAll: result; yourself.

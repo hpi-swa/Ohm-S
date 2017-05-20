@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCreateAnInterval
 
 	OhmInterval newOn: 'hello world!'.

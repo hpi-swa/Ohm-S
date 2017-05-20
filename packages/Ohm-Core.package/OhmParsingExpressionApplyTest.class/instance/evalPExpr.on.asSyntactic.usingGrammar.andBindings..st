@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar andBindings: bindings
 
 	| rules state | 

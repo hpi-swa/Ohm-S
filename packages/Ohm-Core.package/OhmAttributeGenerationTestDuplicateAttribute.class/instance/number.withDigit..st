@@ -1,2 +1,2 @@
-as yet unclassified
+attributes
 number: aNode withDigit: digit 

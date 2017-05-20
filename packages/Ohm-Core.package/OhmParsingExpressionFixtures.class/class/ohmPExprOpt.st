@@ -10,5 +10,10 @@ ohmPExprOpt
 		"matchTree" : [ 	   	   { "input" : "", 
 								"expectedTree" : {"ruleName" : "ruleOne", "children" : [{"ruleName" : "_terminal", "children" : [null] }] } },
 							   { "input" : "dr", 
-								"expectedTree" : {"ruleName" : "ruleOne", "children" : [{"ruleName" : "_terminal", "children" : ["dr"] }] } } ] }'
+								"expectedTree" : {"ruleName" : "ruleOne", "children" : [{"ruleName" : "_terminal", "children" : ["dr"] }] } } ],
+		"matchEmptyComplexTree" : [
+							   { "input" : "", 
+								"expectedTree" : {"ruleName" : "ruleOne", "children" : [{"ruleName" : "_terminal", "children" : [null] }, {"ruleName" : "_terminal", "children" : [null] }] } },
+							   { "input" : "dr", 
+								"expectedTree" : {"ruleName" : "ruleOne", "children" : [{"ruleName" : "_terminal", "children" : [null] }, {"ruleName" : "_terminal", "children" : [null] }] } } ]  }'.
         

@@ -1,11 +1,11 @@
-as yet unclassified
+testing
 testLeftRecursionCanBeDealtWith
 
 	"G {
 		addExpr = a | c
 		a = b
 		b = addExprRec
-		addExprRec = addExpr '+' mulExpr
+		addExprRec = addExpr ""+"" mulExpr
 		c = d
 		d = mulExpr
 		mulExpr = e | g
@@ -13,7 +13,7 @@ testLeftRecursionCanBeDealtWith
 		f = mulExprRec
 		g = h
 		h = priExpr
-		mulExprRec = mulExpr '*' priExpr
+		mulExprRec = mulExpr ""*"" priExpr
 		priExpr = /[0-9]/ }"
 	| grammar b |
 	b := OhmGrammarBuilder new.

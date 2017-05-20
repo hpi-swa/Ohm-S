@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesComplicatedNumbers
 
 	startRule := #integerLiteral.
@@ -14,5 +14,5 @@ testGrammarParsesComplicatedNumbers
 	{	{'3e2' .			#floatingPointLiteral }.
 		{'2r0.1e-2'.		#floatingPointLiteral } }
 		do: [ :t | |r|
-			r := OhmSmalltalk matchContents: t first startingFrom: t second.
-			self assert: r MatchedWithContent: t first andRuleName: t second.]
+			r := OhmSmalltalk match: t first startingFrom: t second.
+			self assert: r cst MatchedWithContent: t first andRuleName: t second.]

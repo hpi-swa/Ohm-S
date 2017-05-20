@@ -1,4 +1,4 @@
-accessing
+signaling
 signalForRule: ruleName expectedArity: expected actualArity: actual
 
 	self

@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 installAttribute: attributesObject
 
 	self 

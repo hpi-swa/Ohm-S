@@ -1,13 +1,13 @@
-as yet unclassified
+testing
 testCompileGrammarWithExistingSuperclass
 
 	| aSuperGrammar aGrammar |
 	aSuperGrammar := OhmCompiler compileGrammarDefinition: 'OhmTestingPackage.G0 {
-		base = ''foo''
+		base = "foo"
 	}'.
 	OhmCompiler installGrammar: aSuperGrammar.
 	aGrammar := OhmCompiler compileGrammarDefinition: 'OhmTestingPackage.G1 <: OhmTestingPackage.G0 {
-		expr = number ''+'' number
+		expr = number "+" number
 		number = digit*
 	}'.
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testStringArity
 
 	self assert: 1 equals: (OhmPExprString newOn: 'abc') arity.

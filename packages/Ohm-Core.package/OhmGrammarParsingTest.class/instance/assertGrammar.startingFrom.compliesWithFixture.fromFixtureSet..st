@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 assertGrammar: grammar startingFrom: startRule compliesWithFixture: fixtureName fromFixtureSet: fixtureSetName
 	
 	| parsingResult |

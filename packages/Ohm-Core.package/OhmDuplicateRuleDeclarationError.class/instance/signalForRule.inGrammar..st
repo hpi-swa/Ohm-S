@@ -1,4 +1,4 @@
-accessing
+signaling
 signalForRule: ruleName inGrammar: grammarName
 
 	self ruleName: ruleName.

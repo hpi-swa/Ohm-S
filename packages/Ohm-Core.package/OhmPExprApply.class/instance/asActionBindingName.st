@@ -1,4 +1,4 @@
-as yet unclassified
+evaluation
 asActionBindingName 
 
 	^ self ruleName

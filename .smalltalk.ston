@@ -5,5 +5,11 @@ SmalltalkCISpec {
       #directory : 'packages',
       #platforms : [ #squeak ]
     }
-  ]
+  ],
+  #testing : {
+    #categories : [ 'Ohm-*' ],
+    #coverage : {
+      #categories : [ 'Ohm-*' ]
+    }
+  }
 }

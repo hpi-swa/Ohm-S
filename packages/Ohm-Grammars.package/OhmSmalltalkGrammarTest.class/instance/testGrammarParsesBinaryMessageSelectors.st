@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesBinaryMessageSelectors
 	
 	startRule := #binaryMessageSelector.

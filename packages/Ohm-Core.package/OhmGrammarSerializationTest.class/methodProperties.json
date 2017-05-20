@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testComplexSerialization" : "pre 5/27/2015 18:19",
-		"testSimpleSerialization" : "pre 5/27/2015 18:20" } }
+		"testComplexSerialization" : "pre 5/20/2017 17:05",
+		"testSerializerToRecipe" : "pre 5/20/2017 17:06",
+		"testSimpleSerialization" : "pre 5/20/2017 17:06" } }

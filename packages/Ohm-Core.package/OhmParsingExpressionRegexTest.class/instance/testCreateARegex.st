@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCreateARegex
 
 	OhmPExprRegex newOn: '[0-9]'.

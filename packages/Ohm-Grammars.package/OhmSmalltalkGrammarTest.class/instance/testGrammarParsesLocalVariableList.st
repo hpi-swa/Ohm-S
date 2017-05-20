@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesLocalVariableList
 	
 	| ruleName |
@@ -10,12 +10,12 @@ testGrammarParsesLocalVariableList
 						expected := inputStringOrArray second.]
 				ifFalse: [ input := inputStringOrArray.
 						expected := inputStringOrArray ].
-			r := OhmSmalltalk matchContents: input
+			r := OhmSmalltalk match: input
 									startingFrom: ruleName.
-			self assert: r MatchedWithContent: expected andRuleName: ruleName].
+			self assert: r cst MatchedWithContent: expected andRuleName: ruleName].
 
 	{ '|' . '|2a|' . '|+a|'}
 		do: [ :input | |r|
-			r := OhmSmalltalk matchContents: input
+			r := OhmSmalltalk match: input
 									startingFrom: ruleName.
-			self assert: false equals: r]
+			self assert: r failed]

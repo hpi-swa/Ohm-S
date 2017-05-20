@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCompileGrammarWithSupergrammarDependency
 
 	| aGrammar aSuperGrammar createdGrammar |
@@ -9,7 +9,7 @@ testCompileGrammarWithSupergrammarDependency
 	aSuperGrammar smalltalkPlaceholder OhmInstance: nil. "To create the state after monticello checkout"  
 
 	aGrammar := OhmCompiler compileGrammarDefinition: 'OhmTestingPackage.G1 <: OhmTestingPackage.G2 {
-		expr = number ''+'' number
+		expr = number "+" number
 		number = digit*
 	}'.
 	OhmCompiler installGrammar: aGrammar.

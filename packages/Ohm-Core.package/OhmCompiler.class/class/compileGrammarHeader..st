@@ -4,9 +4,8 @@ compileGrammarHeader: textualRepresentation
 	| cst |
 
 	cst := OhmGrammarOfOhm 
-				matchContents: textualRepresentation 
-				startingFrom: 'GrammarHeader' 
-				failureAsException: true.
+				match: textualRepresentation 
+				startingFrom: 'GrammarHeader'.
 	
 	^ (OhmGrammarOfOhm 
 			semanticAction: OhmCompileGrammarHeader new) value: cst.
