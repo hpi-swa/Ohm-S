@@ -1,8 +1,7 @@
 # Ohm/S
 [![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg)](https://travis-ci.org/hpi-swa/Ohm-S)
 
-Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/
-cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
+Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
 
 ## How to install
 1. Get [Squeak 4.6 or later](http://www.squeak.org)
