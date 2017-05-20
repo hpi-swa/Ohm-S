@@ -1,9 +1,8 @@
 # Ohm/S
 [![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg?branch=master)](https://travis-ci.org/hpi-swa/Ohm-S)
-[![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg?branch=update-to-v0.86)](https://coveralls.io/github/hpi-swa/Ohm-S?branch=update-to-v0.86)
+[![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
 
-Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/
-cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
+Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
 
 ## How to install
 1. Get [Squeak 4.6 or later](http://www.squeak.org)
@@ -18,7 +17,9 @@ Metacello new
 ```
 
 ## Usage
-Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
+For detailed information and tutorials on the Ohm grammar descriptions please consult [Ohm](https://github.com/cdglabs/ohm). 
+
+In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
 
 ### Persisted and Common Grammar Interface
 Ohm/S allows to create gramamrs as ordinary objects:
