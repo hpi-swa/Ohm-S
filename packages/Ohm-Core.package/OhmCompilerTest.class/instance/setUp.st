@@ -1,4 +1,4 @@
-as yet unclassified
+running
 setUp
 
 	testGrammar := OhmGrammar new.

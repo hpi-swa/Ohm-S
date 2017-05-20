@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCompileGrammarWithSupergrammarDependency
 
 	| aGrammar aSuperGrammar createdGrammar |

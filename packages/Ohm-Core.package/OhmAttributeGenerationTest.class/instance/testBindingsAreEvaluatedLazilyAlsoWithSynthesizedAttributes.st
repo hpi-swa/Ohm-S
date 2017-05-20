@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes
 
 	| g action result |

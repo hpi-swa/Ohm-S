@@ -1,4 +1,4 @@
-as yet unclassified
+converting
 toRecipe 
 
 	^ 'b regex: ' , self regexString printString

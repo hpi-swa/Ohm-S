@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesBindableIdentifier
 	
 	startRule := #bindableIdentifier.

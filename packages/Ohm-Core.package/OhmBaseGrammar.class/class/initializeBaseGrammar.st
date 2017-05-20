@@ -1,4 +1,4 @@
-as yet unclassified
+class initialization
 initializeBaseGrammar
 
 	OhmInstance := OhmGrammar basicNew  

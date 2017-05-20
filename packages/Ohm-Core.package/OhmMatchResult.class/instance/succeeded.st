@@ -1,4 +1,4 @@
-as yet unclassified
+result status
 succeeded
 
 	^ self failed not

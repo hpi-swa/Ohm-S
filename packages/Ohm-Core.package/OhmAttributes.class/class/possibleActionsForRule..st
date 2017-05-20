@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 possibleActionsForRule: anOhmRule
 	
 	| result ruleName ruleMessageName|

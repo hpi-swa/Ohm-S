@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testNewGrammarCreationAPIbrokenGrammar
 
 	self should: [OhmGrammar new: 'G {

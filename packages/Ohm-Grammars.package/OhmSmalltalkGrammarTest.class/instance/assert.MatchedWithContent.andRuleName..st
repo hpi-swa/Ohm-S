@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 assert: result MatchedWithContent: stringContent andRuleName: ruleName
 
 	self assert: result ~= false.

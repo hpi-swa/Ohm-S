@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testMatchResultClassExists
 
 	OhmMatchResult newFor: self successfulState.

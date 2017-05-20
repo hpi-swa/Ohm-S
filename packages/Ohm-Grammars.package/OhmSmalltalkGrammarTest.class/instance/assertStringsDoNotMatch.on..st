@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 assertStringsDoNotMatch: inputStrings on: ruleName
 	
 	inputStrings

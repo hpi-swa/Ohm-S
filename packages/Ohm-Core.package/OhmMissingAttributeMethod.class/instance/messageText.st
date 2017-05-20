@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 messageText
 
 	^ self ruleName

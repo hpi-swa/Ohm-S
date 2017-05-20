@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 semanticAction: actions
 
 	^ self OhmInstance semanticAction: actions     

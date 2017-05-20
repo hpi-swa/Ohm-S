@@ -1,4 +1,4 @@
-as yet unclassified
+signaling
 signalForRule: ruleName expectedArity: arity reason: why
 	
 	self ruleName: ruleName.

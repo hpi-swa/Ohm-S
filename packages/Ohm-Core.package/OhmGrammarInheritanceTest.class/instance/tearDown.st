@@ -1,4 +1,4 @@
-as yet unclassified
+running
 tearDown
 
 	SystemOrganizer default removeSystemCategory: 'inheritanceTestNameSpace1'.

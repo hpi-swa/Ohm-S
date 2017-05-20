@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testFailureInformationOnFailedMatch
 
 	"Error messages are fine when displayed in monospace. --pre"

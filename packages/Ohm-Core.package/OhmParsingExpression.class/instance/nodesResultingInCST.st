@@ -1,4 +1,4 @@
-as yet unclassified
+private
 nodesResultingInCST
 	"This method only returns these rules in the rule tree
 	which will create nodes in the CST. So an alt rule will

@@ -1,4 +1,4 @@
-as yet unclassified
+signaling
 signalFor: state
 
 	self state: state.

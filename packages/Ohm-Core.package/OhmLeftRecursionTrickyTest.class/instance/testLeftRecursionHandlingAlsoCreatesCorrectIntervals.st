@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testLeftRecursionHandlingAlsoCreatesCorrectIntervals
 
 	" This is the structure which we want to check for intervals:

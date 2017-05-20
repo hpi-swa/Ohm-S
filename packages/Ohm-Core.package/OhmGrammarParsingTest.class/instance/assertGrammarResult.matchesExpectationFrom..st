@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 assertGrammarResult: grammarResult matchesExpectationFrom: aFixture
 
 	| expectedValue |

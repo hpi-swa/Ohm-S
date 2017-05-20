@@ -1,4 +1,4 @@
-as yet unclassified
+serialized grammar
 serializedGrammar
 ^ 'Ohm <: BaseGrammar {
 

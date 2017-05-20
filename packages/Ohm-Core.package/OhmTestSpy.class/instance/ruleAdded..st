@@ -1,4 +1,4 @@
-as yet unclassified
+rule changes
 ruleAdded: aRule
 
 	self messages add: #ruleAdded

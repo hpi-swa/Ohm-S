@@ -1,4 +1,4 @@
-as yet unclassified
+standard attributes
 defaultExpression: aNode
 
 	| tempStructure nonPrimitiveChildren|

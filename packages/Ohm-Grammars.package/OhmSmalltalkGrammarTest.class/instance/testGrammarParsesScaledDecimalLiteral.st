@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesScaledDecimalLiteral
 	{	{'2s' . 		#scaledDecimalLiteral } .
 	 	{'2s' . 		#scaledDecimalLiteral } .

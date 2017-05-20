@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 ownAndInheritedRules
 
 	^ self OhmInstance ownAndInheritedRules

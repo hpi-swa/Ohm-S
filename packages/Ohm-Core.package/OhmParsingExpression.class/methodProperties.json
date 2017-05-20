@@ -2,6 +2,7 @@
 	"class" : {
 		"expressionName" : "pre 12/3/2014 10:25",
 		"listRuleIdentifier" : "pre 1/7/2015 13:57",
+		"newOn:" : "pre 5/20/2017 17:43",
 		"terminalRuleIdentifier" : "pre 1/7/2015 13:57" },
 	"instance" : {
 		"arity" : "pre 1/6/2015 15:00",
@@ -25,5 +26,6 @@
 		"syntacticRuleHandling:" : "pre 1/13/2015 13:48",
 		"textualRepresentation" : "pre 4/21/2015 13:08",
 		"textualRepresentation:" : "pre 4/15/2015 13:36",
+		"toRecipe" : "pre 5/20/2017 17:42",
 		"totalNumberOfExpressions" : "pre 7/23/2015 16:42",
-		"weightedComplexity" : "pre 7/23/2015 16:56" } }
+		"weightedComplexity" : "pre 5/20/2017 17:41" } }

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testInheritedAttributesWorkTheOtherWayRound
 
 	| depth g cst collector result |

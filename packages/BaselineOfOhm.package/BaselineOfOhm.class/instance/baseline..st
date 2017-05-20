@@ -1,4 +1,4 @@
-as yet unclassified
+baseline
 baseline: spec
 	<baseline>
 	spec

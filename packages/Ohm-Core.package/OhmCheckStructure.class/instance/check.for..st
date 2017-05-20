@@ -1,4 +1,4 @@
-as yet unclassified
+checking
 check: aNode for: aStructure
 
 	self structure: aStructure.

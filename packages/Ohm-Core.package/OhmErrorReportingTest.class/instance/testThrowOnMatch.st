@@ -1,4 +1,4 @@
-as yet unclassified
+testing #2
 testThrowOnMatch
 
 	| g matching |

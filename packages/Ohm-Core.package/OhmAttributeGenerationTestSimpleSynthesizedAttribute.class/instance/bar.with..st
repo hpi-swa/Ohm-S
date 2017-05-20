@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 bar: aNode with: e
 
 	| c |

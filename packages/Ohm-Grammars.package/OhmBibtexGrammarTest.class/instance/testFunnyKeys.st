@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testFunnyKeys
 
 	startRule := #BibtexDB.

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testValueOfFailedMatch
 	| r |
 	r := OhmFailedMatchResult new: self successfulState.

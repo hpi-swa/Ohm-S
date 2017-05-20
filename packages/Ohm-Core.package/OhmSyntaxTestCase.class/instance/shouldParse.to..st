@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 shouldParse: aString to: aStructure
 
 	| result |

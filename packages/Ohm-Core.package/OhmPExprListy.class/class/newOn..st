@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newOn: list
 
 	^ (self new)

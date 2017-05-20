@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCompileRulesAndInstall
 
 	OhmCompiler compileRule: 'aRule = number "+" aRule' forGrammar: testGrammar.

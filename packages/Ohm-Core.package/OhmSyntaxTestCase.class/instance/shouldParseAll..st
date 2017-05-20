@@ -1,4 +1,4 @@
-as yet unclassified
+asserting
 shouldParseAll: collectionOfStrings
 
 	collectionOfStrings do: [:input | 

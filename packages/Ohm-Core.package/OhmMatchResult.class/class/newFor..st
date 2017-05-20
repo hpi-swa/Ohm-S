@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFor: aParsingState
 	| setParents |
 	^ (aParsingState bindingsStack isEmpty or: [aParsingState bindings isEmpty])

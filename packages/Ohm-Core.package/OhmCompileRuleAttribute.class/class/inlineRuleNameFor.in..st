@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 inlineRuleNameFor: inlineRuleName in: parentRuleName
 
 	^ parentRuleName  , $_ , inlineRuleName

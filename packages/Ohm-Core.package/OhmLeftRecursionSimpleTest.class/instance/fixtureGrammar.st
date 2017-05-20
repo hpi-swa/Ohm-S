@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 fixtureGrammar
 	
 	"M { number = numberRec | digit 

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testObjectArity
 
 	self assert: 0 equals: (OhmPExprObject newOn: Dictionary new inMode: #strict) arity.

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 ruleNamed: ruleName
 
 	^ self OhmInstance ruleNamed: ruleName

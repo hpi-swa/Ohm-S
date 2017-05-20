@@ -1,4 +1,4 @@
-as yet unclassified
+serialized grammar
 serializedGrammar
 ^ 'Ohm-Core-Grammars.UnifiedAction <: Ohm-Grammars.Ohm {
 

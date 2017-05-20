@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFor: aParsingState withResult: result startingFrom: startRuleName
 	| setParents |
 	^ result

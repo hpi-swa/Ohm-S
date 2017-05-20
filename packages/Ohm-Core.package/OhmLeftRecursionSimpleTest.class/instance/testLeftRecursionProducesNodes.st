@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testLeftRecursionProducesNodes
 
 	"Structure to be produced:

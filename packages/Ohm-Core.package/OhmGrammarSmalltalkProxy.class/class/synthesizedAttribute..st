@@ -1,4 +1,4 @@
-as yet unclassified
+attributes
 synthesizedAttribute: actions
 
 	^ self OhmInstance synthesizedAttribute: actions     

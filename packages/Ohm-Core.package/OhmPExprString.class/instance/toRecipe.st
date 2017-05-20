@@ -1,4 +1,4 @@
-as yet unclassified
+converting
 toRecipe 
 
 	^ 'b prim: ' , self matchString printString

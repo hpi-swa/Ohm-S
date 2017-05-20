@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testExtendArities
 
 	self makeAndInstallGrammar: 'M1 { foo = "foo" }' in: 'inheritanceTestNameSpace1'.

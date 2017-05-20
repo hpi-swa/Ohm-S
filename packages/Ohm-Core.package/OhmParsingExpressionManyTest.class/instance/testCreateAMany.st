@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCreateAMany
 
 	OhmPExprMany newOn: nil minimalMatches: 0.

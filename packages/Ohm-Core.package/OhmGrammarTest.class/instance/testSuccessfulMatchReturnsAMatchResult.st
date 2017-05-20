@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSuccessfulMatchReturnsAMatchResult
 	| r |
 	r := self fixtureGrammar match: 'foo' startingFrom: #foo.

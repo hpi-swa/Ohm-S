@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGrammarParsesTheTestItself
 	
 	startRule := #MethodDeclaration.

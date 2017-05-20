@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testOnGrammar: grammarDescription in: packageName throws: errorType andShould: blockWithAssertions
 
 	SystemChangeNotifier uniqueInstance doSilently: [ | signal |

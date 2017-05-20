@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSkipSpaces
 	| testInput state |
 	  
