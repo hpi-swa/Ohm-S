@@ -10,9 +10,8 @@ skipSpaces: state
 
 	[ originalPosition := anInput getState.
 	  state pushBindings: OrderedCollection new.
-	  #ohmDebugging withoutLayerDo: [
 	  result := (self ruleNamed: #space)
-				eval: state].
+				eval: state.
 	  state popBindings.
 	 ] doWhileTrue: [result].
 
