@@ -1,6 +1,4 @@
-# Ohm/S
-[![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg?branch=master)](https://travis-ci.org/hpi-swa/Ohm-S)
-[![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
+# Ohm/S [![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg?branch=master)](https://travis-ci.org/hpi-swa/Ohm-S) [![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
 
 Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
 
