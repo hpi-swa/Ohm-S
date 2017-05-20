@@ -21,7 +21,7 @@ questionIdentifier =
   letter alnum*
 
 questionLabel = 
-  "\"" (~"\"" _)* "\""
+  "\"" (~"\"" any)* "\""
 
 typeIdentifier =
   letter+}'

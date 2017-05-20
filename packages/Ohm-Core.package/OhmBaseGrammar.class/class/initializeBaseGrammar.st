@@ -8,8 +8,8 @@ initializeBaseGrammar
 						yourself.
 	OhmInstance superGrammar: OhmInstance.
 	 
-	{    '_' asSymbol -> OhmPExprAnything new .
-		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: '_' asSymbol)) .
+	{    'any' asSymbol -> OhmPExprAnything new .
+		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: 'any' asSymbol)) .
 		#space -> (OhmPExprRegex newOn: '[\s]') .
 		#alnum -> (OhmPExprRegex newOn: '[0-9a-zA-Z]') .
 		#letter -> (OhmPExprRegex newOn: '[a-zA-Z]') .

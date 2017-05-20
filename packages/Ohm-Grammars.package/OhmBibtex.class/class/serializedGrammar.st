@@ -12,7 +12,7 @@ CommandOrEntry =
   "@" (CommandComment | Preamble | String | Entry)
 
 Comment =
-  (~"@" _)+
+  (~"@" any)+
 
 Entry = 
 	identifier ( "{" key EntryBody? "}" | "(" keyParen EntryBody? ")" )
@@ -31,7 +31,7 @@ StringBody =
 
 balanced =
   "{" balanced+ "}" --brackets
-  | (~("{" | "}") _) -- any
+  | (~("{" | "}") any) -- any
 
 bibValue = 
   piece (space* "#" space* piece)*
@@ -39,13 +39,13 @@ bibValue =
 identifier = 
   ~digit
   ( ~("#" | "=" | "%" | " " | "\"" | "\''" | "," | "{" | "}" | "(" | ")" )
-    _ )+
+    any )+
 
 key = 
-  (~("," | space | "}") _)*
+  (~("," | space | "}") any)*
 
 keyParen = 
-  (~("," | space | ")") _)*
+  (~("," | space | ")") any)*
 
 piece =
   digit+ --number

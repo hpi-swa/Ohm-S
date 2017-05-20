@@ -9,7 +9,7 @@ testBoostrapGrammarCanParseRuleInGrammarConstruct
 									 Bird --- A kind of animal 
 									    = ~ Fish
 									 Mushroom = Animal?
-									 Spirit = _
+									 Spirit = any
 									 Mammal = (~Fish | ~Bird)
 									 name = (letter+ | digit+)
 									

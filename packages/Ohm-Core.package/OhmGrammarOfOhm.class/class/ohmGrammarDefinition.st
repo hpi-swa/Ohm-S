@@ -66,7 +66,7 @@ ohmGrammarDefinition
     = "--" ruleDescrText "\n"
 
   ruleDescrText
-    = (~"\n" _)*
+    = (~"\n" any)*
 
   caseName
     = "--" (~"\n" space)* name (~"\n" space)* ("\n" | &"}")
@@ -98,21 +98,21 @@ ohmGrammarDefinition
   sChar
     = "\\x" hexDigit hexDigit                    -- hexEscape
     | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
-    | "\\" _                                     -- escape
-    | ~"\"" ~"\n" _
+    | "\\" any                                     -- escape
+    | ~"\"" ~"\n" any
 
   regExp  -- regular expression
     = "/" reCharClass "/"
 
   reCharClass
     = "\\p{" /[A-Za-z]/+ "}"    -- unicode
-    | "[" ("\\]" | ~"]" _)* "]" -- ordinary
+    | "[" ("\\]" | ~"]" any)* "]" -- ordinary
 
   number  -- number
     = "-"? digit+
 
   space
-   += "//" (~"\n" _)* "\n"  -- singleLine
-    | "/*" (~"*/" _)* "*/"  -- multiLine
+   += "//" (~"\n" any)* "\n"  -- singleLine
+    | "/*" (~"*/" any)* "*/"  -- multiLine
 
 }'
