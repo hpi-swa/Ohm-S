@@ -6,49 +6,49 @@ BibtexDB =
   Comment? (CommandOrEntry Comment?)*
 
 CommandComment =
-  ''comment''
+  "comment"
 
 CommandOrEntry =
-  ''@'' (CommandComment | Preamble | String | Entry)
+  "@" (CommandComment | Preamble | String | Entry)
 
 Comment =
-  (~''@'' any)+
+  (~"@" _)+
 
 Entry = 
-	identifier ( ''{'' key EntryBody? ''}'' | ''('' keyParen EntryBody? '')'' )
+	identifier ( "{" key EntryBody? "}" | "(" keyParen EntryBody? ")" )
 
 EntryBody = 
- ('','' identifier ''='' bibValue)* '',''?
+ ("," identifier "=" bibValue)* ","?
 
 Preamble =
-  ''preamble'' (''{'' ''}'' | ''('' '')'')
+  "preamble" ("{" "}" | "(" ")")
 
 String = 
-  ''string'' (''{'' StringBody ''}'' | ''('' StringBody '')'')
+  "string" ("{" StringBody "}" | "(" StringBody ")")
 
 StringBody =
-  identifier ''='' bibValue
+  identifier "=" bibValue
 
 balanced =
-  ''{'' balanced+ ''}'' --brackets
-  | (~(''{'' | ''}'') any) --any
+  "{" balanced+ "}" --brackets
+  | (~("{" | "}") _) -- any
 
 bibValue = 
-  piece (space* ''#'' space* piece)*
+  piece (space* "#" space* piece)*
 
 identifier = 
   ~digit
-  ( ~(''#'' | ''='' | ''%'' | '' '' | ''"'' | ''\'''' | '','' | ''{'' | ''}'' | ''('' | '')'' )
-    any )+
+  ( ~("#" | "=" | "%" | " " | "\"" | "\''" | "," | "{" | "}" | "(" | ")" )
+    _ )+
 
 key = 
-  (~('','' | space | ''}'') any)*
+  (~("," | space | "}") _)*
 
 keyParen = 
-  (~('','' | space | '')'') any)*
+  (~("," | space | ")") _)*
 
 piece =
   digit+ --number
-  | ''{'' balanced* ''}'' --brackets
-  | ''"'' (~''"'' balanced)* ''"'' --string
+  | "{" balanced* "}" --brackets
+  | "\"" (~"\"" balanced)* "\"" --string
   | identifier --identifier}'

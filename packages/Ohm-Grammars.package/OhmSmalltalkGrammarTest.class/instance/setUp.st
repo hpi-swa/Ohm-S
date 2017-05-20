@@ -1,4 +1,4 @@
 as yet unclassified
 setUp
 
-	grammar := OhmSmalltalk .
+	grammar := OhmSmalltalk.

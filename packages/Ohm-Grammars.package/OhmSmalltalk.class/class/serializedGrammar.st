@@ -8,7 +8,7 @@ ArrayLiteral =
       | LiteralArrayLiteral
 
 AssignmentOperation =
-    bindableIdentifier '':=''
+    bindableIdentifier ":="
 
 BinaryMessage =
     binaryMessageSelector BinaryMessageOperand
@@ -23,29 +23,29 @@ BinaryMethodHeader =
     binaryMessageSelector bindableIdentifier
 
 BlockArgument =
-	'':'' letter alnum*
+	":" letter alnum*
 
 BlockArguments =
-	BlockArgument+ ''|''
+	BlockArgument+ "|"
 
 BlockLiteral =
-	''['' BlockArguments? ExecutableCode? '']''
+	"[" BlockArguments? ExecutableCode? "]"
 
 ByteArrayLiteral =
-	''#['' byteArrayNumber* '']''
+	"#[" byteArrayNumber* "]"
 
 CascadedMessage =
-	'';'' MessageChain
+	";" MessageChain
 
 ExecutableCode =
    LocalVariableDeclarationList?
-   (~MethodReturnOperator Statement ''.'')* (FinalStatement ''.''?)?
+   (~MethodReturnOperator Statement ".")* (FinalStatement "."?)?
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?
 
 FinalStatement =
-	''^''? Statement
+	"^"? Statement
 
 KeywordMessage =
     KeywordMessageSegment+
@@ -74,10 +74,10 @@ Literal =
 	| BlockLiteral
 
 LiteralArrayLiteral =
-  ''#('' literalArrayLiteralElement*  '')''
+  "#(" literalArrayLiteralElement*  ")"
 
 LocalVariableDeclarationList =
- ''|'' bindableIdentifier* ''|''
+ "|" bindableIdentifier* "|"
 
 MessageChain =
     KeywordMessage --keyword
@@ -93,13 +93,13 @@ MethodHeader =
     | UnaryMethodHeader
 
 MethodReturnOperator =
-    ''^''
+    "^"
 
 NestedExpression =
-    ''('' Statement '')''
+    "(" Statement ")"
 
 ObjectArrayLiteral =
-    ''{'' (Expression (''.'' Expression)* ''.''?)? ''}''
+    "{" (Expression ("." Expression)* "."?)? "}"
 
 Operand =
     Literal
@@ -131,7 +131,7 @@ binaryMessageSelector =
     binarySelectorChar binarySelectorChar?
 
 binarySelectorChar =
-    ''~'' | ''!'' | ''@'' | ''%'' | ''&'' | ''*'' | ''-'' | ''+'' | ''='' | ''|'' | ''\\'' | ''<'' | ''>'' | '','' | ''?'' | ''/''
+    "~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
 
 bindableIdentifier =
 	~(reservedIdentifier space) identifier
@@ -139,24 +139,24 @@ bindableIdentifier =
 byteArrayNumber =
 	digit 				-- oneDigit
 	| digit digit 			-- twoDigits
-	| (''1''|''2'') digit digit      -- threeDigits
+	| ("1"|"2") digit digit      -- threeDigits
 
 characterLiteral =
-	''$'' (any | space)
+	"$" (_ | space)
 
 comment =
-	''"'' (~''"'' (any | '' '' | ''\n''))* ''"''
+	"\"" (~"\"" (_ | " " | "\n"))* "\""
 
 constantReference =
-	''true''
-	| ''false''
-	| ''nil''
+	"true"
+	| "false"
+	| "nil"
 
 decimalIntegerLiteral
   = numberSigns? digit+
 
 exponent
-  = (''e'' | ''d'' | ''q'')? 
+  = ("e" | "d" | "q")? 
 decimalIntegerLiteral
 
 floatingPointLiteral 
@@ -167,11 +167,11 @@ identifier =
 	letter alnum*
 
 integerLiteral = 
-	numberSigns? radix ''r'' baseNIntegerLiteral --radix
+	numberSigns? radix "r" baseNIntegerLiteral --radix
 	| numberSigns? digit+ --normal
 
 keyword =
-	identifier '':''
+	identifier ":"
 
 literalArrayLiteralElement =
     floatingPointLiteral
@@ -182,38 +182,38 @@ literalArrayLiteralElement =
     | symbolLiteral
 
 normalFloatingPointLiteral
-	= decimalIntegerLiteral (''.'' digit+)? exponent --exponent
-     | decimalIntegerLiteral ''.'' digit+  --normal
+	= decimalIntegerLiteral ("." digit+)? exponent --exponent
+     | decimalIntegerLiteral "." digit+  --normal
 
 numberSigns
-	= ''-''
+	= "-"
 
 pseudoVariableReference = 
-	''self'' | ''super'' | ''thisContext''
+	"self" | "super" | "thisContext"
 
 radix =
 	decimalIntegerLiteral
 
 radixFloatingPointLiteral
-	= decimalIntegerLiteral ''r'' normalFloatingPointLiteral
+	= decimalIntegerLiteral "r" normalFloatingPointLiteral
 
 reservedIdentifier =
 	constantReference | pseudoVariableReference
 
 scaledDecimalLiteral =
-	decimalIntegerLiteral (''.'' digit+)? ''s'' decimalIntegerLiteral?
+	decimalIntegerLiteral ("." digit+)? "s" decimalIntegerLiteral?
 
 space +=
 	comment
 
 stringLiteral =
-	''\'''' (~''\'''' any | ''\''\'''')* ''\''''
+	"\''" (~"\''" _ | "\''\''")* "\''"
 
 symbolInArrayLiteral =
-    letter (alnum | '':'')* --plain
+    letter (alnum | ":")* --plain
     | binaryMessageSelector --binarySelector
 
 symbolLiteral =
-	''#'' letter (alnum | '':'')* -- normal
-	| ''#'' stringLiteral -- fromString
-	| ''#'' binaryMessageSelector -- fromBinarySelector}'
+	"#" letter (alnum | ":")* -- normal
+	| "#" stringLiteral -- fromString
+	| "#" binaryMessageSelector -- fromBinarySelector}'

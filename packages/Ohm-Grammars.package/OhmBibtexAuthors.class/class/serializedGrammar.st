@@ -12,15 +12,15 @@ FirstnameAuthor =
     namePart+
 
 LastnameAuthor =
-    namePart+ '','' namePart+
+    namePart+ "," namePart+
 
 MoreAuthors =
-    ''and'' Author
+    "and" Author
 
-firstRule = ''start''
+firstRule = "start"
 
 middleName =
-  ~''and'' letter+ ''.''
+  ~"and" letter+ "."
 
 namePart =
-    ~''and'' letter+ ''.''?}'
+    ~"and" letter+ "."?}'
