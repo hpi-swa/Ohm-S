@@ -1,6 +1,6 @@
 # Ohm/S [![Build Status](https://travis-ci.org/hpi-swa/Ohm-S.svg?branch=master)](https://travis-ci.org/hpi-swa/Ohm-S) [![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
 
-Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around this [commit](https://github.com/cdglabs/ohm/commit/f18448604a09f3c343d10e994eab228edee51ce2).
+Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around version v0.86. A notable difference is that there are currently no parameterized rules and actions. Beside that, Ohm/S changes the lookup of rules from supergrammars from compile-time to matching-time. Further, Ohm/S grammars can be installed as meta-objects in the Smalltalk image similar to Smalltalk classes.
 
 ## How to install
 1. Get [Squeak 4.6 or later](http://www.squeak.org)
@@ -17,14 +17,14 @@ Metacello new
 ## Usage
 For detailed information and tutorials on the Ohm grammar descriptions please consult [Ohm](https://github.com/cdglabs/ohm). 
 
-In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
+In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications as long as they do not contain paramterized rules. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
 
 ### Persisted and Common Grammar Interface
 Ohm/S allows to create gramamrs as ordinary objects:
 
 ````Smalltalk
 OhmGrammar new: 'G { 
-  start = ''a''
+  start = "a"
   anotherRule = start start
 }'
 ````
@@ -33,7 +33,7 @@ The interface also allows grammars to be persisted into the image, similar to th
 
 ````Smalltalk
 OhmGrammar install:  'G { 
-  start = ''a''
+  start = "a"
   anotherRule = start start
 }'
 ````
