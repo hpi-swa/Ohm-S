@@ -2,6 +2,8 @@ language: smalltalk
 sudo: false
 
 smalltalk:
+  - trunk
+  - Squeak-5.1
   - Squeak-5.0
   - Squeak-4.6
   - Squeak-4.5
