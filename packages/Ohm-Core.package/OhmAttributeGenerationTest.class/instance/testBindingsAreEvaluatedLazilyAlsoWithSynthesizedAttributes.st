@@ -4,8 +4,8 @@ testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes
 	| g action result |
 	g := OhmGrammar new: 'G {
           foo = bar baz
-          bar = ''a''
-          baz = ''b'' }'.
+          bar = "a"
+          baz = "b" }'.
 
 	action := g synthesizedAttribute: OhmAttributeGenerationTestSimpleSynthesizedAttribute new.
 

@@ -3,10 +3,10 @@ testLeftRecursionCanBeDealtWith
 
 	"M {
             add = addRec | pri
-            addRec = add '+' pri
+            addRec = add ""+"" pri
             pri = priX | priY
-            priX = 'x'
-            priY = 'y' }"
+            priX = ""x""
+            priY = ""y"" }"
 	| rules grammar |
 	rules := Dictionary new.
 	rules at: #add put: (OhmPExprAlt newOn: { OhmPExprApply newOn: #addRec . OhmPExprApply  newOn: #pri }).

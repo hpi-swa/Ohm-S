@@ -4,6 +4,6 @@
 	"instance" : {
 		"setUp" : "pre 5/6/2015 18:24",
 		"tearDown" : "pre 5/6/2015 18:25",
-		"testNotificationOnAddRule" : "pre 9/29/2015 14:38",
-		"testNotificationOnChangeRule" : "pre 9/29/2015 14:38",
+		"testNotificationOnAddRule" : "pre 5/20/2017 16:56",
+		"testNotificationOnChangeRule" : "pre 5/20/2017 16:56",
 		"theTestNamespace" : "pre 5/6/2015 18:25" } }

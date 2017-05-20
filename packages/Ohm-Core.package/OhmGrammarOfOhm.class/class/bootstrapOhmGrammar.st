@@ -47,7 +47,7 @@ bootstrapOhmGrammar
 	  b addRule: 'Props' as: ( b alt: { b apply: 'Props_rec' . b apply: 'Props_base'}).
 	  b addRule: 'Prop' as: ( b seq: { b alt: {b apply: 'name' . b apply: 'string'} . b prim: ':' . b apply: 'Base'}).
 	  b addRule: 'ruleDescr' as: ( b seq: { b prim: '--' . b apply: 'ruleDescrText' . b prim: ('',Character cr)}).
-	  b addRule: 'ruleDescrText' as: ( b star: (b seq: {b not: (b prim: ('',Character cr)) . b apply: 'any'})).
+	  b addRule: 'ruleDescrText' as: ( b star: (b seq: {b not: (b prim: ('',Character cr)) . b apply: '_'})).
 	  b addRule: 'caseName' 
 		as: ( b seq: 
 				{ b prim: '--' . 
@@ -64,20 +64,20 @@ bootstrapOhmGrammar
 	  b addInlineRule: 'keyword_true' as: (b seq: {b prim: 'true' . b not: (b apply: 'nameRest')}).
 	  b addInlineRule: 'keyword_false' as: (b seq: {b prim: 'false' . b not: (b apply: 'nameRest')}).
 	  b addRule: 'keyword' as: ( b alt: { b apply: 'keyword_undefined' . b apply: 'keyword_null' . b apply: 'keyword_true' . b apply: 'keyword_false'}).
-	  b addRule: 'string' as: ( b seq: {b prim: '''' . b star: (b apply: 'sChar') . b prim: ''''} ) .
+	  b addRule: 'string' as: ( b seq: {b prim: '"' . b star: (b apply: 'sChar') . b prim: '"'} ) .
 	  b addInlineRule: 'sChar_hexEscape' as: (b seq: {b prim: '\x' . b apply: 'hexDigit' . b apply: 'hexDigit'}).
 	  b addInlineRule: 'sChar_unicodeEscape' as: (b seq: {b prim: '\u' . b apply: 'hexDigit' . b apply: 'hexDigit' . b apply: 'hexDigit' . b apply: 'hexDigit'}).
-	  b addInlineRule: 'sChar_escape' as: (b seq: {b prim: '\' . b apply: 'any'}).
+	  b addInlineRule: 'sChar_escape' as: (b seq: {b prim: '\' . b apply: '_'}).
 	  b addRule: 'sChar' 
 	     as: ( b alt: 
-	                {b apply: 'sChar_hexEscape' . b apply: 'sChar_unicodeEscape' . b apply: 'sChar_escape' . b seq: {b not: (b prim: '''') . b not: (b prim: ('',Character cr)) . b apply: 'any'}}).
+	                {b apply: 'sChar_hexEscape' . b apply: 'sChar_unicodeEscape' . b apply: 'sChar_escape' . b seq: {b not: (b prim: '"') . b not: (b prim: ('',Character cr)) . b apply: '_'}}).
 	  b addRule: 'regExp' as: ( b seq: {b prim: $/ asString . b apply: 'reCharClass' . b prim: $/ asString}).
 	  b addInlineRule: 'reCharClass_unicode' as: (b seq: {b prim: '\p{' . b plus: (b regex: '[A-Za-z]') . b prim: '}'}).
-	  b addInlineRule: 'reCharClass_ordinary' as: (b seq: {b prim: '[' . b star: (b alt: { b prim: '\]' . b seq: {b not: (b prim: ']') . b apply: 'any'}}) . b prim: ']'}).
+	  b addInlineRule: 'reCharClass_ordinary' as: (b seq: {b prim: '[' . b star: (b alt: { b prim: '\]' . b seq: {b not: (b prim: ']') . b apply: '_'}}) . b prim: ']'}).
 	  b addRule: 'reCharClass' as: ( b alt: { b apply: 'reCharClass_unicode' . b apply: 'reCharClass_ordinary'}).
 	  b addRule: 'number' as: ( b seq: {b opt: (b prim: '-') . b plus: (b apply: 'digit')}).
-	  b addInlineRule: 'space_singleLine' as: (b seq: {b prim: '//' . b star: (b seq: {b not: (b prim: ('',Character cr)) . b apply: 'any'}) . b prim: ('',Character cr)}).
-	  b addInlineRule: 'space_multiLine' as: (b seq: {b prim: '/*' . b star: (b seq: {b not: (b prim: '*/') . b apply: 'any'}) . b prim: '*/'}).
+	  b addInlineRule: 'space_singleLine' as: (b seq: {b prim: '//' . b star: (b seq: {b not: (b prim: ('',Character cr)) . b apply: '_'}) . b prim: ('',Character cr)}).
+	  b addInlineRule: 'space_multiLine' as: (b seq: {b prim: '/*' . b star: (b seq: {b not: (b prim: '*/') . b apply: '_'}) . b prim: '*/'}).
 	  b addRule: 'space' as: (b alt: { b regex: '[\s]' . b apply: 'space_singleLine' . b apply: 'space_multiLine'}).
 	  ^ b buildGrammar
 	

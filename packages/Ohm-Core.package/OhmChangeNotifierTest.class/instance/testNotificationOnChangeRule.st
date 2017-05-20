@@ -2,7 +2,7 @@ as yet unclassified
 testNotificationOnChangeRule
 
 	| g spy |
-	g := OhmCompiler compileGrammarDefinition: 'Foo { foo = ''foo'' }' 
+	g := OhmCompiler compileGrammarDefinition: 'Foo { foo = "foo" }' 
 			inNamespace: self theTestNamespace namespaceName. 
 
 	spy := OhmTestSpy new.
@@ -12,6 +12,6 @@ testNotificationOnChangeRule
 		change: #Modified 
 		using: #ruleChanged:. 
 
-	OhmCompiler compileRule: 'foo = ''bar''' forGrammar: g.
+	OhmCompiler compileRule: 'foo = "bar"' forGrammar: g.
 	self assert: spy messages size equals: 1.
 	self assert: spy messages first equals: #ruleChanged.

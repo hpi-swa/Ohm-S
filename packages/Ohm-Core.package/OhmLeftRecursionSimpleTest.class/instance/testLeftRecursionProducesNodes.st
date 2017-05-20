@@ -14,7 +14,7 @@ testLeftRecursionProducesNodes
                 '4']]);"
 
 	"M { number = numberRec | digit 
-             numberRec = number digit"
+             numberRec = number digit }"
 	
 
 	| result |

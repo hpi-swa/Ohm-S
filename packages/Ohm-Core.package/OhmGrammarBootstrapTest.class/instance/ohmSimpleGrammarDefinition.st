@@ -7,19 +7,19 @@ ohmSimpleGrammarDefinition
     = Grammar*
 
   Grammar
-    = ident SuperGrammar? ''{'' Rule* ''}''
+    = ident SuperGrammar? "{" Rule* "}"
 
   SuperGrammar
-    = ''<:'' ident ''.'' ident  -- qualified
-    | ''<:'' ident            -- unqualified
+    = "<:" ident "." ident  -- qualified
+    | "<:" ident            -- unqualified
 
   Rule
-    = ident ruleDescr? ''=''  Alt  -- define
-    | ident            '':='' Alt  -- override
-    | ident            ''+='' Alt  -- extend
+    = ident ruleDescr? "="  Alt  -- define
+    | ident            ":=" Alt  -- override
+    | ident            "+=" Alt  -- extend
 
   Alt
-    = Term ''|'' Alt  -- rec
+    = Term "|" Alt  -- rec
     | Term
 
   Term
@@ -30,82 +30,82 @@ ohmSimpleGrammarDefinition
     = Iter*
 
   Iter
-    = Pred ''*''  -- star
-    | Pred ''+''  -- plus
-    | Pred ''?''  -- opt
+    = Pred "*"  -- star
+    | Pred "+"  -- plus
+    | Pred "?"  -- opt
     | Pred
 
   Pred
-    = ''~'' Base  -- not
-    | ''&'' Base  -- lookahead
+    = "~" Base  -- not
+    | "&" Base  -- lookahead
     | Base
 
   Base
-    = ident ~(ruleDescr? ''='' | '':='' | ''+='')  -- application
+    = ident ~(ruleDescr? "=" | ":=" | "+=")  -- application
     | (keyword | string | regExp | number)   -- prim
-    | ''('' Alt '')''                            -- paren
-    | ''['' Alt '']''                            -- listy
-    | ''{'' ''...''? ''}''                         -- obj
-    | ''{'' Props ('','' ''...'')? ''}''             -- objWithProps
+    | "(" Alt ")"                            -- paren
+    | "[" Alt "]"                            -- listy
+    | "{" "..."? "}"                         -- obj
+    | "{" Props ("," "...")? "}"             -- objWithProps
 
   Props
-    = Prop '','' Props  -- rec
+    = Prop "," Props  -- rec
     | Prop            -- base
 
   Prop
-    = (name | string) '':'' Base
+    = (name | string) ":" Base
 
   ruleDescr  -- rule description for use in error messages
-    = ''--'' ruleDescrText ''\n''
+    = "--" ruleDescrText "\n"
 
   ruleDescrText
-    = (~''\n'' _)*
+    = (~"\n" _)*
 
   caseName
-    = ''--'' (~''\n'' space)* name (~''\n'' space)* (''\n'' | &''}'')
+    = "--" (~"\n" space)* name (~"\n" space)* ("\n" | &"}")
 
   name  -- name
     = nameFirst nameRest*
 
   nameFirst
-    = ''_''
+    = "_"
     | letter
 
   nameRest
-    = ''_''
+    = "_"
     | alnum
 
   ident  -- identifier
     = ~keyword name
 
   keyword
-    = ''undefined'' ~nameRest  -- undefined
-    | ''null'' ~nameRest       -- null
-    | ''true'' ~nameRest       -- true
-    | ''false'' ~nameRest      -- false
+    = "undefined" ~nameRest  -- undefined
+    | "null" ~nameRest       -- null
+    | "true" ~nameRest       -- true
+    | "false" ~nameRest      -- false
 
   string  -- string literal
-    = ''\'''' sChar* ''\''''
+    = "\"" sChar* "\""
 
   sChar
-    = ''\\x'' hexDigit hexDigit                    -- hexEscape
-    | ''\\u'' hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
-    | ''\\'' _                                     -- escape
-    | ~''\'''' ~''\n'' _
+    = "\\x" hexDigit hexDigit                    -- hexEscape
+    | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
+    | "\\" _                                     -- escape
+    | ~"\"" ~"\n" _
 
   regExp  -- regular expression
-    = ''/'' reCharClass ''/''
+    = "/" reCharClass "/"
 
   reCharClass
-    = ''\\p{'' /[A-Za-z]/+ ''}''    -- unicode
-    | ''['' (''\\]'' | ~'']'' _)* '']'' -- ordinary
+    = "\\p{" /[A-Za-z]/+ "}"    -- unicode
+    | "[" ("\\]" | ~"]" _)* "]" -- ordinary
 
   number  -- number
-    = ''-''? digit+
+    = "-"? digit+
 
   space
    = /[\s]/
-    |	''//'' (~''\n'' _)* ''\n''  -- singleLine
-    | ''/*'' (~''*/'' _)* ''*/''  -- multiLine
+    |	"//" (~"\n" _)* "\n"  -- singleLine
+    | "/*" (~"*/" _)* "*/"  -- multiLine
 
 }'

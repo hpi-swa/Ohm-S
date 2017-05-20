@@ -5,7 +5,7 @@ testFailureInformationOnFailedMatch
 
 	| g matching |
 
-	g := OhmGrammar new: 'G { start = ''a'' ''b'' ''c'' ''d'' }'.
+	g := OhmGrammar new: 'G { start = "a" "b" "c" "d" }'.
 	
 	matching := g match: 'ab' startingFrom: 'start'.
 

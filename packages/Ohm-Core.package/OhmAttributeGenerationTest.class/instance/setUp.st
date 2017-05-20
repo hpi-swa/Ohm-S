@@ -3,8 +3,8 @@ setUp
 
 	| ruleDictionary |
 	"G {
-		foo = 'foo'
-		bar = foo 'bar'
+		foo = ""foo""
+		bar = foo ""bar""
 	}"
 	self fixtureRuleFoo: (OhmPExprString newOn: 'foo').
 	self fixtureRuleBar: (OhmPExprSeq newOn: { OhmPExprApply newOn: #foo . OhmPExprString newOn: 'bar' } ).

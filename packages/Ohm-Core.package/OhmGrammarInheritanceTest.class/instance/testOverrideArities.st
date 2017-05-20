@@ -1,7 +1,7 @@
 as yet unclassified
 testOverrideArities
 
-	self makeAndInstallGrammar: 'M1 { foo = ''foo'' }' in: 'inheritanceTestNameSpace1'.
+	self makeAndInstallGrammar: 'M1 { foo = "foo" }' in: 'inheritanceTestNameSpace1'.
      
 	self testOnGrammar:  'M2 <: M1 { foo := bar baz }' 
 		in: 'inheritanceTestNameSpace1'

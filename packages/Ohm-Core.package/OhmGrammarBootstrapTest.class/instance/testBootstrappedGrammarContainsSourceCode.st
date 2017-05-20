@@ -6,4 +6,4 @@ testBootstrappedGrammarContainsSourceCode
 	grammar := (OhmGrammarOfOhm bootstrapOhmGrammar semanticAction: OhmCompileGrammar new) value: result.
 
 	self assert: (grammar rules at: #number) textualRepresentation equals: 'number  -- number
-    = ''-''? digit+' .
+    = "-"? digit+' .

@@ -4,7 +4,7 @@ testSerializerToRecipe
 	| g g2 recipe |
 
 	g := OhmCompiler compileGrammarDefinition: 'G {
-		foo = ''f''
+		foo = "f"
 	}'.
 
 	recipe := g toRecipe.
