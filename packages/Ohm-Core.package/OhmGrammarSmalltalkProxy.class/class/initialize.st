@@ -1,4 +1,4 @@
 class initialization
 initialize
 
-	isLoading := false.
+	self recompile.
