@@ -1,4 +1,7 @@
 asserting
 shouldntParse: aString
+	
+	| result |
+	result := self parseAndStoreResult: aString ifSuccessful: true.
 
-	self should: (grammar match: aString startingFrom: startRule) failed
+	self should: result failed

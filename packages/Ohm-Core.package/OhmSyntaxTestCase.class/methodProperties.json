@@ -1,9 +1,13 @@
 {
 	"class" : {
-		 },
+		"ParsingResults" : "pre 5/21/2017 17:50",
+		"ParsingResultsForCase:" : "pre 5/21/2017 17:50",
+		"ResetParsingResults" : "pre 5/21/2017 17:50",
+		"storeSyntaxTestResult:for:" : "pre 5/21/2017 18:06" },
 	"instance" : {
-		"shouldParse:" : "pre 10/7/2015 15:36",
-		"shouldParse:to:" : "pre 10/7/2015 15:36",
+		"parseAndStoreResult:ifSuccessful:" : "pre 5/21/2017 17:50",
+		"shouldParse:" : "pre 5/21/2017 17:51",
+		"shouldParse:to:" : "pre 5/21/2017 17:51",
 		"shouldParseAll:" : "pre 7/27/2015 16:41",
-		"shouldntParse:" : "pre 10/7/2015 15:37",
+		"shouldntParse:" : "pre 5/21/2017 17:52",
 		"shouldntParseAny:" : "pre 7/27/2015 16:43" } }
