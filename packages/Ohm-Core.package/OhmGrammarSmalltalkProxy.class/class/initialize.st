@@ -1,4 +1,6 @@
 class initialization
 initialize
 
-	self recompile.
+	(self == OhmGrammarSmalltalkProxy) ifTrue: [
+		self allSubclassesDo: [:grammar |
+			grammar recompile]]
