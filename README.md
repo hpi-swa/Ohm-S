@@ -57,3 +57,45 @@ attribute itself:
 SimpleSemantics>>anotherRule: aNode start1: firstStart start2: secondStart
   ^ (self value: start1) , (self value: start2)
 ````
+
+### How to cite this work
+If you did work based on / or build with Ohm/S and want to write about the work, you can reference Ohm/S through the reference at the bottom.
+
+As Ohm/S is a mere Smalltalk adaptation of [Ohm](https://github.com/cdglabs/ohm) you should also reference Ohm, which you can do using the second reference.
+
+````Bibtex
+@inproceedings{rein_gramada_2016,
+  author    = {Patrick Rein and
+               Robert Hirschfeld and
+               Marcel Taeumel},
+  title     = {Gramada: Immediacy in Programming Language Development},
+  booktitle = {Symposium on New Ideas, New Paradigms, and
+               Reflections on Programming and Software (Onward!) 2016},
+  pages     = {165--179},
+  year      = {2016},
+  month     = {November},
+  location  = {Amsterdam, The Netherlands},
+  crossref  = {DBLP:conf/oopsla/2016onward},
+  url       = {http://doi.acm.org/10.1145/2986012.2986022},
+  doi       = {10.1145/2986012.2986022}
+}
+
+@inproceedings{warth_modularSemanticActions_2016,
+  author = {Warth, Alessandro 
+            and Dubroy, Patrick 
+            and Garnock-Jones, Tony},
+  title = {Modular Semantic Actions},
+  booktitle = {Proceedings of the Symposium on Dynamic Languages (DLS) 2016},
+  series = {DLS 2016},
+  year = {2016},
+  isbn = {978-1-4503-4445-6},
+  location = {Amsterdam, Netherlands},
+  pages = {108--119},
+  numpages = {12},
+  url = {http://doi.acm.org/10.1145/2989225.2989231},
+  doi = {10.1145/2989225.2989231},
+  acmid = {2989231},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+} 
+````
