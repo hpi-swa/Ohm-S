@@ -22,11 +22,11 @@ BinaryMessageOperand =
 BinaryMethodHeader =
     binaryMessageSelector bindableIdentifier
 
-BlockArgument =
+blockArgument =
 	":" letter alnum*
 
 BlockArguments =
-	BlockArgument+ "|"
+	blockArgument+ "|"
 
 BlockLiteral =
 	"[" BlockArguments? ExecutableCode? "]"
@@ -38,8 +38,18 @@ CascadedMessage =
 	";" MessageChain
 
 ExecutableCode =
-   LocalVariableDeclarationList?
-   (~MethodReturnOperator Statement ".")* (FinalStatement "."?)?
+   LocalVariableDeclarationList? MoreExecutableCode
+
+MoreExecutableCode = 
+    Statements FinalStatement?
+
+Statements =
+    (~MethodReturnOperator Statement ".")*
+
+FinalStatement =
+	"^"? Statement "."?
+
+
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?
@@ -85,7 +95,9 @@ MessageChain =
     | UnaryMessage UnaryMessageChain? BinaryMessageChain? KeywordMessage? --unary
 
 MethodDeclaration =
-  MethodHeader ExecutableCode
+  MethodHeader 
+  Pragmas
+  ExecutableCode
 
 MethodHeader =
     KeywordMethodHeader
@@ -99,12 +111,31 @@ NestedExpression =
     "(" Statement ")"
 
 ObjectArrayLiteral =
-    "{" (Expression ("." Expression)* "."?)? "}"
+    "{" ObjectArrayLiteralElement* "}"
+
+ObjectArrayLiteralElement =
+  Expression "." --normal
+  | Expression --finalExpression
 
 Operand =
     Literal
     | Reference
     | NestedExpression
+
+PragmaValues = KeywordPragma+ | unaryPragma 
+
+unaryPragma = identifier
+
+KeywordPragma = pragmaKey Literal
+
+pragmaKey = identifier ":"
+
+Pragma = 
+  "<" PragmaValues ">"
+
+Pragmas =
+  Pragma*
+
 
 Reference = 
     identifier

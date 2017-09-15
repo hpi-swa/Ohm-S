@@ -3,10 +3,13 @@ serializedGrammar
 ^ 'Bibtex <: BaseGrammar {
 
 BibtexDB =
-  Comment? (CommandOrEntry Comment?)*
+  Comment? CommandsOrEntries*
+
+CommandsOrEntries = 
+  CommandOrEntry Comment?
 
 CommandComment =
-  "comment"
+  "comment" | "Comment"
 
 CommandOrEntry =
   "@" (CommandComment | Preamble | String | Entry)
@@ -18,7 +21,7 @@ Entry =
 	identifier ( "{" key EntryBody? "}" | "(" keyParen EntryBody? ")" )
 
 EntryBody = 
- ("," identifier "=" bibValue)* ","?
+ ("," StringBody)* ","?
 
 Preamble =
   "preamble" ("{" "}" | "(" ")")

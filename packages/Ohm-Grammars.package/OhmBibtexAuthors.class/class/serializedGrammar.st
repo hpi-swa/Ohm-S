@@ -17,10 +17,16 @@ LastnameAuthor =
 MoreAuthors =
     "and" Author
 
-firstRule = "start"
+innerPiece =
+  piece -- recurse
+  | ~"}" any -- special
 
 middleName =
-  ~"and" letter+ "."
+  ~"and" piece+ "."
 
 namePart =
-    ~"and" letter+ "."?}'
+    ~"and" piece+ "."?
+
+piece =
+  letter -- simple
+  | "{" innerPiece* "}" -- complex}'
