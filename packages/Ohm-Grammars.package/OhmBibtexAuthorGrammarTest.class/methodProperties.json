@@ -3,5 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "pre 10/2/2015 15:09",
+		"testComplicatedAuthors" : "pre 9/18/2017 16:04",
 		"testFirstnameAuthors" : "pre 10/2/2015 15:25",
 		"testPerfectAuthors" : "pre 10/2/2015 15:26" } }

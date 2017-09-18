@@ -17,10 +17,6 @@ LastnameAuthor =
 MoreAuthors =
     "and" Author
 
-innerPiece =
-  piece -- recurse
-  | ~"}" any -- special
-
 middleName =
   ~"and" piece+ "."
 
@@ -28,5 +24,8 @@ namePart =
     ~"and" piece+ "."?
 
 piece =
-  letter -- simple
-  | "{" innerPiece* "}" -- complex}'
+  ~separator any
+
+separator =
+  space | ","
+}'
