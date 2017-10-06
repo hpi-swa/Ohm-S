@@ -7,9 +7,16 @@ Alt
     | Term
 
 Base
-    = ident ~(ruleDescr? "=" | ":=" | "+=")  -- application
-    | (keyword | string | regExp | number)   -- prim
+    = ident Params? ~(ruleDescr? "=" | ":=" | "+=")  -- application
+    | oneCharTerminal ".." oneCharTerminal -- range
+    | ohmTerminal   -- terminal
     | "(" Alt ")"                            -- paren
+
+Formals
+    = "<" FormalsList ">"
+
+FormalsList
+    = ident ("," ident)*
 
 Grammar
     = GrammarHeader "{" Rule* "}"
@@ -30,15 +37,26 @@ Iter
     | Pred "?"  -- opt
     | Pred
 
+Lex
+  = "#" Base -- lex
+   | Base
+
+Params
+    = "<" ParamsList ">"
+
+ParamsList
+    = Seq ("," Seq)*
+
 Pred
-    = "~" Base  -- not
-    | "&" Base  -- lookahead
-    | Base
+    = "~" Lex  -- not
+    | "&" Lex  -- lookahead
+    | Lex
 
 Rule
-    = ident ruleDescr? "="  Alt  -- define
-    | ident ruleDescr? ":=" Alt  -- override
-    | ident            "+=" Alt  -- extend
+    = ident Formals? ruleDescr? "="  Alt  -- define
+    | ident  Formals? ruleDescr? ":=" Alt  -- override
+    | ident  Formals?             "+=" Alt  -- extend
+    | ident  Formals?            "+=" Alt  -- extend
 
 Seq
     = Iter*
@@ -54,7 +72,22 @@ Term
 caseName
     = "--" (~"\n" space)* name (~"\n" space)* ("\n" | &"}")
 
-ident  -- identifier
+comment
+   = "//" (~"\n" any)* "\n"  -- singleLine
+    | "/*" (~"*/" any)* "*/"  -- multiLine
+
+escapeChar
+    = "\\\\"                                     -- backslash
+    | "\\\""                                      -- doubleQuote
+    | "\\\''"                                      -- singleQuote
+    | "\\b"                                      -- backspace
+    | "\\n"                                      -- lineFeed
+    | "\\r"                                      -- carriageReturn
+    | "\\t"                                      -- tab
+    | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
+    | "\\x" hexDigit hexDigit                    -- hexEscape
+
+ident 
     = ~keyword name
 
 keyword
@@ -63,7 +96,7 @@ keyword
     | "true" ~nameRest       -- true
     | "false" ~nameRest      -- false
 
-name  -- name
+name 
     = nameFirst nameRest*
 
 nameFirst
@@ -72,34 +105,36 @@ nameFirst
 
 nameRest
     = "_"
-    | "-"
     | alnum
 
-number  -- number
+number
     = "-"? digit+
+
+ohmTerminal
+    = keyword | string | regExp | number
+
+oneCharTerminal
+    = "\"" terminalChar "\""
 
 reCharClass
     = "\\p{" /[A-Za-z]/+ "}"    -- unicode
     | "[" ("\\]" | ~"]" any)* "]" -- ordinary
 
-regExp  -- regular expression
+regExp 
     = "/" reCharClass "/"
 
-ruleDescr  -- rule description for use in error messages
-    = "--" ruleDescrText "\n"
+ruleDescr
+    = "(" ruleDescrText ")"
 
 ruleDescrText
-    = (~"\n" any)*
-
-sChar
-    = "\\x" hexDigit hexDigit                    -- hexEscape
-    | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
-    | "\\" any                                     -- escape
-    | ~"\"" ~"\n" any
+    = (~")" any)*
 
 space
-   += "//" (~"\n" any)* "\n"  -- singleLine
-    | "/*" (~"*/" any)* "*/"  -- multiLine
+   += comment
 
-string  -- string literal
-    = "\"" sChar* "\""}'
+string 
+    = "\"" terminalChar* "\""
+
+terminalChar
+    = escapeChar
+     | ~"\\" ~"\"" ~"\n" any}'

@@ -1,101 +1,78 @@
 boostrapping
-ohmGrammarDefinition
+ohmGrammarDefinition 
+^ 'Ohm <: BaseGrammar {
 
-	^ 'Ohm {
-
-  Grammars
-    = Grammar*
-
-  Grammar
-    = GrammarHeader "{" Rule* "}"
-
-  GrammarHeader
-    = GrammarName SuperGrammar?
-
-  GrammarName
-    = ident "." ident -- qualified
-    | ident           -- unqualified
-
-  SuperGrammar
-    = "<:" ident "." ident  -- qualified
-    | "<:" ident              -- unqualified
-
-  Rule
-    = ident ruleDescr? "="  Alt  -- define
-    | ident ruleDescr? ":=" Alt  -- override
-    | ident            "+=" Alt  -- extend
-
-  Alt
+Alt
     = Term "|" Alt  -- rec
     | Term
 
-  Term
-    = Seq caseName -- inline
-    | Seq
+Base
+    = ident Params? ~(ruleDescr? "=" | ":=" | "+=")  -- application
+    | oneCharTerminal ".." oneCharTerminal -- range
+    | ohmTerminal   -- terminal
+    | "(" Alt ")"                            -- paren
 
-  Seq
-    = Iter*
+Formals
+    = "<" FormalsList ">"
 
-  Iter
+FormalsList
+    = ident ("," ident)*
+
+Grammar
+    = GrammarHeader "{" Rule* "}"
+
+GrammarHeader
+    = GrammarName SuperGrammar?
+
+GrammarName
+    = ident "." ident -- qualified
+    | ident           -- unqualified
+
+Grammars
+    = Grammar*
+
+Iter
     = Pred "*"  -- star
     | Pred "+"  -- plus
     | Pred "?"  -- opt
     | Pred
 
-  Pred
+Params
+    = "<" ParamsList ">"
+
+ParamsList
+    = Seq ("," Seq)*
+
+Pred
     = "~" Base  -- not
     | "&" Base  -- lookahead
     | Base
 
-  Base
-    = ident ~(ruleDescr? "=" | ":=" | "+=")  -- application
-    | oneCharTerminal ".." oneCharTerminal -- range
-    | ohmTerminal   -- terminal
-    | "(" Alt ")"                            -- paren
+Rule
+    = ident Formals? ruleDescr? "="  Alt  -- define
+    | ident  Formals? ruleDescr? ":=" Alt  -- override
+    | ident  Formals?             "+=" Alt  -- extend
+    | ident  Formals?            "+=" Alt  -- extend
 
-  ruleDescr
-    = "(" ruleDescrText ")"
+Seq
+    = Iter*
 
-  ruleDescrText
-    = (~")" any)*
+SuperGrammar
+    = "<:" ident "." ident  -- qualified
+    | "<:" ident              -- unqualified
 
-  caseName
+Term
+    = Seq caseName -- inline
+    | Seq
+
+caseName
     = "--" (~"\n" space)* name (~"\n" space)* ("\n" | &"}")
 
-  name 
-    = nameFirst nameRest*
+comment
+   = "//" (~"\n" any)* "\n"  -- singleLine
+    | "/*" (~"*/" any)* "*/"  -- multiLine
 
-  nameFirst
-    = "_"
-    | letter
-
-  nameRest
-    = "_"
-    | alnum
-
-  ident 
-    = ~keyword name
-
-  keyword
-    = "undefined" ~nameRest  -- undefined
-    | "null" ~nameRest       -- null
-    | "true" ~nameRest       -- true
-    | "false" ~nameRest      -- false
-
-  ohmTerminal
-    = keyword | string | regExp | number
-
-  oneCharTerminal
-    = "\"" terminalChar "\""
-
-  string 
-    = "\"" terminalChar* "\""
-
-  terminalChar
-    = escapeChar
-     | ~"\\" ~"\"" ~"\n" any  
-
-  escapeChar
+escapeChar
     = "\\\\"                                     -- backslash
     | "\\\""                                      -- doubleQuote
     | "\\\''"                                      -- singleQuote
@@ -106,21 +83,54 @@ ohmGrammarDefinition
     | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
     | "\\x" hexDigit hexDigit                    -- hexEscape
 
-  regExp 
-    = "/" reCharClass "/"
+ident 
+    = ~keyword name
 
-  reCharClass
+keyword
+    = "undefined" ~nameRest  -- undefined
+    | "null" ~nameRest       -- null
+    | "true" ~nameRest       -- true
+    | "false" ~nameRest      -- false
+
+name 
+    = nameFirst nameRest*
+
+nameFirst
+    = "_"
+    | letter
+
+nameRest
+    = "_"
+    | alnum
+
+number
+    = "-"? digit+
+
+ohmTerminal
+    = keyword | string | regExp | number
+
+oneCharTerminal
+    = "\"" terminalChar "\""
+
+reCharClass
     = "\\p{" /[A-Za-z]/+ "}"    -- unicode
     | "[" ("\\]" | ~"]" any)* "]" -- ordinary
 
-  number
-    = "-"? digit+
+regExp 
+    = "/" reCharClass "/"
 
-  comment
-   = "//" (~"\n" any)* "\n"  -- singleLine
-    | "/*" (~"*/" any)* "*/"  -- multiLine
+ruleDescr
+    = "(" ruleDescrText ")"
 
-  space
+ruleDescrText
+    = (~")" any)*
+
+space
    += comment
 
-}'
+string 
+    = "\"" terminalChar* "\""
+
+terminalChar
+    = escapeChar
+     | ~"\\" ~"\"" ~"\n" any}'

@@ -1,5 +1,5 @@
 actions
-BaseApplication: node with: name
+BaseApplication: node with: name with: params 
 
 	^ (self builder apply: (self value: name))
 		textualRepresentation: node interval contents;

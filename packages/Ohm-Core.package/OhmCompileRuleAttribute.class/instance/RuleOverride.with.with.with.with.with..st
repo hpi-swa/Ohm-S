@@ -1,5 +1,5 @@
 actions
-RuleOverride: aNode with: name with: description with: x with: body
+RuleOverride: aNode with: name with: formals with: description with: x with: body
 
 	self currentRule: (self value: name).
 	^ self builder 
