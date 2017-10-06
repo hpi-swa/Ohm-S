@@ -1,0 +1,4 @@
+accessing
+startCharacter
+
+	^ startCharacter

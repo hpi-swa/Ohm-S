@@ -5,7 +5,7 @@ testBoostrapGrammarCanParseApostrophe
 					doesMatch: 'G { foo = """ "foo" """ }' startingFrom: 'Grammars').
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)
-					doesMatch: 'G { string  -- string literal
+					doesMatch: 'G { string  ( string literal )
     										= "" sChar* "" }' startingFrom: 'Grammars').
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)

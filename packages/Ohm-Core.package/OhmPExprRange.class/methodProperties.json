@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"expressionName" : "pre 10/6/2017 16:41",
+		"newFrom:to:" : "pre 10/6/2017 16:45" },
+	"instance" : {
+		"asExpected:" : "pre 10/6/2017 16:44",
+		"debugNodeString" : "pre 10/6/2017 16:44",
+		"endCharacter" : "pre 10/6/2017 16:41",
+		"endCharacter:" : "pre 10/6/2017 16:41",
+		"matchInput:" : "pre 10/6/2017 16:55",
+		"startCharacter" : "pre 10/6/2017 16:41",
+		"startCharacter:" : "pre 10/6/2017 16:41",
+		"toRecipe" : "pre 10/6/2017 16:42" } }

@@ -1,5 +1,9 @@
 {
 	"class" : {
-		 },
+		"signalForRule:andMessage:" : "pre 10/6/2017 16:24" },
 	"instance" : {
-		 } }
+		"messageName" : "pre 10/6/2017 16:23",
+		"messageName:" : "pre 10/6/2017 16:23",
+		"messageText" : "pre 10/6/2017 16:25",
+		"ruleName" : "pre 10/6/2017 16:23",
+		"ruleName:" : "pre 10/6/2017 16:23" } }

@@ -1,5 +1,5 @@
 actions
-sChar: node with: expr
+terminalChar: node with: expr
 
 	^ node interval contents
 

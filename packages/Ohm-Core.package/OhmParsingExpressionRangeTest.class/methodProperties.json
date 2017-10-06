@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCreateARange" : "pre 10/6/2017 16:51",
+		"testRangeArity" : "pre 10/6/2017 16:55",
+		"testRangeProducesIntervals" : "pre 10/6/2017 16:50",
+		"testStringMatchesCharactersInItsRange" : "pre 10/6/2017 16:47" } }

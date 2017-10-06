@@ -11,7 +11,7 @@
 		"testCompileGrammarHeaderWithExistingSupergrammar" : "pre 4/22/2015 13:16",
 		"testCompileGrammarWithExistingSuperclass" : "pre 5/20/2017 17:00",
 		"testCompileGrammarWithSupergrammarDependency" : "pre 5/20/2017 17:03",
-		"testCompileRulesAndInstall" : "pre 5/20/2017 17:03",
+		"testCompileRulesAndInstall" : "pre 10/6/2017 19:49",
 		"testCompileRulesAndInstallDeletesInlineRules" : "pre 5/20/2017 17:03",
 		"testCompileRulesAndInstallsInlineRules" : "pre 5/20/2017 17:03",
 		"testCompiledGrammarHasAStartRule" : "pre 5/20/2017 17:03",

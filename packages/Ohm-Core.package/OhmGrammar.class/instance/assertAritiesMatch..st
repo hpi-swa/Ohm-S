@@ -11,4 +11,6 @@ assertAritiesMatch: actionClass
 			ifNil: [ true ]
 			ifNotNil: [ arguments := (message count: [:c | c = $:]) - 1.
 					  arguments = assoc value arity
-						ifFalse: [ ^ OhmAttributeAritiesMissmatchError signal ] ] ].
+						ifFalse: [ ^ OhmAttributeAritiesMissmatchError 
+									signalForRule: assoc key
+									andMessage: message  ] ] ].

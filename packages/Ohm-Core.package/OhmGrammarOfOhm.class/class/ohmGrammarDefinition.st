@@ -49,19 +49,20 @@ ohmGrammarDefinition
 
   Base
     = ident ~(ruleDescr? "=" | ":=" | "+=")  -- application
-    | (keyword | string | regExp | number)   -- prim
+    | oneCharTerminal ".." oneCharTerminal -- range
+    | ohmTerminal   -- terminal
     | "(" Alt ")"                            -- paren
 
-  ruleDescr  -- rule description for use in error messages
-    = "--" ruleDescrText "\n"
+  ruleDescr
+    = "(" ruleDescrText ")"
 
   ruleDescrText
-    = (~"\n" any)*
+    = (~")" any)*
 
   caseName
     = "--" (~"\n" space)* name (~"\n" space)* ("\n" | &"}")
 
-  name  -- name
+  name 
     = nameFirst nameRest*
 
   nameFirst
@@ -70,10 +71,9 @@ ohmGrammarDefinition
 
   nameRest
     = "_"
-    | "-"
     | alnum
 
-  ident  -- identifier
+  ident 
     = ~keyword name
 
   keyword
@@ -82,27 +82,45 @@ ohmGrammarDefinition
     | "true" ~nameRest       -- true
     | "false" ~nameRest      -- false
 
-  string  -- string literal
-    = "\"" sChar* "\""
+  ohmTerminal
+    = keyword | string | regExp | number
 
-  sChar
-    = "\\x" hexDigit hexDigit                    -- hexEscape
+  oneCharTerminal
+    = "\"" terminalChar "\""
+
+  string 
+    = "\"" terminalChar* "\""
+
+  terminalChar
+    = escapeChar
+     | ~"\\" ~"\"" ~"\n" any  
+
+  escapeChar
+    = "\\\\"                                     -- backslash
+    | "\\\""                                      -- doubleQuote
+    | "\\\''"                                      -- singleQuote
+    | "\\b"                                      -- backspace
+    | "\\n"                                      -- lineFeed
+    | "\\r"                                      -- carriageReturn
+    | "\\t"                                      -- tab
     | "\\u" hexDigit hexDigit hexDigit hexDigit  -- unicodeEscape
-    | "\\" any                                     -- escape
-    | ~"\"" ~"\n" any
+    | "\\x" hexDigit hexDigit                    -- hexEscape
 
-  regExp  -- regular expression
+  regExp 
     = "/" reCharClass "/"
 
   reCharClass
     = "\\p{" /[A-Za-z]/+ "}"    -- unicode
     | "[" ("\\]" | ~"]" any)* "]" -- ordinary
 
-  number  -- number
+  number
     = "-"? digit+
 
-  space
-   += "//" (~"\n" any)* "\n"  -- singleLine
+  comment
+   = "//" (~"\n" any)* "\n"  -- singleLine
     | "/*" (~"*/" any)* "*/"  -- multiLine
+
+  space
+   += comment
 
 }'
