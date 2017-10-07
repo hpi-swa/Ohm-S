@@ -84,13 +84,7 @@ escapeChar
     | "\\x" hexDigit hexDigit                    -- hexEscape
 
 ident 
-    = ~keyword name
-
-keyword
-    = "undefined" ~nameRest  -- undefined
-    | "null" ~nameRest       -- null
-    | "true" ~nameRest       -- true
-    | "false" ~nameRest      -- false
+    = name
 
 name 
     = nameFirst nameRest*
@@ -101,13 +95,14 @@ nameFirst
 
 nameRest
     = "_"
+    | "-"
     | alnum
 
 number
     = "-"? digit+
 
 ohmTerminal
-    = keyword | string | regExp | number
+    = string | regExp | number
 
 oneCharTerminal
     = "\"" terminalChar "\""

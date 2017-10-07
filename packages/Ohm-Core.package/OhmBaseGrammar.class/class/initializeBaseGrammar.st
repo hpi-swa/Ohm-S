@@ -7,7 +7,7 @@ initializeBaseGrammar
 						namespace: OhmNamespace defaultNamespace;
 						yourself.
 	OhmInstance superGrammar: OhmInstance.
-	 
+	  
 	{    'any' asSymbol -> OhmPExprAnything new .
 		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: 'any' asSymbol)) .
 		#space -> (OhmPExprRegex newOn: '[\s]') .
