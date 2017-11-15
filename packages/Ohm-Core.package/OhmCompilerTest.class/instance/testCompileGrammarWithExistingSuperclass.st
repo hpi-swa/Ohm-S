@@ -13,6 +13,6 @@ testCompileGrammarWithExistingSuperclass
 	
 	
 	self assert: 'G1' equals: aGrammar grammarName.
-	self assert: aSuperGrammar equals: aGrammar superGrammar.
+	self assert: (Smalltalk at: #G0) OhmInstance equals: aGrammar superGrammar.
 	self assert: (aGrammar ruleDeclarations at: #expr) body equals: (aGrammar ruleNamed: #expr).
 	self assert: (OhmNamespace named: 'OhmTestingPackage') equals: aGrammar namespace.
