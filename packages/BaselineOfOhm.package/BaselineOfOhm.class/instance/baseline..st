@@ -12,9 +12,10 @@ baseline: spec
 					[ spec repository: 'http://www.squeaksource.com/Regex' ];
 				package: 'Ohm-Core' with: [spec requires: #('libraries')];
 				package: 'Ohm-Grammars' with: [spec requires: #('core')];
+				package: 'Ohm-Support' with: [spec requires: #('core' 'libraries')];
 				yourself.
 			spec
-				group: 'default' with: #('Ohm-Core' 'Ohm-Grammars');
+				group: 'default' with: #('Ohm-Core' 'Ohm-Grammars' 'Ohm-Support');
 				group: 'core' with: #('Ohm-Core');
 				group: 'libraries' with: #('JSON' 'VB-Regex')];
 				yourself
