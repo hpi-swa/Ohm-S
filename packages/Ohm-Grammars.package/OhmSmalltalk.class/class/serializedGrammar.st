@@ -1,7 +1,8 @@
 serialized grammar
 serializedGrammar
-^ 'Ohm-Core-Grammars.OhmSmalltalk <: Ohm-Grammars.BaseGrammar {
 
+^ 'Ohm-Core-Grammars.OhmSmalltalk <: Ohm-Grammars.BaseGrammar {
+  
 ArrayLiteral =
 	ByteArrayLiteral
 	| ObjectArrayLiteral
@@ -48,8 +49,6 @@ Statements =
 
 FinalStatement =
 	"^"? Statement "."?
-
-
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?

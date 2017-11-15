@@ -1,7 +1,7 @@
 serialized grammar
 serializedGrammar
 ^ 'Ohm <: BaseGrammar {
-
+   
 Alt
     = Term "|" Alt  -- rec
     | Term

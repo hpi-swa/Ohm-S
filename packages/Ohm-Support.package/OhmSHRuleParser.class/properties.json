@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmSHRuleParser",
+	"pools" : [
+		 ],
+	"super" : "SHParserST80",
+	"type" : "normal" }

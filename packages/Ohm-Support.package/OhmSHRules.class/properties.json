@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"predefinedNamespace" ],
+	"name" : "OhmSHRules",
+	"pools" : [
+		 ],
+	"super" : "OhmSemanticAction",
+	"type" : "normal" }

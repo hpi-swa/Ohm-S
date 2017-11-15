@@ -1,13 +1,13 @@
 serialized grammar
 serializedGrammar
 ^ 'Ohm-Core-Grammars.UnifiedAction <: Ohm-Grammars.Ohm {
+  
+Alt :=
+	Term "|" Alt binding?  -- rec
+	| Term  -- term 
 
-Alt
-    := Term "|" Alt binding?  -- rec
-    | Term  -- term
-
-Seq 
-  := (Iter binding?)* -- withBinding
-
+Seq := 
+	(Iter binding?)* -- withBinding
+ 
 binding =
-    ":" ident}'
+	":" ident}'   
