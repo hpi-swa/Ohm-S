@@ -1,4 +1,4 @@
 as yet unclassified
-shoutParserClass
+metaShoutParserClass
 	
 	^ OhmSHRuleParser
