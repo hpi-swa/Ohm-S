@@ -2,7 +2,7 @@ as yet unclassified
 rangesIn: aString classOrMetaClass: aClass workspace: workspace environment: environment 
 	
 	| cst rangeSetting grammarSource offset |
-	(aString beginsWith: 'serializedGrammar') ifFalse: [
+	((aString beginsWith: 'serializedGrammar') and: [aString includes: '''']) ifFalse: [
 		^ super 
 			rangesIn: aString 
 			classOrMetaClass: aClass 
