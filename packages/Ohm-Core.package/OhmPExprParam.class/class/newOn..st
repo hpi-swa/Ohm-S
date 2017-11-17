@@ -1,6 +1,4 @@
 instance creation
 newOn: parameterIndex
 
-	^ self new
-		parameterIndex: parameterIndex;
-		yourself
+	^ self newOn: parameterIndex named: 'tempParam'

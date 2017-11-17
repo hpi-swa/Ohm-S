@@ -2,6 +2,6 @@ converting
 grammarDefinitionAsString
 
 	^ self grammarName
-		, (self superGrammar == OhmBuiltIn 
+		, (self superGrammar == OhmBuiltInRules 
 				ifFalse: [' <: ' , self superGrammar grammarName] 
 				ifTrue: [''])

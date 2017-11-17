@@ -1,9 +1,13 @@
 {
 	"class" : {
 		"expressionName" : "pre 11/16/2017 16:58",
-		"newOn:" : "pre 11/17/2017 17:09" },
+		"newOn:" : "pre 11/17/2017 20:10",
+		"newOn:named:" : "pre 11/17/2017 20:09" },
 	"instance" : {
 		"doEval:" : "pre 11/16/2017 17:07",
 		"parameterIndex" : "pre 11/17/2017 17:09",
 		"parameterIndex:" : "pre 11/17/2017 17:09",
-		"replaceParametersWithArguments:" : "pre 11/17/2017 18:19" } }
+		"parameterName" : "pre 11/17/2017 20:09",
+		"parameterName:" : "pre 11/17/2017 20:09",
+		"replaceParametersWithArguments:" : "pre 11/17/2017 18:19",
+		"toRecipe" : "pre 11/17/2017 20:26" } }

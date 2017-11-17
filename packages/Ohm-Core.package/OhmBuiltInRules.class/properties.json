@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OhmBuiltIn",
+	"name" : "OhmBuiltInRules",
 	"pools" : [
 		 ],
 	"super" : "OhmGrammarSmalltalkProxy",

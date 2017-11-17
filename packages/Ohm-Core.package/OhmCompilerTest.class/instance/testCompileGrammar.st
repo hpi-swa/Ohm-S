@@ -8,7 +8,7 @@ testCompileGrammar
 	}'.
 	
 	self assert: 'G1' equals: aGrammar grammarName.
-	self assert: OhmBuiltIn OhmInstance equals: aGrammar superGrammar.
+	self assert: OhmBuiltInRules OhmInstance equals: aGrammar superGrammar.
 	self 
 		assert: (aGrammar ruleDeclarations at: #expr) body 
 		equals: (aGrammar ruleNamed: #expr).

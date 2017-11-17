@@ -2,4 +2,4 @@ class initialization
 initialize
 
 	super initialize.
-	self initializeBaseGrammar.
+	self initializeBaseBuiltInGrammar.

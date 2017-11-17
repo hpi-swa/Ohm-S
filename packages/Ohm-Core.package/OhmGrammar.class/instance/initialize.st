@@ -4,4 +4,4 @@ initialize
 	self grammarName: ''.
 	self ruleDeclarations: Dictionary new.
 	
-	self superGrammar: OhmBuiltIn OhmInstance.
+	self superGrammar: OhmBuiltInRules OhmInstance.
