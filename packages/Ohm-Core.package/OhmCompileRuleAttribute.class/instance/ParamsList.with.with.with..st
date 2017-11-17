@@ -1,4 +1,4 @@
 actions
-ParamsList: node with: startIdentifier with: separators with: optionalMoreIdentifiers 
+ParamsList: node with: startParameter with: separators with: optionallyMoreParameters 
 
-	^ {startIdentifier interval contents} , (optionalMoreIdentifiers children collect: [:i | i interval contents])
+	^ {self value: startParameter} , (optionallyMoreParameters children collect: [:p | self value: p ])

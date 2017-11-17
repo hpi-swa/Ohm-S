@@ -21,5 +21,4 @@ evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar andBi
 		shouldRecordFailures: false.
 		
 
-	^ pexpr 
-		eval: state
+	^ pexpr eval: state
