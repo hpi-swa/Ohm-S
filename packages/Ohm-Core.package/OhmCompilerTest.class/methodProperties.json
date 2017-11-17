@@ -14,6 +14,7 @@
 		"testCompileGrammarWithEscapes" : "pre 11/15/2017 17:06",
 		"testCompileGrammarWithExistingSuperclass" : "pre 11/15/2017 16:54",
 		"testCompileGrammarWithSupergrammarDependency" : "pre 5/20/2017 17:03",
+		"testCompileGrammarWithUnicodeEscapes" : "pre 11/17/2017 19:41",
 		"testCompileRulesAndInstall" : "pre 10/6/2017 19:49",
 		"testCompileRulesAndInstallDeletesInlineRules" : "pre 5/20/2017 17:03",
 		"testCompileRulesAndInstallsInlineRules" : "pre 5/20/2017 17:03",
