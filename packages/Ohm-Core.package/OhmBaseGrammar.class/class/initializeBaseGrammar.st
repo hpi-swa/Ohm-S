@@ -10,7 +10,10 @@ initializeBaseGrammar
 	  
 	{    'any' asSymbol -> OhmPExprAnything new .
 		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: 'any' asSymbol)) .
-		#space -> (OhmPExprRegex newOn: '[\s]') .
+		
+		#space -> (OhmPExprRange newFrom: Character null to: Character space) .
+		#spaces -> (OhmPExprMany newStarOn: (OhmPExprApply newOn: #space)).
+		
 		#alnum -> (OhmPExprRegex newOn: '[0-9a-zA-Z]') .
 		#letter -> (OhmPExprRegex newOn: '[a-zA-Z]') .
 		#lower -> (OhmPExprRegex newOn: '[a-z]') .
@@ -19,3 +22,9 @@ initializeBaseGrammar
 		#hexDigit -> (OhmPExprRegex newOn: '[0-9a-fA-F]') } do: 
 		[:assoc | OhmInstance ruleDeclarations at: assoc key 
 						put: (OhmRuleDefine newNamed: assoc key parameters: #() body: assoc value)].
+					
+	OhmInstance ruleDeclarations at: #caseInsensitive
+		put: (OhmRuleDefine
+				newNamed: #caseInsensitive
+				parameters: #(str)
+				body: (OhmPExprCaseInsensitive newWithParam))

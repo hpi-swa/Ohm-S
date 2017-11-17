@@ -1,0 +1,4 @@
+accessing
+expressionName
+
+	^ #ohmPExprCaseInsensitive

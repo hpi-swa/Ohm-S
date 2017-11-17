@@ -15,6 +15,7 @@
 		"getState" : "pre 12/3/2014 08:49",
 		"initialize" : "pre 12/10/2014 10:28",
 		"isStringStream" : "pre 1/20/2015 20:21",
+		"matchCaseInsensitiveString:" : "pre 11/17/2017 18:11",
 		"matchExactly:" : "pre 12/11/2014 13:20",
 		"matchRegex:" : "pre 1/7/2015 10:50",
 		"matchString:" : "pre 12/4/2014 21:47",

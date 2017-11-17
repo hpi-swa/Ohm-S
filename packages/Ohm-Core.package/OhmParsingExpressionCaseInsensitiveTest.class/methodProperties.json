@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"evalPExpr:on:asSyntactic:usingGrammar:" : "pre 11/17/2017 18:24",
+		"evalPExpr:on:asSyntactic:usingGrammar:andBindings:" : "pre 11/17/2017 18:24",
+		"exampleExpression" : "pre 11/17/2017 18:25",
+		"testCaseInsensitiveArity" : "pre 11/17/2017 17:59",
+		"testCaseInsensitiveMatches" : "pre 11/17/2017 18:26",
+		"testCaseInsensitiveProducesIntervals" : "pre 11/17/2017 18:26",
+		"testCreateACaseInsensitive" : "pre 11/17/2017 17:57" } }
