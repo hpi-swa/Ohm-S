@@ -1,6 +1,6 @@
 serialized grammar
 serializedGrammar
-^ 'QLQuestionnaire <: BaseGrammar {
+^ 'QLQuestionnaire {
 
 Form =
   "form" formName "{" FormBody "}"

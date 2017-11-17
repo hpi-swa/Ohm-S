@@ -1,6 +1,8 @@
 actions
 BaseApplication: node with: name with: arguments 
 
-	^ (self builder apply: (self value: name) withArguments: (self value: arguments))
+	| argumentList |
+	argumentList := (self value: arguments) ifNil: [#()].
+	^ (self builder apply: (self value: name) withArguments: argumentList)
 		textualRepresentation: node interval contents;
 		yourself

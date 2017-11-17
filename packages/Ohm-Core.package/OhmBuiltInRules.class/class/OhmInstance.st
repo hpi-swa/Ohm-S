@@ -1,4 +1,4 @@
 accessing
 OhmInstance
 
-	^ OhmInstance ifNil: [ self initializeBaseGrammar. OhmInstance ]
+	^ OhmInstance ifNil: [ self initializeBaseBuiltInGrammar. OhmInstance ]

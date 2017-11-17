@@ -1,8 +1,8 @@
 {
 	"class" : {
 		"expressionName" : "pre 12/3/2014 16:56",
-		"newOn:" : "pre 12/4/2014 20:25",
-		"newOn:arguments:" : "pre 11/16/2017 17:01" },
+		"newOn:" : "pre 11/17/2017 20:50",
+		"newOn:arguments:" : "pre 11/17/2017 20:54" },
 	"instance" : {
 		"arguments" : "pre 11/16/2017 17:00",
 		"arguments:" : "pre 11/16/2017 17:00",
@@ -11,9 +11,10 @@
 		"asString" : "pre 6/5/2015 10:56",
 		"debugNodeString" : "pre 5/2/2015 15:10",
 		"doEval:" : "pre 7/20/2015 14:26",
+		"initialize" : "pre 11/17/2017 20:47",
 		"innerNodesAt:" : "pre 7/20/2015 14:39",
 		"nodesResultingInCST" : "pre 6/1/2015 14:48",
-		"replaceParametersWithArguments:" : "pre 11/17/2017 17:25",
+		"replaceParametersWithArguments:" : "pre 11/17/2017 20:48",
 		"ruleBodyOn:" : "pre 11/17/2017 17:11",
 		"ruleName" : "pre 12/3/2014 16:53",
 		"ruleName:" : "pre 12/3/2014 16:53",

@@ -1,6 +1,6 @@
 serialized grammar
 serializedGrammar
-^ 'OhmMath <: BaseGrammar {
+^ 'OhmMath {
 
 Exp
     = AddExp

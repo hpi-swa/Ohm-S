@@ -1,7 +1,7 @@
 serialized grammar
 serializedGrammar
 
-^ 'Ohm-Core-Grammars.OhmSmalltalk <: Ohm-Grammars.BaseGrammar {
+^ 'Ohm-Core-Grammars.OhmSmalltalk {
   
 ArrayLiteral =
 	ByteArrayLiteral

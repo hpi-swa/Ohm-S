@@ -1,6 +1,6 @@
 serialized grammar
 serializedGrammar
-^ 'OhmBibtexAuthors <: BaseGrammar {
+^ 'OhmBibtexAuthors {
 
 Author =
     LastnameAuthor | FirstnameAuthor

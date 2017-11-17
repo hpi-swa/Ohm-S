@@ -2,4 +2,9 @@ class initialization
 initialize
 
 	(self == OhmGrammarSmalltalkProxy) ifTrue: [
-		self allSubclassesDo: [:grammar | grammar recompile]]
+		OhmBaseGrammar recompile.
+		OhmBuiltInRules recompile.
+		OhmGrammarOfOhm recompile.
+		
+		(self allSubclasses copyWithout: {OhmBaseGrammar . OhmBuiltInRules . OhmGrammarOfOhm})
+			do: [:grammar | grammar recompile]]

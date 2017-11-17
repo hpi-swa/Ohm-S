@@ -1,6 +1,6 @@
 serialized grammar
 serializedGrammar
-^ 'Bibtex <: BaseGrammar {
+^ 'Bibtex {
 
 BibtexDB =
   Comment? CommandsOrEntries*
