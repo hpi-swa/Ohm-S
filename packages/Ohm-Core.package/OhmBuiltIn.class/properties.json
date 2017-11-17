@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core-Grammars",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmBuiltIn",
+	"pools" : [
+		 ],
+	"super" : "OhmGrammarSmalltalkProxy",
+	"type" : "normal" }

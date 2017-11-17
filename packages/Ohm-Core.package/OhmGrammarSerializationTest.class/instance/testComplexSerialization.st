@@ -11,7 +11,7 @@ testComplexSerialization
 			| "foobaz" --two
 	}'.
 
-	description := 'G <: BaseGrammar {
+	description := 'G <: BuiltInRules {
 
 Bar = foo | foobaz
 

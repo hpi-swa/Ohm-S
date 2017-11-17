@@ -9,6 +9,7 @@ compileGrammarDefinition: textualRepresentation inNamespace: namespaceName
 		
 	cst failed ifTrue: [OhmMatchFailure signalFor: cst state startedFrom: 'Grammar']. 
 	
-	^ (OhmGrammarOfOhm 
-			semanticAction: (OhmCompileGrammar newIn: (OhmNamespace named: namespaceName))) value: cst
+	^ (OhmGrammarOfOhm semanticAction: 
+		(OhmCompileGrammar newIn: (OhmNamespace named: namespaceName))) 
+			value: cst
 	

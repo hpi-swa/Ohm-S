@@ -1,6 +1,6 @@
 serialized grammar
 serializedGrammar
-^ 'Ohm <: BaseGrammar {
+^ 'Ohm <: BuiltIn {
 
 Alt
     = Term "|" Alt  -- rec

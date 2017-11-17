@@ -7,7 +7,7 @@ testSimpleSerialization
 		foo = "f"
 	}'.
 
-	description := 'G <: BaseGrammar {
+	description := 'G <: BuiltInRules {
 
 foo = "f"}'.
 	self assert: description equals: g grammarDefinitionString.

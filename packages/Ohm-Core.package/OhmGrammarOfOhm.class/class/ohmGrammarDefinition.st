@@ -1,6 +1,6 @@
 boostrapping
 ohmGrammarDefinition 
-^ 'Ohm <: BaseGrammar {
+^ 'Ohm {
 
 Alt
     = Term "|" Alt  -- rec
