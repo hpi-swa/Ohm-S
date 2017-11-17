@@ -1,4 +1,4 @@
-accessing
+converting
 toRecipe
 
 	self subclassResponsibility 

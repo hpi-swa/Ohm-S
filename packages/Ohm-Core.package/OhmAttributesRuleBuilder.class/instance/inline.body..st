@@ -1,4 +1,4 @@
-build-instructions
+rule finalization
 inline: ruleName body: b
 
 	self resultRules add: (OhmRuleInline 

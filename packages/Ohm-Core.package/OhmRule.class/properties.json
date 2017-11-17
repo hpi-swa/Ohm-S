@@ -8,6 +8,7 @@
 	"instvars" : [
 		"ruleName",
 		"body",
+		"parameters",
 		"boundGrammar",
 		"superGrammar",
 		"inlineRules",

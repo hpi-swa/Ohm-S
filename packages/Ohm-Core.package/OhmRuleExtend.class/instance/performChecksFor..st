@@ -1,9 +1,10 @@
-accessing
+checking
 performChecksFor: aGrammar
-
-	| expectedArity |
-	expectedArity := (aGrammar superGrammar ruleNamed: self ruleName) arity.
-	self body arity ~~ expectedArity
-		ifTrue: [ OhmRefinementMustBeCompatibleError signalForRule: self ruleName expectedArity: expectedArity reason: 'extending' ].
-
+	
+	| superRule |
+	superRule := aGrammar superGrammar ruleDeclarationNamed: self ruleName.
+	self checkForSameParametersAs: superRule in: aGrammar.
+	
+	self checkForSameArityIn: aGrammar.
+		
 	super performChecksFor: aGrammar.

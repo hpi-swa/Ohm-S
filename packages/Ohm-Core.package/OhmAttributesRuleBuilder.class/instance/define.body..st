@@ -1,4 +1,4 @@
-build-instructions
+rule finalization
 define: ruleName body: b
 	
 	self resultRules add: (OhmRuleDefine 

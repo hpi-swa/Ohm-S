@@ -1,5 +1,7 @@
 compiling
 compileGrammarDefinition: textualRepresentation
 
-	^ self compileGrammarDefinition: textualRepresentation inNamespace: OhmNamespace defaultNamespace packageName
+	^ self 
+		compileGrammarDefinition: textualRepresentation 
+		inNamespace: OhmNamespace defaultNamespace packageName
 	

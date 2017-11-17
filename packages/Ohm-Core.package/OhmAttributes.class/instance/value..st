@@ -12,6 +12,10 @@ value: inputNode
 	messages := messages select: [:msg | msg beginsWith: ruleMessageName].
 	self assert: messages size <= 1.
 	
-	(messages size = 1)
-		ifTrue:  [ ^ self perform: messages anyOne withArguments: ({ aNode } , (aNode children)). ]
-		ifFalse: [ ^ self tryToUseSpecialAttributesFor: ruleName asMessage: ruleMessageName on: aNode ].
+	messages size = 1
+		ifTrue:  [ ^ self 
+						perform: messages anyOne 
+						withArguments: ({ aNode } , (aNode children)). ]
+		ifFalse: [ ^ self 
+						tryToUseSpecialAttributesFor: ruleName 
+						asMessage: ruleMessageName on: aNode ].

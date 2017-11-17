@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testCallers" : "pre 6/3/2015 14:35" } }
+		"testCallers" : "pre 6/3/2015 14:35",
+		"testEmptyParams" : "pre 11/16/2017 14:30",
+		"testRuleCreatedWithParamsHasParams" : "pre 11/16/2017 14:31" } }

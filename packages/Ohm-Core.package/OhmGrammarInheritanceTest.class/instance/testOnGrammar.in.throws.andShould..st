@@ -6,5 +6,5 @@ testOnGrammar: grammarDescription in: packageName throws: errorType andShould: b
 		[ OhmGrammar makeAndInstallGrammars: grammarDescription in: packageName ] 
 			on: errorType
 			do: [:e | signal := true. blockWithAssertions value: e ].
-		self assert: signal equals: true ].
+		self assert: signal equals: true description: 'Exception was not signaled' ].
 

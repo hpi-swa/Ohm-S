@@ -1,7 +1,7 @@
 serialized grammar
 serializedGrammar
 ^ 'Ohm <: BaseGrammar {
-   
+
 Alt
     = Term "|" Alt  -- rec
     | Term
@@ -10,7 +10,7 @@ Base
     = ident Params? ~(ruleDescr? "=" | ":=" | "+=")  -- application
     | oneCharTerminal ".." oneCharTerminal -- range
     | ohmTerminal   -- terminal
-    | "(" Alt ")"                            -- paren
+    | "(" Alt ")"                           -- paren
 
 Formals
     = "<" FormalsList ">"

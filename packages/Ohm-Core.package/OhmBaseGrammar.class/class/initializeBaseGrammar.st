@@ -18,4 +18,4 @@ initializeBaseGrammar
 		#digit -> (OhmPExprRegex newOn: '[0-9]') .
 		#hexDigit -> (OhmPExprRegex newOn: '[0-9a-fA-F]') } do: 
 		[:assoc | OhmInstance ruleDeclarations at: assoc key 
-						put: (OhmRuleDefine newNamed: assoc key body: assoc value)].
+						put: (OhmRuleDefine newNamed: assoc key parameters: #() body: assoc value)].

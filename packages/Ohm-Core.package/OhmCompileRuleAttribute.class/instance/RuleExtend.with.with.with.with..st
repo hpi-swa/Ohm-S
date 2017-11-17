@@ -1,5 +1,13 @@
 actions
-RuleExtend: node with: name with: formals with: x with: body
+RuleExtend: node with: name with: parameters with: x with: body
 
-	self currentRule: (self value: name).
-	^ self builder extend: (self value: name) body: (self value: body)
+	| bodyValue nameValue |
+	nameValue := self value: name.
+	self currentRule: nameValue.
+	self builder parameterNames: ((self value: parameters) ifNil: [#()]).
+	
+	bodyValue := self value: body.
+	
+	^ self builder 
+		extend: nameValue 
+		body: bodyValue

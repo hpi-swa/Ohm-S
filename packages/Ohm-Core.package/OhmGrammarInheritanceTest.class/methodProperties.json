@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"makeAndInstallGrammar:in:" : "pre 9/22/2015 15:13",
+		"makeAndInstallGrammar:in:" : "pre 11/17/2017 16:29",
 		"makeGrammar:" : "pre 9/30/2015 14:25",
 		"setUp" : "pre 9/22/2015 15:12",
 		"tearDown" : "pre 9/22/2015 15:17",
@@ -10,10 +10,12 @@
 		"testDefineCannotOverride" : "pre 5/20/2017 17:05",
 		"testExtend" : "pre 5/20/2017 17:05",
 		"testExtendArities" : "pre 5/20/2017 17:05",
+		"testExtendParameterArities" : "pre 11/16/2017 17:02",
 		"testExtendRecognition" : "pre 5/20/2017 17:05",
-		"testOnGrammar:in:throws:andShould:" : "pre 9/22/2015 15:14",
+		"testOnGrammar:in:throws:andShould:" : "pre 11/16/2017 17:08",
 		"testOnGrammar:in:throwsNot:" : "pre 9/22/2015 15:14",
 		"testOverride" : "pre 5/20/2017 17:05",
 		"testOverrideArities" : "pre 5/20/2017 17:05",
+		"testOverrideParameterArities" : "pre 11/16/2017 15:03",
 		"testOverrideRecognition" : "pre 10/7/2015 15:39",
 		"testUndefinedSuperGrammar" : "pre 9/22/2015 16:04" } }

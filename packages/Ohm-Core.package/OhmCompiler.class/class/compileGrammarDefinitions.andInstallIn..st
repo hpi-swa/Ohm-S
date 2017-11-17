@@ -6,5 +6,5 @@ compileGrammarDefinitions: textualRepresentation andInstallIn: namespaceName
 				match: textualRepresentation 
 				startingFrom: 'Grammars'.
   
-	^ (OhmGrammarOfOhm 
-			semanticAction: (OhmCompileAndInstallGrammar newIn: (OhmNamespace named: namespaceName))) value: csts
+	^ (OhmGrammarOfOhm semanticAction: 
+		(OhmCompileAndInstallGrammar newIn: (OhmNamespace named: namespaceName))) value: csts

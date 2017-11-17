@@ -6,5 +6,6 @@ build
 	definition := self resultRules select: [:r | r isInlineRule not].
 	self assert: definition size = 1.
 	definition first inlineRules: inlineRules.
+	definition first parameters: self parameterNames.
 
 	^ self resultRules 

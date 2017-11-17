@@ -1,4 +1,4 @@
-build-instructions
+rule finalization
 extend: ruleName body: b
 
 	self resultRules add: (OhmRuleExtend 

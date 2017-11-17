@@ -1,0 +1,15 @@
+{
+	"category" : "Ohm-Core-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rule",
+		"grammar" ],
+	"name" : "OhmDuplicateParameterName",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

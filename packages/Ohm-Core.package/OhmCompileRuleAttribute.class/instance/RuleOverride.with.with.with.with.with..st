@@ -1,7 +1,15 @@
 actions
-RuleOverride: aNode with: name with: formals with: description with: x with: body
+RuleOverride: aNode with: name with: parameters with: description with: x with: body
 
-	self currentRule: (self value: name).
+	| bodyValue descriptionValue nameValue |
+	
+	nameValue := self value: name.
+	self currentRule: nameValue.
+	self builder parameterNames: ((self value: parameters) ifNil: [#()]).
+	
+	bodyValue := self value: body.
+	descriptionValue := self value: description.
+	
 	^ self builder 
-		override: (self value: name) 
-		body: (self value: body).
+		override: nameValue
+		body: bodyValue.

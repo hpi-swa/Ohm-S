@@ -11,7 +11,7 @@
 		"setUp" : "pre 5/20/2017 16:55",
 		"tearDown" : "pre 4/22/2015 14:13",
 		"testBindingsAreEvaluatedLazily" : "pre 5/20/2017 16:55",
-		"testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes" : "pre 5/20/2017 16:56",
+		"testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes" : "pre 11/17/2017 17:00",
 		"testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributesAndCached" : "pre 5/20/2017 16:56",
 		"testDuplicateActionsAreNotAllowed" : "pre 5/20/2017 16:56",
 		"testInheritedAttributesWorkTheOtherWayRound" : "pre 5/20/2017 16:56",

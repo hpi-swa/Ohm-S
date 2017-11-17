@@ -4,7 +4,7 @@
 	"instance" : {
 		"assertEvalIntervalResult:matchesExpectationFrom:" : "pre 1/6/2015 10:50",
 		"assertEvalResult:matchesExpectationFrom:" : "pre 1/5/2015 15:26",
-		"assertInput:matchesExpectationFrom:" : "pre 12/3/2014 15:23",
+		"assertInput:matchesExpectationFrom:" : "pre 11/17/2017 17:30",
 		"assertNodeTreeOf:equals:" : "pre 1/7/2015 10:34",
 		"assertParsingExpression:asSyntactic:compliesWithFixture:fromFixtureSet:" : "pre 1/13/2015 13:55",
 		"assertParsingExpression:asSyntactic:compliesWithIntervalFixture:fromFixtureSet:" : "pre 1/6/2015 15:46",
