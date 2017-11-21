@@ -1,4 +1,8 @@
 accessing
 initialize
 
-	self children: OrderedCollection new.
+	self 
+		children: OrderedCollection new;
+		ruleName: '';
+		interval: #()
+	
