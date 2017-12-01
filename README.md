@@ -20,7 +20,7 @@ For detailed information and tutorials on the Ohm grammar descriptions please co
 In general, Ohm/S provides the same features Ohm/JS provides. The Ohm grammar language remains unchanged and Ohm/JS grammars can be used in Ohm/S without modifications as long as they do not contain paramterized rules. To make use of the image concept, grammars can additionally be installed permanently in the image. Further, the specification of semantics is adjusted to match the language concepts of Smalltalk.
 
 ### Persisted and Common Grammar Interface
-Ohm/S allows to create gramamrs as ordinary objects:
+Ohm/S allows to create grammars as ordinary objects:
 
 ````Smalltalk
 OhmGrammar new: 'G { 
@@ -41,7 +41,7 @@ OhmGrammar install:  'G {
 This will create a class with the name ````G```` in the package 'Ohm-Grammars'. It represents the grammar and it understands all messages an Ohm grammar will understand. This class also contains the Ohm grammar language representation of the grammar, which can be found in the class method ````serializedGrammar````. You can move this class to your own package and put it under version control.
 
 ### Ohm/S Semantics Definition
-As Ohm/S is currently based on a previous version of Ohm/JS the semantics are still separated into SemanticActions, InheritedAttributes and SynthesizedAttributes. To implement on of them in Ohm/S, you can subclass the class with the same name. The semantics for specific rules are implemented in methods with the following naming scheme.
+As Ohm/S is currently based on a previous version of Ohm/JS the semantics are still separated into SemanticActions, InheritedAttributes and SynthesizedAttributes. To implement one of them in Ohm/S, you can subclass the class with the same name. The semantics for specific rules are implemented in methods with the following naming scheme.
 
 For synthesized attributes and semantic actions, the first keyword of the method name has to be a camel case version of the rule name with the capitalization of the first character matching the capitalization of the first character of the rule name (hyphens and underscores are removed and the word after them is capitalized). The argument to this first keyword is the node which is currently augmented. After the first one, there has to follow one keyword for each subexpression with an arbitrary name.
 
