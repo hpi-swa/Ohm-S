@@ -81,9 +81,9 @@ As Ohm/S is a mere Smalltalk adaptation of [Ohm](https://github.com/cdglabs/ohm)
 }
 
 @inproceedings{warth_modularSemanticActions_2016,
-  author = {Warth, Alessandro 
-            and Dubroy, Patrick 
-            and Garnock-Jones, Tony},
+  author = {Alessandro Warth 
+            and Patrick Dubroy 
+            and Tony Garnock-Jones},
   title = {Modular Semantic Actions},
   booktitle = {Proceedings of the Symposium on Dynamic Languages (DLS) 2016},
   series = {DLS 2016},
