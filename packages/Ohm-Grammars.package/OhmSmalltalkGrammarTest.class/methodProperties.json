@@ -9,7 +9,7 @@
 		"testGrammarExists" : "pre 5/13/2015 18:09",
 		"testGrammarParsesAssignmentOperations" : "pre 7/27/2015 16:44",
 		"testGrammarParsesBinaryMessageChains" : "pre 7/27/2015 16:44",
-		"testGrammarParsesBinaryMessageSelectors" : "pre 7/27/2015 16:43",
+		"testGrammarParsesBinaryMessageSelectors" : "pre 2/13/2018 20:43",
 		"testGrammarParsesBinaryMethodHeaders" : "pre 7/27/2015 16:45",
 		"testGrammarParsesBindableIdentifier" : "pre 7/27/2015 16:45",
 		"testGrammarParsesBlockLiterals" : "pre 7/27/2015 16:46",

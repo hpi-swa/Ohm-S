@@ -140,7 +140,7 @@ Reference =
     identifier
 
 Statement =
-    AssignmentOperation? Expression
+    AssignmentOperation* Expression
 
 UnaryMessage =
     ~keyword UnaryMessageSelector
@@ -158,7 +158,7 @@ baseNIntegerLiteral =
 	numberSigns? alnum+
 
 binaryMessageSelector =
-    binarySelectorChar binarySelectorChar?
+    binarySelectorChar binarySelectorChar? binarySelectorChar?
 
 binarySelectorChar =
     "~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
