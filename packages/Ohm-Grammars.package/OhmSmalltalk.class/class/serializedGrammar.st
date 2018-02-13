@@ -24,7 +24,7 @@ BinaryMethodHeader =
     binaryMessageSelector bindableIdentifier
 
 blockArgument =
-	":" letter alnum*
+	":" space* letter alnum*
 
 BlockArguments =
 	blockArgument+ "|"
@@ -39,7 +39,7 @@ CascadedMessage =
 	";" MessageChain
 
 ExecutableCode =
-   LocalVariableDeclarationList? MoreExecutableCode
+   LocalVariableDeclarationList? Pragma? MoreExecutableCode
 
 MoreExecutableCode = 
     Statements FinalStatement?
@@ -52,9 +52,6 @@ FinalStatement =
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?
-
-FinalStatement =
-	"^"? Statement
 
 KeywordMessage =
     KeywordMessageSegment+
