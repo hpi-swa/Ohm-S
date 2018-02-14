@@ -8,7 +8,7 @@ ArrayLiteral =
       | LiteralArrayLiteral
 
 AssignmentOperation =
-    bindableIdentifier ":="
+    bindableIdentifier assignmentOperator
 
 BinaryMessage =
     binaryMessageSelector BinaryMessageOperand
@@ -146,6 +146,9 @@ UnaryMessageSelector =
 UnaryMethodHeader =
     UnaryMessageSelector
 
+assignmentOperator =
+    ":=" | "_"
+
 baseNIntegerLiteral =
 	numberSigns? alnum+
 
@@ -244,7 +247,7 @@ stringLiteral =
 symbolInArrayLiteral =
     letter (alnum | ":")* --plain
     | binaryMessageSelector --binarySelector
-    | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | ":=")+ --code
+    | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | assignmentOperator)+ --code
 
 symbolLiteral =
 	"#" letter (alnum | ":")* -- normal
