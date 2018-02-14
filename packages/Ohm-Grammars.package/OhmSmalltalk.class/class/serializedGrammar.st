@@ -109,8 +109,8 @@ ObjectArrayLiteral =
     "{" ObjectArrayLiteralElement* "}"
 
 ObjectArrayLiteralElement =
-  Expression "." --normal
-  | Expression --finalExpression
+  Statement "." --normal
+  | Statement --finalExpression
 
 Operand =
     Literal
@@ -192,7 +192,7 @@ floatingPointLiteral
          | normalFloatingPointLiteral
 
 identifier =
-	letter alnum*
+	letter (alnum | "_")*
 
 integerLiteral = 
 	numberSigns? radix "r" baseNIntegerLiteral --radix
@@ -250,8 +250,9 @@ symbolInArrayLiteral =
     | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | assignmentOperator)+ --code
 
 symbolLiteral =
-	"#" letter (alnum | ":")* -- normal
+	"#" letter (alnum | ":" | "_")* -- normal
 	| "#" stringLiteral -- fromString
 	| "#" binaryMessageSelector -- fromBinarySelector
+	| "#:" -- colonSymbol
 
 unaryPragma = identifier}'
