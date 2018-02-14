@@ -26,7 +26,8 @@ BlockArguments =
 	blockArgument+ "|"
 
 BlockLiteral =
-	"[" BlockArguments? ExecutableCode? "]"
+	"[" BlockArguments? ExecutableCode? "]" -- normal
+	| "[" blockArgument+ "]" -- specialEmpty
 
 ByteArrayLiteral =
 	"#[" integerLiteral* "]"
@@ -242,6 +243,7 @@ stringLiteral =
 symbolInArrayLiteral =
     letter (alnum | ":")* --plain
     | binaryMessageSelector --binarySelector
+    | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | ":=")+ --code
 
 symbolLiteral =
 	"#" letter (alnum | ":")* -- normal
