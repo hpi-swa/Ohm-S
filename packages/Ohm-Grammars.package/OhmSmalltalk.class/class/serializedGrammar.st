@@ -250,9 +250,9 @@ symbolInArrayLiteral =
     | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | assignmentOperator)+ --code
 
 symbolLiteral =
-	"#" letter (alnum | ":" | "_")* -- normal
-	| "#" stringLiteral -- fromString
-	| "#" binaryMessageSelector -- fromBinarySelector
+	"#" space* letter (alnum | ":" | "_")* -- normal
+	| "#" space*  stringLiteral -- fromString
+	| "#" space*  binaryMessageSelector -- fromBinarySelector
 	| "#:" -- colonSymbol
 
 unaryPragma = identifier}'
