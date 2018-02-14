@@ -58,7 +58,7 @@ KeywordMethodHeader =
 KeywordMethodHeaderSegment =
     keyword bindableIdentifier
 
-KeywordPragma = pragmaKey literalArrayLiteralElement
+KeywordPragma = pragmaKey pragmaLiteral*
 
 Literal =
 	constantReference
@@ -215,6 +215,8 @@ numberSigns
 	= "-"
 
 pragmaKey = identifier ":"
+
+pragmaLiteral = ~pragmaKey ~">" literalArrayLiteralElement
 
 pseudoVariableReference = 
 	"self" | "super" | "thisContext"
