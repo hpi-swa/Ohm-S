@@ -11,6 +11,7 @@ testGrammarParsesSymbolArrayLiterals
 		{'#(+1.2)' 		. {#symbolInArrayLiteral => '+' .#floatingPointLiteral =>'1.2' } } . 
 		{'#(false)' 		. {#constantReference => 'false'} } .
 		{'#(''asdf'')' 	. {#stringLiteral => '''asdf'''  }  } .
+		{'#($a)' 		. {#characterLiteral => '$a'  }  } .
 		{'#(#a #b)' 		. {#symbolLiteral => '#a' . #symbolLiteral => '#b'} } }
 		do: [ :t | |input r| input := t first.
 			r := (OhmSmalltalk match: input startingFrom: ruleName) cst.

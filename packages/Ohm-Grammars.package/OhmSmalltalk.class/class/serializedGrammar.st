@@ -1,8 +1,7 @@
 serialized grammar
 serializedGrammar
+^ 'OhmSmalltalk <: BuiltInRules {
 
-^ 'Ohm-Core-Grammars.OhmSmalltalk {
-  
 ArrayLiteral =
 	ByteArrayLiteral
 	| ObjectArrayLiteral
@@ -23,9 +22,6 @@ BinaryMessageOperand =
 BinaryMethodHeader =
     binaryMessageSelector bindableIdentifier
 
-blockArgument =
-	":" space* letter alnum*
-
 BlockArguments =
 	blockArgument+ "|"
 
@@ -33,7 +29,7 @@ BlockLiteral =
 	"[" BlockArguments? ExecutableCode? "]"
 
 ByteArrayLiteral =
-	"#[" byteArrayNumber* "]"
+	"#[" integerLiteral* "]"
 
 CascadedMessage =
 	";" MessageChain
@@ -41,17 +37,11 @@ CascadedMessage =
 ExecutableCode =
    LocalVariableDeclarationList? Pragma? MoreExecutableCode
 
-MoreExecutableCode = 
-    Statements FinalStatement?
-
-Statements =
-    (~MethodReturnOperator Statement ".")*
+Expression =
+	Operand (MessageChain CascadedMessage*)?
 
 FinalStatement =
 	"^"? Statement "."?
-
-Expression =
-	Operand (MessageChain CascadedMessage*)?
 
 KeywordMessage =
     KeywordMessageSegment+
@@ -68,6 +58,8 @@ KeywordMethodHeader =
 KeywordMethodHeaderSegment =
     keyword bindableIdentifier
 
+KeywordPragma = pragmaKey literalArrayLiteralElement
+
 Literal =
 	constantReference
 	| scaledDecimalLiteral
@@ -81,6 +73,9 @@ Literal =
 
 LiteralArrayLiteral =
   "#(" literalArrayLiteralElement*  ")"
+
+LiteralArrayLiteralInLiteralArray =
+  "#"? "(" literalArrayLiteralElement*  ")"
 
 LocalVariableDeclarationList =
  "|" bindableIdentifier* "|"
@@ -103,6 +98,9 @@ MethodHeader =
 MethodReturnOperator =
     "^"
 
+MoreExecutableCode = 
+    Statements FinalStatement?
+
 NestedExpression =
     "(" Statement ")"
 
@@ -118,26 +116,22 @@ Operand =
     | Reference
     | NestedExpression
 
-PragmaValues = KeywordPragma+ | unaryPragma 
-
-unaryPragma = identifier
-
-KeywordPragma = pragmaKey Literal
-
-pragmaKey = identifier ":"
-
 Pragma = 
   "<" PragmaValues ">"
 
+PragmaValues = KeywordPragma+ | unaryPragma
+
 Pragmas =
   Pragma*
-
 
 Reference = 
     identifier
 
 Statement =
     AssignmentOperation* Expression
+
+Statements =
+    (~MethodReturnOperator Statement? ".")*
 
 UnaryMessage =
     ~keyword UnaryMessageSelector
@@ -162,6 +156,9 @@ binarySelectorChar =
 
 bindableIdentifier =
 	~(reservedIdentifier space) identifier
+
+blockArgument =
+	":" space* letter alnum*
 
 byteArrayNumber =
 	digit 				-- oneDigit
@@ -207,6 +204,8 @@ literalArrayLiteralElement =
     | stringLiteral
     | symbolInArrayLiteral
     | symbolLiteral
+    | characterLiteral
+    | LiteralArrayLiteralInLiteralArray
 
 normalFloatingPointLiteral
 	= decimalIntegerLiteral ("." digit+)? exponent --exponent
@@ -214,6 +213,8 @@ normalFloatingPointLiteral
 
 numberSigns
 	= "-"
+
+pragmaKey = identifier ":"
 
 pseudoVariableReference = 
 	"self" | "super" | "thisContext"
@@ -243,4 +244,6 @@ symbolInArrayLiteral =
 symbolLiteral =
 	"#" letter (alnum | ":")* -- normal
 	| "#" stringLiteral -- fromString
-	| "#" binaryMessageSelector -- fromBinarySelector}'
+	| "#" binaryMessageSelector -- fromBinarySelector
+
+unaryPragma = identifier}'
