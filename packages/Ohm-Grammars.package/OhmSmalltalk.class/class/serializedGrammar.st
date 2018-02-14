@@ -26,8 +26,7 @@ BlockArguments =
 	blockArgument+ "|"
 
 BlockLiteral =
-	"[" BlockArguments? ExecutableCode? "]" -- normal
-	| "[" blockArgument+ "]" -- specialEmpty
+	"[" BlockArguments? ExecutableCode? "]"
 
 ByteArrayLiteral =
 	"#[" integerLiteral* "]"
@@ -36,7 +35,7 @@ CascadedMessage =
 	";" MessageChain
 
 ExecutableCode =
-   LocalVariableDeclarationList? Pragma? MoreExecutableCode
+   LocalVariableDeclarationList? Pragmas? MoreExecutableCode
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?
@@ -203,6 +202,7 @@ literalArrayLiteralElement =
     | integerLiteral
     | constantReference
     | stringLiteral
+    | ByteArrayLiteral
     | symbolInArrayLiteral
     | symbolLiteral
     | characterLiteral
@@ -243,7 +243,6 @@ stringLiteral =
 symbolInArrayLiteral =
     letter (alnum | ":")* --plain
     | binaryMessageSelector --binarySelector
-    | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | ":=")+ --code
 
 symbolLiteral =
 	"#" letter (alnum | ":")* -- normal
