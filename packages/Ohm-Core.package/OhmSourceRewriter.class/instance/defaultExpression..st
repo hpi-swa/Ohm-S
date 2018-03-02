@@ -1,10 +1,10 @@
 standard attributes
 defaultExpression: aNode
 
-	|isSyntacticRule|
+	| isSyntacticRule |
 
 	isSyntacticRule := self isNameOfSyntacticRule: aNode ruleName.
 	^ aNode children inject: '' into: [ :string :child |
 		string , (isSyntacticRule 
-			ifTrue: [ ' ']
+			ifTrue: [' ']
 			ifFalse: ['']) , (self value: child) ]
