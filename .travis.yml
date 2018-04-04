@@ -6,3 +6,11 @@ smalltalk:
   - Squeak-5.1
   - Squeak-5.0
   - Squeak-4.6
+  
+os:
+  - linux
+  - osx
+
+matrix:
+    allow_failures:
+        - smalltalk: Squeak-trunk
