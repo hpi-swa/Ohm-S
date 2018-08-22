@@ -4,7 +4,7 @@ Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm
 
 ## How to install
 1. Get [Squeak 4.6 or later](http://www.squeak.org)
-2. Load [Metacello](https://github.com/dalehenrich/metacello-work)
+2. Load [Metacello](https://github.com/metacello/metacello)
 3. Finally, load Ohm/S with the following command:
 
 ```Smalltalk
