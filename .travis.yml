@@ -3,7 +3,9 @@ sudo: false
 
 smalltalk:
   - Squeak-trunk
+  - Squeak64-trunk
   - Squeak-5.2
+  - Squeak64-5.2
   - Squeak-5.1
   - Squeak-5.0
   - Squeak-4.6
@@ -11,7 +13,20 @@ smalltalk:
 os:
   - linux
   - osx
+  - windows
 
 matrix:
+    exclude:
+        - os: windows
+          smalltalk: Squeak-trunk
+        - os: windows
+          smalltalk: Squeak-5.2
+        - os: windows
+          smalltalk: Squeak-5.1
+        - os: windows
+          smalltalk: Squeak-5.0
+        - os: windows
+          smalltalk: Squeak-4.6
     allow_failures:
         - smalltalk: Squeak-trunk
+        - smalltalk: Squeak64-trunk
