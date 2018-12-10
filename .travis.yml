@@ -13,20 +13,8 @@ smalltalk:
 os:
   - linux
   - osx
-  - windows
 
 matrix:
-    exclude:
-        - os: windows
-          smalltalk: Squeak-trunk
-        - os: windows
-          smalltalk: Squeak-5.2
-        - os: windows
-          smalltalk: Squeak-5.1
-        - os: windows
-          smalltalk: Squeak-5.0
-        - os: windows
-          smalltalk: Squeak-4.6
     allow_failures:
         - smalltalk: Squeak-trunk
         - smalltalk: Squeak64-trunk
