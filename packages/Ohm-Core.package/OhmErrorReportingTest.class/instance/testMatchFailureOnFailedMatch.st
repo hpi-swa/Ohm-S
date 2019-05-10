@@ -1,4 +1,4 @@
-testing #2
+tests
 testMatchFailureOnFailedMatch
 
 	| g result |
