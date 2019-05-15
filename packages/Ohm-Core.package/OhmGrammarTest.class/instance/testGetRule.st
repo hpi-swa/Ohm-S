@@ -1,4 +1,4 @@
-testing
+tests
 testGetRule
 
 	self assert: self fixtureRuleFoo equals: (self fixtureGrammar ruleNamed: #foo).

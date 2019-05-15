@@ -1,4 +1,4 @@
-testing
+tests
 testOverrideRecognition
 
 	| g1 g2 |

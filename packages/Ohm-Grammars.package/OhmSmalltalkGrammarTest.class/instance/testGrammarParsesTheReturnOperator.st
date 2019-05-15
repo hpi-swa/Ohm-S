@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesTheReturnOperator
 	
 	startRule := #MethodReturnOperator.

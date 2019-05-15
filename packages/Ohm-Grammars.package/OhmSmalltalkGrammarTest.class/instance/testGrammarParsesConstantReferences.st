@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesConstantReferences
 	{	{'true' . 		#constantReference } .
 	 	{'false' . 	#constantReference } .

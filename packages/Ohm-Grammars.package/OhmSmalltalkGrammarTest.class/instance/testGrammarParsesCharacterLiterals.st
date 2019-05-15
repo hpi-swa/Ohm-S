@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesCharacterLiterals
 
 	{	{'$a' . 	#characterLiteral } .

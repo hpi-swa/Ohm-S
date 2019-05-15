@@ -1,4 +1,4 @@
-testing
+tests
 testMatchString
 
 	self assert: (self fixtureStream matchString: 'hal').

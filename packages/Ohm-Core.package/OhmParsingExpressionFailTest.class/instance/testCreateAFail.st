@@ -1,4 +1,4 @@
-testing
+tests
 testCreateAFail
 
 	OhmPExprFail new.

@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesStatements
 	
 	startRule := #Statement.

@@ -1,4 +1,4 @@
-testing
+tests
 testNotificationOnChangeRule
 
 	| g spy |

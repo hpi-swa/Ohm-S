@@ -1,4 +1,4 @@
-testing
+tests
 testGetNextToken
 
 	self assert: self fixtureStream next 

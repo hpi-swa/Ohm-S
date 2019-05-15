@@ -1,4 +1,4 @@
-testing
+tests
 testParameterNamesHaveToBeUnique
 
 	| pexpr rule testGrammar |

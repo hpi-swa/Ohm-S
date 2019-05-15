@@ -1,4 +1,4 @@
-testing
+tests
 testBoostrapGrammarCanParseRuleInGrammarConstruct
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)

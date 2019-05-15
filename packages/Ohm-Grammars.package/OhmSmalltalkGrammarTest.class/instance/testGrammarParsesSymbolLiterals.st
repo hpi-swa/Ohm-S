@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesSymbolLiterals
 	
 	startRule := #symbolLiteral.

@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesFloatingPoints
 	
 	startRule := #floatingPointLiteral.

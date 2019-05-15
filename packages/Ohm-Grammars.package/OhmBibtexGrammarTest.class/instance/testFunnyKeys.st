@@ -1,4 +1,4 @@
-testing
+tests
 testFunnyKeys
 
 	startRule := #BibtexDB.

@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesBinaryMessageChains
 	
 	startRule := #BinaryMessageChain.

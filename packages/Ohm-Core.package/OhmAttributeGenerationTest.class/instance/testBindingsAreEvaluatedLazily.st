@@ -1,4 +1,4 @@
-testing
+tests
 testBindingsAreEvaluatedLazily
 
 	| g action result |

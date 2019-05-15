@@ -1,4 +1,4 @@
-testing
+tests
 testInheritedAttributesWorkTheOtherWayRound
 
 	| depth g cst collector result |

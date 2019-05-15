@@ -1,4 +1,4 @@
-testing
+tests
 testCreateAnInterval
 
 	OhmInterval newOn: 'hello world!'.

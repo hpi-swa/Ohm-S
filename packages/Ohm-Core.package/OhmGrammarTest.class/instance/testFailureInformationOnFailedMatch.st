@@ -1,4 +1,4 @@
-testing
+tests
 testFailureInformationOnFailedMatch
 
 	"Error messages are fine when displayed in monospace. --pre"

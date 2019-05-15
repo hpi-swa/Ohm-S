@@ -1,4 +1,4 @@
-testing
+tests
 testCompileGrammarWithExistingSuperclass
 
 	| aSuperGrammar aGrammar |

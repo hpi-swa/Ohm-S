@@ -1,4 +1,4 @@
-testing
+tests
 testCreateAMany
 
 	OhmPExprMany newOn: nil minimalMatches: 0.

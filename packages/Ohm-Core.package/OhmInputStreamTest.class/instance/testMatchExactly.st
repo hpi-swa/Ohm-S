@@ -1,4 +1,4 @@
-testing
+tests
 testMatchExactly
 
 	self assert: (self fixtureStream matchExactly: $h).

@@ -1,4 +1,4 @@
-testing
+tests
 testExtendRecognition
 
 	| g1 g2 |

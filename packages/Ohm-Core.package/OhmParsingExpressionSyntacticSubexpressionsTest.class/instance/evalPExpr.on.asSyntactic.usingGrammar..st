@@ -1,4 +1,4 @@
-testing
+tests
 evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar
 
 	| rules state | 

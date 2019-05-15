@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesComplicatedNumbers
 
 	startRule := #integerLiteral.

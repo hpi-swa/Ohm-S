@@ -1,4 +1,4 @@
-testing
+tests
 testEmptyParams
 
 	| fooRule testGrammar |

@@ -1,4 +1,4 @@
-testing
+tests
 testSemanticActionCanBeCreated
 
 	self fixtureGrammar semanticAction: OhmAttributeGenerationTestAttribute new.

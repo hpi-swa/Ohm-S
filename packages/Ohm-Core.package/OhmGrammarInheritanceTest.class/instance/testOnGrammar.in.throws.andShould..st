@@ -1,4 +1,4 @@
-testing
+tests
 testOnGrammar: grammarDescription in: packageName throws: errorType andShould: blockWithAssertions
 
 	SystemChangeNotifier uniqueInstance doSilently: [ | signal |

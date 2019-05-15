@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesScaledDecimalLiteral
 	{	{'2s' . 		#scaledDecimalLiteral } .
 	 	{'2s' . 		#scaledDecimalLiteral } .

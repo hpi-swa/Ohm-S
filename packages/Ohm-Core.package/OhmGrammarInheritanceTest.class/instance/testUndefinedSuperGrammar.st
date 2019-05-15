@@ -1,4 +1,4 @@
-testing
+tests
 testUndefinedSuperGrammar
 
 	self testOnGrammar:  'G1 <: G2 {}' 

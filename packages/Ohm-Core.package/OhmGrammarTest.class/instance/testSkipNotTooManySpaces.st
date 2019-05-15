@@ -1,4 +1,4 @@
-testing
+tests
 testSkipNotTooManySpaces
 	
 	| state testInput |

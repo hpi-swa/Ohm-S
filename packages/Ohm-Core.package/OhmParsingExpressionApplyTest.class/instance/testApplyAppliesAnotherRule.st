@@ -1,4 +1,4 @@
-testing
+tests
 testApplyAppliesAnotherRule
 	
 	| applyExpression |

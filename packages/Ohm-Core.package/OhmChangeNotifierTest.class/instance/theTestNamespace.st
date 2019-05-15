@@ -1,4 +1,4 @@
-testing
+tests
 theTestNamespace
 
 	^ OhmNamespace named: 'ohmChangeNotifierTestNamespace'

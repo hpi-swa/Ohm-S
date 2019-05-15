@@ -1,4 +1,4 @@
-testing
+tests
 testNotStillMaintainsTheInterval
 
 	| notExpression |

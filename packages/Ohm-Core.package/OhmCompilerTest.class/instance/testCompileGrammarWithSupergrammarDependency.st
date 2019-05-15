@@ -1,4 +1,4 @@
-testing
+tests
 testCompileGrammarWithSupergrammarDependency
 
 	| aGrammar aSuperGrammar createdGrammar |

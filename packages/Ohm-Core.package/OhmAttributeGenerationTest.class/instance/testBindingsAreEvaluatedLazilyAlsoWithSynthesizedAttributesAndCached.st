@@ -1,4 +1,4 @@
-testing
+tests
 testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributesAndCached
 
 	| g action result |

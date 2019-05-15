@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesSimpleNumbers
 
 	{	{'1' . 		#integerLiteral } .

@@ -1,4 +1,4 @@
-testing
+tests
 testOverride
 
 	self makeAndInstallGrammar: 'G1 { number = digit }' in: 'inheritanceTestNameSpace1'.

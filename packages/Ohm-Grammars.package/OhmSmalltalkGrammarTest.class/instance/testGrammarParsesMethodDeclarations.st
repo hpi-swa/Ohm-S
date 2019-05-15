@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesMethodDeclarations
 	
 	startRule := #MethodDeclaration.

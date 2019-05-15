@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesLiteralArrayInLiteralArray
 	
 	startRule := #LiteralArrayLiteral.

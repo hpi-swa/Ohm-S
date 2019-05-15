@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesKeywordMessages
 	
 	startRule := #KeywordMessage.

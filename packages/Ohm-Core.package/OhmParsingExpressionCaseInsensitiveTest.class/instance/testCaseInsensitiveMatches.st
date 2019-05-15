@@ -1,4 +1,4 @@
-testing
+tests
 testCaseInsensitiveMatches
 	
 	| actualExpression freshExpression |

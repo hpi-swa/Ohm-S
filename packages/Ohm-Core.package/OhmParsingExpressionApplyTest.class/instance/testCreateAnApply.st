@@ -1,4 +1,4 @@
-testing
+tests
 testCreateAnApply
 
 	OhmPExprApply newOn: #firstRule.

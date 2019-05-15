@@ -1,4 +1,4 @@
-testing
+tests
 testCommentCommand
 
 	startRule := #BibtexDB.

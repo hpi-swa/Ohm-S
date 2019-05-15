@@ -1,4 +1,4 @@
-testing
+tests
 testAComment
 	
 	startRule := #Comment.

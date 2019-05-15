@@ -1,4 +1,4 @@
-testing
+tests
 testManyStarCreatesIntervals
 
 	| starExpression |

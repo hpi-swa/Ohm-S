@@ -1,4 +1,4 @@
-testing
+tests
 testCreateASeq
 
 	OhmPExprSeq newOn: {}.

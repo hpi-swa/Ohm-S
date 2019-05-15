@@ -1,4 +1,4 @@
-testing
+tests
 testBasic
 	
 	startRule := #BibtexDB.

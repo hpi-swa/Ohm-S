@@ -1,4 +1,4 @@
-testing
+tests
 testOptMatchesIfItPleases
 	| optExpression |
 	optExpression := OhmPExprOpt

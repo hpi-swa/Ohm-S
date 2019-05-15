@@ -1,4 +1,4 @@
-testing
+tests
 testSerializerToRecipe
 
 	| g g2 recipe |

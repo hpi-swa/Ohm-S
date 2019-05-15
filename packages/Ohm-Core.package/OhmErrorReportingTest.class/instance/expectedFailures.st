@@ -1,4 +1,4 @@
-testing
+failures
 expectedFailures 
 
 	^ #(testMatchFailureOnFailedMatch testMatchFailureOnNonStringInput)

@@ -1,4 +1,4 @@
-testing
+tests
 testComplicatedAuthors
 	
 	startRule := #Authors.

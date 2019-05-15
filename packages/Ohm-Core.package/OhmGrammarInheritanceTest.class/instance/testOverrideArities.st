@@ -1,4 +1,4 @@
-testing
+tests
 testOverrideArities
 
 	self makeAndInstallGrammar: 'M1 { foo = "foo" }' in: 'inheritanceTestNameSpace1'.

@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesByteArrayLiterals
 	
 	startRule := #ArrayLiteral.

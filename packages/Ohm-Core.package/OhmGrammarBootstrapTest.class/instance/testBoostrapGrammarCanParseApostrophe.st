@@ -1,4 +1,4 @@
-testing
+tests
 testBoostrapGrammarCanParseApostrophe
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)

@@ -1,4 +1,4 @@
-testing
+tests
 testLeftRecursionHandlingAlsoCreatesCorrectIntervals
 
 	" This is the structure which we want to check for intervals:

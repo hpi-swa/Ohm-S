@@ -1,4 +1,4 @@
-testing
+tests
 testCommandOrEntry
 	
 	startRule := #CommandOrEntry.

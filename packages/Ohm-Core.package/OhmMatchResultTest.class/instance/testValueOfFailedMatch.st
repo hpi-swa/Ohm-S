@@ -1,4 +1,4 @@
-testing
+tests
 testValueOfFailedMatch
 	| r |
 	r := OhmFailedMatchResult new: self successfulState.

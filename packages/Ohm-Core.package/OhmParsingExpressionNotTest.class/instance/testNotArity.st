@@ -1,4 +1,4 @@
-testing
+tests
 testNotArity
 
 	self assert: 0 equals: (OhmPExprNot newOn: OhmParsingExpression new) arity.

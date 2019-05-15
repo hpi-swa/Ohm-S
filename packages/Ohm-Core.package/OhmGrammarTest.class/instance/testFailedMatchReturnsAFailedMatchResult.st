@@ -1,4 +1,4 @@
-testing
+tests
 testFailedMatchReturnsAFailedMatchResult
 	| r |
 	r := self fixtureGrammar match: 'bar' startingFrom: #foo.

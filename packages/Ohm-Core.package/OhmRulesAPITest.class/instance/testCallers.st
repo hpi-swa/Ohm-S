@@ -1,4 +1,4 @@
-testing
+tests
 testCallers
 
 	| barRule fooRule testGrammar |

@@ -1,4 +1,4 @@
-testing
+tests
 testDoesMatch
 
 	self assert: (self fixtureGrammar doesMatch: 'foo' startingFrom: 'foo').

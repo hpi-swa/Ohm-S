@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesExecutableCode
 	
 	startRule := #ExecutableCode.

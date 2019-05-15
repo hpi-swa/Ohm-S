@@ -1,4 +1,4 @@
-testing
+utility
 makeAndInstallGrammar: grammarDefinition in: packageName
 
 	SystemChangeNotifier uniqueInstance doSilently: [

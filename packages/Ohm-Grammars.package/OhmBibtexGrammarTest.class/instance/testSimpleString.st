@@ -1,4 +1,4 @@
-testing
+tests
 testSimpleString
 
 	startRule := #BibtexDB.

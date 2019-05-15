@@ -1,4 +1,4 @@
-testing
+tests
 testDefinitionIsCorrect
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)

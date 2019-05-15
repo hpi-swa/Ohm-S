@@ -1,4 +1,4 @@
-testing
+tests
 testBoostrapGrammarCanParseWhitespaceAfterGrammar
 
 	self assert: ((OhmGrammarOfOhm bootstrapOhmGrammar)

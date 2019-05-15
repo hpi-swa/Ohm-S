@@ -1,4 +1,4 @@
-testing
+tests
 testGrammarParsesIdentifier
 	
 	startRule := #identifier.

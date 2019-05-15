@@ -1,4 +1,4 @@
-testing
+tests
 testExtendParameterArities
 
 	self makeAndInstallGrammar: 'M1 { foo<A> = "foo" }' in: 'inheritanceTestNameSpace1'.

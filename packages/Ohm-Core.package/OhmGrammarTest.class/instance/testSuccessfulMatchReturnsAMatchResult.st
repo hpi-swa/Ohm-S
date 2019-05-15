@@ -1,4 +1,4 @@
-testing
+tests
 testSuccessfulMatchReturnsAMatchResult
 	| r |
 	r := self fixtureGrammar match: 'foo' startingFrom: #foo.
