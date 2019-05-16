@@ -153,7 +153,7 @@ baseNIntegerLiteral =
 	numberSigns? alnum+
 
 binaryMessageSelector =
-    binarySelectorChar binarySelectorChar? binarySelectorChar?
+    binarySelectorChar+
 
 binarySelectorChar =
     "~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
