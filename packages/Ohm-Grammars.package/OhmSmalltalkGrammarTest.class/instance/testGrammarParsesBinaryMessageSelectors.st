@@ -1,7 +1,6 @@
-tests
 testGrammarParsesBinaryMessageSelectors
 	
 	startRule := #binaryMessageSelector.
 	self 
-		shouldParseAll: { '+' . '-' . '=' . '?' . '?!' . '@?' . '*!' . '==>' };
+		shouldParseAll: { '+' . '-' . '=' . '?' . '&' . '%' . '*' . '\\' . '<' . '>'  . '|' . '!' . '~' . ',' . '?!' . '@?' . '*!' . '==>' . '@@@@' . '====='};
 		shouldntParseAny: { '*a' . '' . 'aa' . 'a*' . 'a:' . ':a' . '+ +'}.
