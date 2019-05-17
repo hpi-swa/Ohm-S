@@ -1,3 +1,4 @@
+tests
 testGrammarParsesBinaryMessageSelectors
 	
 	startRule := #binaryMessageSelector.
