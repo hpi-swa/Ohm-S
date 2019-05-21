@@ -7,4 +7,4 @@ defaultExpression: aNode
 	^ (aNode children inject: '' into: [ :string :child |
 		string , (isSyntacticRule 
 			ifTrue: [' ']
-			ifFalse: ['']) , (self value: child) ]) withSeparatorsCompacted withBlanksTrimmed
+			ifFalse: ['']) , (self value: child) ]) withBlanksTrimmed
