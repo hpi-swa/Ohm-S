@@ -105,6 +105,7 @@ nameFirst
 
 nameRest
     = "_"
+    | "-"
     | alnum
 
 number
