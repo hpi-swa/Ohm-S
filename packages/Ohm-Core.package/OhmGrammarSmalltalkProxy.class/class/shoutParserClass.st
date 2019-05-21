@@ -1,0 +1,4 @@
+styling
+shoutParserClass
+	
+	^ OhmSHRuleParser

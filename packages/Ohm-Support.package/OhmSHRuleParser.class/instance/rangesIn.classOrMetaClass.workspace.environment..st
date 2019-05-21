@@ -1,8 +1,8 @@
-as yet unclassified
+parse
 rangesIn: aString classOrMetaClass: aClass workspace: workspace environment: environment 
 	
 	| cst rangeSetting grammarSource offset |
-	((aString beginsWith: 'serializedGrammar') and: [aString includes: '''']) ifFalse: [
+	((aString beginsWith: 'serializedGrammar') and: [aString includesSubstring: '''']) ifFalse: [
 		^ super 
 			rangesIn: aString 
 			classOrMetaClass: aClass 
