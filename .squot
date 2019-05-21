@@ -1,0 +1,7 @@
+OrderedDictionary {
+	'packages\/Ohm-Core.package' : #SquotCypressCodeSerializer,
+	'packages\/Ohm-Grammars.package' : #SquotCypressCodeSerializer,
+	'packages\/Ohm-Semantics.package' : nil,
+	'packages\/Ohm-Support.package' : nil,
+	'packages\/BaselineOfOhm.package' : nil
+}

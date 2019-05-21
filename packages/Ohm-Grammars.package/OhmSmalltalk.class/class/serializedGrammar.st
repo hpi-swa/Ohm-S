@@ -173,7 +173,7 @@ characterLiteral =
 	"$" (any | space)
 
 comment =
-	"\"" (~"\"" (any | " " | "\n"))* "\""
+	"\"" (~"\"" any)* "\""
 
 constantReference =
 	"true"
