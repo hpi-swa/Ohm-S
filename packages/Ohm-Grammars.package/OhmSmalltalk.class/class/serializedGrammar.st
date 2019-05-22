@@ -5,22 +5,22 @@ serializedGrammar
 ArrayLiteral =
 	ByteArrayLiteral
 	| ObjectArrayLiteral
-      | LiteralArrayLiteral
+	| LiteralArrayLiteral
 
 AssignmentOperation =
-    bindableIdentifier assignmentOperator
+	bindableIdentifier assignmentOperator
 
 BinaryMessage =
-    binaryMessageSelector BinaryMessageOperand
+	binaryMessageSelector BinaryMessageOperand
 
 BinaryMessageChain =
-    BinaryMessage+
+	BinaryMessage+
 
 BinaryMessageOperand =
-    Operand UnaryMessageChain?
+	Operand UnaryMessageChain?
 
 BinaryMethodHeader =
-    binaryMessageSelector bindableIdentifier
+	binaryMessageSelector bindableIdentifier
 
 BlockArguments =
 	blockArgument+ "|"
@@ -36,7 +36,7 @@ CascadedMessage =
 	";" MessageChain
 
 ExecutableCode =
-   LocalVariableDeclarationList? Pragmas? MoreExecutableCode
+	LocalVariableDeclarationList? Pragmas? MoreExecutableCode
 
 Expression =
 	Operand (MessageChain CascadedMessage*)?
@@ -45,21 +45,22 @@ FinalStatement =
 	"^"? Statement "."?
 
 KeywordMessage =
-    KeywordMessageSegment+
+	KeywordMessageSegment+
 
 KeywordMessageArgument =
-    BinaryMessageOperand BinaryMessageChain?
+	BinaryMessageOperand BinaryMessageChain?
 
 KeywordMessageSegment =
-    keyword KeywordMessageArgument
+	keyword KeywordMessageArgument
 
 KeywordMethodHeader =
-    KeywordMethodHeaderSegment+
+	KeywordMethodHeaderSegment+
 
 KeywordMethodHeaderSegment =
-    keyword bindableIdentifier
+	keyword bindableIdentifier
 
-KeywordPragma = pragmaKey pragmaLiteral*
+KeywordPragma =
+	pragmaKey pragmaLiteral*
 
 Literal =
 	constantReference
@@ -73,90 +74,89 @@ Literal =
 	| BlockLiteral
 
 LiteralArrayLiteral =
-  "#(" literalArrayLiteralElement*  ")"
+	"#(" literalArrayLiteralElement*  ")"
 
 LiteralArrayLiteralInLiteralArray =
-  "#"? "(" literalArrayLiteralElement*  ")"
+	"#"? "(" literalArrayLiteralElement*  ")"
 
 LocalVariableDeclarationList =
- "|" bindableIdentifier* "|"
+	"|" bindableIdentifier* "|"
 
 MessageChain =
-    KeywordMessage --keyword
-    | BinaryMessage BinaryMessageChain? KeywordMessage? --binary
-    | UnaryMessage UnaryMessageChain? BinaryMessageChain? KeywordMessage? --unary
+	KeywordMessage --keyword
+	| BinaryMessage BinaryMessageChain? KeywordMessage? --binary
+	| UnaryMessage UnaryMessageChain? BinaryMessageChain? KeywordMessage? --unary
 
 MethodDeclaration =
-  MethodHeader 
-  Pragmas
-  ExecutableCode
+	MethodHeader Pragmas ExecutableCode
 
 MethodHeader =
-    KeywordMethodHeader
-    | BinaryMethodHeader
-    | UnaryMethodHeader
+	KeywordMethodHeader
+	| BinaryMethodHeader
+	| UnaryMethodHeader
 
 MethodReturnOperator =
-    "^"
+	"^"
 
 MoreExecutableCode = 
-    Statements FinalStatement?
+	Statements FinalStatement?
 
 NestedExpression =
-    "(" Statement ")"
+	"(" Statement ")"
 
 ObjectArrayLiteral =
-    "{" ObjectArrayLiteralElement* "}"
+	"{" ObjectArrayLiteralElement* "}"
 
 ObjectArrayLiteralElement =
-  Statement "." --normal
-  | Statement --finalExpression
+	Statement "." --normal
+	| Statement --finalExpression
 
 Operand =
-    Literal
-    | Reference
-    | NestedExpression
+	Literal
+	| Reference
+	| NestedExpression
 
 Pragma = 
-  "<" PragmaValues ">"
+	"<" PragmaValues ">"
 
-PragmaValues = KeywordPragma+ | unaryPragma
+PragmaValues =
+	KeywordPragma+ | unaryPragma
 
 Pragmas =
-  Pragma*
+	Pragma*
 
 Reference = 
-    identifier
+	identifier
 
 Statement =
-    AssignmentOperation* Expression
+	AssignmentOperation* Expression
 
 Statements =
-    (~MethodReturnOperator Statement? ".")*
+	(~MethodReturnOperator Statement? ".")*
 
 UnaryMessage =
-    ~keyword UnaryMessageSelector
+	~keyword UnaryMessageSelector
 
 UnaryMessageChain =
-    UnaryMessage+
+	UnaryMessage+
 
 UnaryMessageSelector =
-    identifier
+	identifier
 
 UnaryMethodHeader =
-    UnaryMessageSelector
+	UnaryMessageSelector
 
 assignmentOperator =
-    ":=" | "_"
+	":=" | "_"
 
 baseNIntegerLiteral =
 	numberSigns? alnum+
 
 binaryMessageSelector =
-    binarySelectorChar+
+	binarySelectorChar+
 
 binarySelectorChar =
-    "~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
+	"~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
 
 bindableIdentifier =
 	~(reservedIdentifier space) identifier
@@ -165,9 +165,9 @@ blockArgument =
 	":" space* letter alnum*
 
 byteArrayNumber =
-	digit 				-- oneDigit
-	| digit digit 			-- twoDigits
-	| ("1"|"2") digit digit      -- threeDigits
+	digit -- oneDigit
+	| digit digit 	-- twoDigits
+	| ("1"|"2") digit digit -- threeDigits
 
 characterLiteral =
 	"$" (any | space)
@@ -180,16 +180,15 @@ constantReference =
 	| "false"
 	| "nil"
 
-decimalIntegerLiteral
-  = numberSigns? digit+
+decimalIntegerLiteral =
+	numberSigns? digit+
 
-exponent
-  = ("e" | "d" | "q")? 
-decimalIntegerLiteral
+exponent =
+	("e" | "d" | "q")? decimalIntegerLiteral
 
-floatingPointLiteral 
-	= radixFloatingPointLiteral
-         | normalFloatingPointLiteral
+floatingPointLiteral =
+	radixFloatingPointLiteral
+	| normalFloatingPointLiteral
 
 identifier =
 	letter (alnum | "_")*
@@ -202,26 +201,28 @@ keyword =
 	identifier ":"
 
 literalArrayLiteralElement =
-    floatingPointLiteral
-    | integerLiteral
-    | constantReference
-    | stringLiteral
-    | ByteArrayLiteral
-    | symbolInArrayLiteral
-    | symbolLiteral
-    | characterLiteral
-    | LiteralArrayLiteralInLiteralArray
+	floatingPointLiteral
+	| integerLiteral
+	| constantReference
+	| stringLiteral
+	| ByteArrayLiteral
+	| symbolInArrayLiteral
+	| symbolLiteral
+	| characterLiteral
+	| LiteralArrayLiteralInLiteralArray
 
-normalFloatingPointLiteral
-	= decimalIntegerLiteral ("." digit+)? exponent --exponent
-     | decimalIntegerLiteral "." digit+  --normal
+normalFloatingPointLiteral =
+	decimalIntegerLiteral ("." digit+)? exponent --exponent
+	| decimalIntegerLiteral "." digit+  --normal
 
-numberSigns
-	= "-"
+numberSigns =
+	"-"
 
-pragmaKey = identifier ":"
+pragmaKey =
+	identifier ":"
 
-pragmaLiteral = ~pragmaKey ~">" literalArrayLiteralElement
+pragmaLiteral =
+	~pragmaKey ~">" literalArrayLiteralElement
 
 pseudoVariableReference = 
 	"self" | "super" | "thisContext"
@@ -229,8 +230,8 @@ pseudoVariableReference =
 radix =
 	decimalIntegerLiteral
 
-radixFloatingPointLiteral
-	= decimalIntegerLiteral "r" normalFloatingPointLiteral
+radixFloatingPointLiteral =
+	decimalIntegerLiteral "r" normalFloatingPointLiteral
 
 reservedIdentifier =
 	constantReference | pseudoVariableReference
@@ -245,9 +246,9 @@ stringLiteral =
 	"\''" (~"\''" any | "\''\''")* "\''"
 
 symbolInArrayLiteral =
-    letter (alnum | ":")* --plain
-    | binaryMessageSelector --binarySelector
-    | (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | assignmentOperator)+ --code
+	letter (alnum | ":")* --plain
+	| binaryMessageSelector --binarySelector
+	| (alnum | "." | "," | ":" | "[" | "]" | "|" | "^" | assignmentOperator)+ --code
 
 symbolLiteral =
 	"#" space* letter (alnum | ":" | "_")* -- normal
@@ -255,4 +256,7 @@ symbolLiteral =
 	| "#" space*  binaryMessageSelector -- fromBinarySelector
 	| "#:" -- colonSymbol
 
-unaryPragma = identifier}'
+unaryPragma
+	= identifier
+	
+}'
