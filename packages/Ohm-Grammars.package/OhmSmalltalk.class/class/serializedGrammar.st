@@ -234,7 +234,8 @@ radixFloatingPointLiteral =
 	decimalIntegerLiteral "r" normalFloatingPointLiteral
 
 reservedIdentifier =
-	constantReference | pseudoVariableReference
+	constantReference
+	| pseudoVariableReference
 
 scaledDecimalLiteral =
 	decimalIntegerLiteral ("." digit+)? "s" decimalIntegerLiteral?
