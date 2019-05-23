@@ -170,7 +170,7 @@ byteArrayNumber =
 	| ("1"|"2") digit digit -- threeDigits
 
 characterLiteral =
-	"$" (any | space)
+	"$" any
 
 comment =
 	"\"" (~"\"" any)* "\""
@@ -213,7 +213,7 @@ literalArrayLiteralElement =
 
 normalFloatingPointLiteral =
 	decimalIntegerLiteral ("." digit+)? exponent --exponent
-	| decimalIntegerLiteral "." digit+  --normal
+	| decimalIntegerLiteral "." digit+ --normal
 
 numberSigns =
 	"-"

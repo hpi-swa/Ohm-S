@@ -37,7 +37,7 @@
 		"testGrammarParsesStatements" : "pre 2/14/2018 08:14",
 		"testGrammarParsesStringLiterals" : "pre 10/7/2015 15:50",
 		"testGrammarParsesSymbolArrayLiterals" : "pre 2/14/2018 08:11",
-		"testGrammarParsesSymbolLiterals" : "pre 7/27/2015 16:54",
+		"testGrammarParsesSymbolLiterals" : "BD 5/23/2019 09:10",
 		"testGrammarParsesTheReturnOperator" : "pre 7/27/2015 16:55",
 		"testGrammarParsesTheTestItself" : "pre 7/27/2015 16:56",
 		"testGrammarParsesUnaryMessageChains" : "pre 7/27/2015 16:56",
