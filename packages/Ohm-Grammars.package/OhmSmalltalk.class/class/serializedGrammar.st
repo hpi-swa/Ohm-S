@@ -170,7 +170,7 @@ byteArrayNumber =
 	| ("1"|"2") digit digit -- threeDigits
 
 characterLiteral =
-	"$" (any | space)
+	"$" any
 
 comment =
 	"\"" (~"\"" any)* "\""
@@ -213,7 +213,7 @@ literalArrayLiteralElement =
 
 normalFloatingPointLiteral =
 	decimalIntegerLiteral ("." digit+)? exponent --exponent
-	| decimalIntegerLiteral "." digit+  --normal
+	| decimalIntegerLiteral "." digit+ --normal
 
 numberSigns =
 	"-"
@@ -234,7 +234,8 @@ radixFloatingPointLiteral =
 	decimalIntegerLiteral "r" normalFloatingPointLiteral
 
 reservedIdentifier =
-	constantReference | pseudoVariableReference
+	constantReference
+	| pseudoVariableReference
 
 scaledDecimalLiteral =
 	decimalIntegerLiteral ("." digit+)? "s" decimalIntegerLiteral?
@@ -256,7 +257,7 @@ symbolLiteral =
 	| "#" space*  binaryMessageSelector -- fromBinarySelector
 	| "#:" -- colonSymbol
 
-unaryPragma
-	= identifier
+unaryPragma =
+	identifier
 	
 }'
