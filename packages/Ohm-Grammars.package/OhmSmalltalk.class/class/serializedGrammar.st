@@ -257,7 +257,7 @@ symbolLiteral =
 	| "#" space*  binaryMessageSelector -- fromBinarySelector
 	| "#:" -- colonSymbol
 
-unaryPragma
-	= identifier
+unaryPragma =
+	identifier
 	
 }'
