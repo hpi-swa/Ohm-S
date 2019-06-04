@@ -4,7 +4,7 @@ evaluation
 	| result |
 	self positionInfo enter: self ruleName.
 	result := self evaluateBody.
-	result = #ohmFail
+	result == #ohmFail
 		ifFalse: [(self positionInfo isCurrentLeftRecursion: self ruleName)
 					ifTrue: [ "We arrived at the top and can now grow a seed."
 							result := self handleLeftRecursion: result ]
@@ -16,7 +16,7 @@ evaluation
 	self state rightmostFailure: self beforeFailureDescriptor.
 	self state recordFailures: self duringFailureDescriptor.
 
-	result = #ohmFail
+	result == #ohmFail
 		ifTrue: [ ^ false ]
 		ifFalse: [ 
 			bindings add: result.

@@ -10,10 +10,10 @@ skipSpaces: state
 
 	[ originalPosition := anInput getState.
 	  state pushBindings: OrderedCollection new.
-	  result := (self ruleNamed: #space)
-				eval: state.
+	  result := state cachedSpacesRule eval: state.
 	  state popBindings.
-	 ] doWhileTrue: [result].
+	  result.
+	 ] whileTrue.
 
 	state rightmostFailure: originalFailures.
 	state isSyntactic: true.

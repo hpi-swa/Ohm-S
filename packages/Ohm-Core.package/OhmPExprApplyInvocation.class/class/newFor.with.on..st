@@ -1,7 +1,7 @@
-as yet unclassified
+instance creation
 newFor: ruleName with: ruleBody on: state
 
-	^ (self new)
+	^ self new
 		ruleName: ruleName;
 		input: state inputStream;
 		grammar: state grammar;

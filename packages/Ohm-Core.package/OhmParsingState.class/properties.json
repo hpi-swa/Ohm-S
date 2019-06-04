@@ -11,7 +11,8 @@
 		"shouldRecordFailures",
 		"isSyntactic",
 		"bindingsStack",
-		"rightmostFailure" ],
+		"rightmostFailure",
+		"cachedSpacesRule" ],
 	"name" : "OhmParsingState",
 	"pools" : [
 		 ],

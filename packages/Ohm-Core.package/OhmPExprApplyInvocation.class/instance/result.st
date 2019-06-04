@@ -7,7 +7,7 @@ result
 	self positionInfo: (self input currentPositionInfo).
 
 	memo := self tryToUseMemoizedResult.
-	memo = #ohmFail
+	memo == #ohmFail
 		ifFalse: [ ^ memo hasMatched ].
 	
 	(self positionInfo activeRules includes: self ruleName)
