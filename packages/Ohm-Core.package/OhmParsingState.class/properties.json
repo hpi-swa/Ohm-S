@@ -12,7 +12,8 @@
 		"isSyntactic",
 		"bindingsStack",
 		"rightmostFailure",
-		"cachedSpacesRule" ],
+		"cachedSpacesRule",
+		"idOfParseProcess" ],
 	"name" : "OhmParsingState",
 	"pools" : [
 		 ],

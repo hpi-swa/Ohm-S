@@ -13,7 +13,8 @@ evaluateBody
 				isSyntactic: (self isSyntactic: self ruleName );
 				pushBindings: tmpBindings;
 				shouldRecordFailures: self shouldRecordFailures;
-				rightmostFailure: self duringFailureDescriptor.
+				rightmostFailure: self duringFailureDescriptor;
+				idOfParseProcess: self state idOfParseProcess.
 	(self isSyntactic: self ruleName)
 		ifTrue: [self grammar skipSpaces: state].
 	result := self ruleBody eval: state.

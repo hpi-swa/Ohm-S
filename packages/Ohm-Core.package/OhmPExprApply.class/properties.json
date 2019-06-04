@@ -9,7 +9,8 @@
 		"ruleName",
 		"arguments",
 		"cachedRuleBody",
-		"cachedRuleBodyGrammar" ],
+		"cachedRuleBodyGrammar",
+		"cachedRuleBodyParseId" ],
 	"name" : "OhmPExprApply",
 	"pools" : [
 		 ],
