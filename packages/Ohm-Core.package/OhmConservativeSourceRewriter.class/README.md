@@ -1,0 +1,1 @@
+The ConservativeSourceRewriter is careful not to break to much of the whitespace of the original string. This results in more readable rewritten source code. To use this, simply write your own subclass which implements the handler methods for the nodes you want to rewrite and return the new string you want the source to contain.

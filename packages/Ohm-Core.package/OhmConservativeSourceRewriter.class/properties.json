@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pre 11/8/2019 20:07",
+	"instvars" : [
+		 ],
+	"name" : "OhmConservativeSourceRewriter",
+	"pools" : [
+		 ],
+	"super" : "OhmSynthesizedAttribute",
+	"type" : "normal" }
