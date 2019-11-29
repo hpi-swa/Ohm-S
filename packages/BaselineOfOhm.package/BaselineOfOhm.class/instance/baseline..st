@@ -18,7 +18,7 @@ baseline: spec
 				group: 'libraries' with: #('JSON')].
 			
 	spec 
-		for: #(#'squeak5.1.x' #'squeak4.6.x') 
+		for: #(#'squeak5.0.x' #'squeak4.6.x') 
 		do: [
 			spec 
 				package: 'VB-Regex' 
