@@ -1,6 +1,6 @@
 parse
 rangesIn: aString classOrMetaClass: aClass workspace: workspace environment: environment 
-	
+	"This is the interface for Squeak <= 5.1"
 	| cst rangeSetting grammarSource offset |
 	((aString beginsWith: 'serializedGrammar') and: [aString includesSubstring: '''']) ifFalse: [
 		^ super 
