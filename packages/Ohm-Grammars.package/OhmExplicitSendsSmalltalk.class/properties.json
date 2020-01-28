@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "pre 1/28/2020 09:20",
+	"commentStamp" : "pre 1/28/2020 09:19",
 	"instvars" : [
 		 ],
-	"name" : "OhmSmalltalk",
+	"name" : "OhmExplicitSendsSmalltalk",
 	"pools" : [
 		 ],
 	"super" : "OhmGrammarSmalltalkProxy",

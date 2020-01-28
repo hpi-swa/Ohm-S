@@ -1,0 +1,14 @@
+{
+	"category" : "Ohm-Grammars-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmExplicitSendsSmalltalkGrammarTest",
+	"pools" : [
+		 ],
+	"super" : "OhmSmalltalkGrammarTest",
+	"type" : "normal" }

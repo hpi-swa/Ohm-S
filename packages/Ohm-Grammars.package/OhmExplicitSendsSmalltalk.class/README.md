@@ -1,0 +1,1 @@
+This Smalltalk grammar provides a complete CST node for a message send including the receiver, the selector and the arguments. The receiver can be another message send. The resulting parser requires more time than the OhmSmalltalk grammar but creates richer CSTs.

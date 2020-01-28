@@ -1,0 +1,1 @@
+This is a Smalltalk grammar resulting in (relatively) fast parsers and is sufficient for most code rewriting or highlighting tasks.
