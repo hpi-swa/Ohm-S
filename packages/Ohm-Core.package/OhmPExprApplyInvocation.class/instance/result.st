@@ -8,8 +8,8 @@ result
 
 	memo := self tryToUseMemoizedResult.
 	memo == #ohmFail
-		ifFalse: [ ^ memo hasMatched ].
+		ifFalse: [^ memo hasMatched].
 	
-	(self positionInfo activeRules includes: self ruleName)
-		ifTrue: [ ^ self handleEncounterOfSelf ]
-		ifFalse: [^ self evaluation]
+	^ (self positionInfo activeRules includes: self ruleName)
+		ifTrue: [self handleEncounterOfSelf]
+		ifFalse: [self evaluation]

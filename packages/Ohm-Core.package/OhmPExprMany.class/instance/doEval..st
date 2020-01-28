@@ -24,10 +24,9 @@ doEval: state
 	
 	matchCount < self min
 		ifTrue: [ ^ false ]
-		ifFalse: [
-			| nodes |
-			nodes := columns do: [ :column | 
-				state addNodeNamed: self class listRuleIdentifier 
-									startedAt: originalInputState 
-									withChildren: column].
+		ifFalse: [columns do: [:column | 
+					state 
+						addNodeNamed: self class listRuleIdentifier 
+						startedAt: originalInputState 
+						withChildren: column].
 			^ true ]

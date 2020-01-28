@@ -19,7 +19,7 @@ evaluateBody
 		ifTrue: [self grammar skipSpaces: state].
 	result := self ruleBody eval: state.
 
-	result 
-		ifTrue: [ ^ (OhmNode newNamed: self ruleName forGrammar: self grammar andInput: self input startedAt: origPos withChildren: tmpBindings) ]
-		ifFalse: [ ^ #ohmFail ]
+	^ result 
+		ifTrue: [ (OhmNode newNamed: self ruleName forGrammar: self grammar andInput: self input startedAt: origPos withChildren: tmpBindings) ]
+		ifFalse: [ #ohmFail ]
 		

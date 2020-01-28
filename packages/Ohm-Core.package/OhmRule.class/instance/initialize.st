@@ -1,5 +1,5 @@
 initialize-release
 initialize
 
-	self inlineRules: Set new.
+	self inlineRules: OrderedCollection new.
 	self parameters: {}

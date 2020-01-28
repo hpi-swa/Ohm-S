@@ -1,6 +1,6 @@
 initialize-release
 initialize
 
-	self memoizedResults: Dictionary new.
+	self memoizedResults: IdentityDictionary new.
 	self activeRules: OrderedCollection new.
 	self leftRecursionStack: Stack new.

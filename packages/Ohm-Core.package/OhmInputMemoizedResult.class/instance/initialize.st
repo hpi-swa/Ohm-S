@@ -1,4 +1,4 @@
 accessing
 initialize
 
-	self involvedRules: Set new.
+	self involvedRules: OrderedCollection new.
