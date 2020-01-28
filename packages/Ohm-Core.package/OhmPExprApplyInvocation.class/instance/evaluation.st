@@ -10,7 +10,9 @@ evaluation
 					result := self handleLeftRecursion: result ]
 			ifFalse: [ (self positionInfo isInvolvedRule: self ruleName)
 						ifFalse: [ "Do not memoize if we are part of a left recursion."
-								self memoizeResult: result ] ] ].
+								self memoizeResult: result ] ] ]
+		ifTrue: [(self positionInfo isCurrentLeftRecursion: self ruleName)
+			ifTrue: [self positionInfo endLeftRecursion]].
 
 	self positionInfo leave: self ruleName.
 	self state rightmostFailure: self beforeFailureDescriptor.

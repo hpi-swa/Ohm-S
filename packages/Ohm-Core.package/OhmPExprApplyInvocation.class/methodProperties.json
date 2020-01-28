@@ -9,11 +9,11 @@
 		"duringFailureDescriptor" : "pre 1/20/2015 16:19",
 		"duringFailureDescriptor:" : "pre 1/20/2015 16:19",
 		"evaluateBody" : "pre 7/25/2019 18:13",
-		"evaluation" : "pre 7/25/2019 18:15",
+		"evaluation" : "pre 1/28/2020 18:14",
 		"grammar" : "pre 12/10/2014 11:17",
 		"grammar:" : "pre 12/10/2014 11:17",
 		"growTheSeed:" : "pre 6/3/2019 16:55",
-		"handleEncounterOfSelf" : "pre 7/25/2019 18:16",
+		"handleEncounterOfSelf" : "pre 1/28/2020 17:30",
 		"handleLeftRecursion:" : "pre 12/10/2014 21:23",
 		"input" : "pre 12/10/2014 11:17",
 		"input:" : "pre 12/10/2014 11:17",
@@ -32,4 +32,4 @@
 		"shouldRecordFailures:" : "pre 12/10/2014 11:17",
 		"state" : "pre 1/20/2015 16:24",
 		"state:" : "pre 1/20/2015 16:24",
-		"tryToUseMemoizedResult" : "pre 6/3/2019 16:55" } }
+		"tryToUseMemoizedResult" : "pre 1/28/2020 13:52" } }
