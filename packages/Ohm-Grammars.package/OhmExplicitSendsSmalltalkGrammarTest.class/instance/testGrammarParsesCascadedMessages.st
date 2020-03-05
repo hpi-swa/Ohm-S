@@ -1,4 +1,4 @@
-tests
+as yet unclassified
 testGrammarParsesCascadedMessages
 	
-	self "This does not exist anymore --pre"
+	"This has a different meaning now, so skipped --pre"

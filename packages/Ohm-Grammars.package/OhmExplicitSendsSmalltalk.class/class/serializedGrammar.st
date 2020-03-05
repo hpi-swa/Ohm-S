@@ -38,6 +38,7 @@ ExecutableCode =
 Expression =
 	BinaryMessageSend CascadedMessages -- binaryCascade
 	| UnaryMessageSend CascadedMessages -- unaryCascade
+	| Operand CascadedMessages -- operandCascade
 	| KeywordMessageSend
 	
 BinaryMessageSend =
