@@ -8,13 +8,14 @@ initializeBaseGrammar
 						yourself.
 	OhmInstance superGrammar: OhmInstance.
 	  
-	{    'any' asSymbol -> OhmPExprAnything new .
-		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: 'any' asSymbol)) .
+	{    #any -> OhmPExprAnything new .
+		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: #any)) .
 		#space -> (OhmPExprRange newFrom: Character null to: Character space) .
 		#spaces -> (OhmPExprMany newStarOn: (OhmPExprApply newOn: #space)).
-		 } do: 
-		[:assoc | OhmInstance ruleDeclarations at: assoc key 
-						put: (OhmRuleDefine newNamed: assoc key parameters: #() body: assoc value)].
+		 } do: [:assoc | 
+			OhmInstance ruleDeclarations 
+				at: assoc key 
+				put: (OhmRuleDefine newNamed: assoc key parameters: #() body: assoc value)].
 					
 	OhmInstance ruleDeclarations at: #caseInsensitive
 		put: (OhmRuleDefine

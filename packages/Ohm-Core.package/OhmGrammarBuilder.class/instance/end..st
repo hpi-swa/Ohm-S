@@ -1,4 +1,4 @@
 expressions
 end: pexpr
 
-	^ OhmPExprEnd newOn: pexpr
+	^ OhmPExprApply newOn: #end

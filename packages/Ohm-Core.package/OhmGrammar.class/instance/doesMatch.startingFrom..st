@@ -12,5 +12,5 @@ doesMatch: string startingFrom: startRuleName
 
 	^ (OhmPExprSeq newOn: { OhmPExprApply newOn: startRuleName . 
 								  OhmPExprMany newStarOn: (self ruleNamed: #space) .
-								  OhmPExprEnd new} )
+								  OhmPExprApply newOn: #end } )
 			eval: state

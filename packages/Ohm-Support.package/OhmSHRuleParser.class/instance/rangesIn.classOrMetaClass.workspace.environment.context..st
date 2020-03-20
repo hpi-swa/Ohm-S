@@ -24,4 +24,5 @@ rangesIn: aString classOrMetaClass: aClass workspace: workspace environment: env
 		r start: r start + offset.
 		r end: r end + offset ].
 	ranges := ranges sorted: [:r1 :r2 | r1 start < r2 start].
-	^ ranges asOrderedCollection 
+	ranges := ranges asOrderedCollection.
+	^ ranges 

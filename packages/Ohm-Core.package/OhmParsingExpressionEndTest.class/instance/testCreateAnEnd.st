@@ -1,4 +1,0 @@
-tests
-testCreateAnEnd
-
-	OhmPExprEnd new.

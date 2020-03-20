@@ -2,8 +2,9 @@ tests
 testSyntacticEndChecksForStreamAtEndEvenAfterSpace
 
 	| endExpression |
-	endExpression := OhmPExprEnd new.
+	endExpression := OhmPExprSeq newOn: {OhmPExprString newOn: 'foo' . OhmPExprApply newOn: #end}.
 	self 
 		assertParsingExpression: endExpression 
 		asSyntactic: true
-		compliesWithItsFixture: #syntacticExpressionMatch.
+		compliesWithFixture: #syntacticExpressionMatch
+		fromFixtureSet: #ohmPExprEnd.

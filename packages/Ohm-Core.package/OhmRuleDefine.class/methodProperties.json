@@ -1,14 +1,13 @@
 {
 	"class" : {
 		"newNamed:body:description:" : "pre 4/20/2015 10:00",
-		"newNamed:body:superGrammar:description:" : "pre 1/19/2015 13:44",
 		"newNamed:body:textualRepresentation:description:" : "pre 6/2/2015 16:03",
-		"newNamed:body:textualRepresentation:superGrammar:description:" : "pre 6/2/2015 16:03",
 		"newNamed:withParameters:body:description:" : "pre 11/17/2017 20:29" },
 	"instance" : {
 		"description" : "pre 4/20/2015 09:41",
 		"description:" : "pre 4/20/2015 09:41",
 		"dispatchedBodyOn:" : "pre 8/4/2015 13:51",
+		"initialize" : "pre 3/20/2020 15:34",
 		"installInto:" : "pre 4/20/2015 09:41",
 		"performChecksFor:" : "pre 11/17/2017 20:42",
 		"toRecipe" : "pre 11/17/2017 20:20" } }

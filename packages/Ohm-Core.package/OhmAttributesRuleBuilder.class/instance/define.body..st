@@ -5,6 +5,6 @@ define: ruleName body: b
 		newNamed: ruleName 
 		body: b
 		textualRepresentation: self textualRepresentation
-		description: self ruleDescription).
+		description: (self ruleDescription ifNil: [''])).
 	
 	^ b

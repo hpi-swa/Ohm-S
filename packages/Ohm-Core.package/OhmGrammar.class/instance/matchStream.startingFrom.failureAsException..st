@@ -10,8 +10,8 @@ matchStream: stream startingFrom: startRuleName failureAsException: exceptionOnF
 		pushBindings: bindings.
 	
 	result := (OhmPExprApply newOn: startRuleName) eval: state.
-	result = false
-		ifFalse: [ self skipSpaces: state.
-				 result := OhmPExprEnd new eval: state. ].
+	result = false ifFalse: [
+		self skipSpaces: state.
+		result := (OhmPExprApply newOn: #end) eval: state].
 	
 	^ OhmMatchResult newFor: state withResult: result startingFrom: startRuleName
