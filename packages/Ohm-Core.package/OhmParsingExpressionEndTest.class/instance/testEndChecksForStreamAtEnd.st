@@ -5,5 +5,5 @@ testEndChecksForStreamAtEnd
 	endExpression := OhmPExprSeq newOn: { OhmPExprString newOn: 'foo' . OhmPExprEnd new. }.
 	self 
 		assertParsingExpression: endExpression 
-		compliesWithFixture: #expressionMatch
+		compliesWithFixture: #matchContents
 		fromFixtureSet: OhmPExprEnd expressionName.

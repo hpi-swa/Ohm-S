@@ -2,9 +2,9 @@ tests
 testSyntacticManyStarMatchesZeroOrMore
 
 	| starExpression |
-	starExpression := OhmPExprMany newStarOn: ( OhmPExprString newOn: 'a' ).
+	starExpression := OhmPExprMany newStarOn: (OhmPExprString newOn: 'a').
 	self 
 		assertParsingExpression: starExpression 
 		asSyntactic: true
-		compliesWithFixture: #syntacticExpressionMatch
-		fromFixtureSet: #ohmPExprStar.
+		compliesWithFixture: #matchContents
+		fromFixtureSet: #ohmPExprStarSyntactic.

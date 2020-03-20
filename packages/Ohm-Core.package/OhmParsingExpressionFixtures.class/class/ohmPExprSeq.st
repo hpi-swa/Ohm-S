@@ -1,7 +1,9 @@
-as yet unclassified
+fixtures
 ohmPExprSeq
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : false },
+	^ '{ 
+		"grammar" : "G { ruleOne = \"a\" \"bc\" \"z\" }",
+		"expressionMatch" : [ { "input" : "", "expect" : false },
 		                                 { "input" : "a", "expect" : false },
 				                     { "input" : "aa", "expect" : false },
 		                                 { "input" : "ab", "expect" : false },

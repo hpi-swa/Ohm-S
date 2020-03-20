@@ -2,8 +2,8 @@ tests
 testManyStarMatchesZeroOrMore
 
 	| starExpression |
-	starExpression := OhmPExprMany newStarOn: ( OhmPExprString newOn: 'a' ).
+	starExpression := OhmPExprMany newStarOn: (OhmPExprSeq newOn: { (OhmPExprString newOn: 'a') . (OhmPExprString newOn: 'b') }).
 	self 
 		assertParsingExpression: starExpression 
-		compliesWithFixture: #expressionMatch
+		compliesWithFixture: #matchContents
 		fromFixtureSet: #ohmPExprStar.

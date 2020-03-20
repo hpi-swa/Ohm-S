@@ -1,7 +1,10 @@
-as yet unclassified
+fixtures
 ohmPExprEnd
 
-	^ '{ "expressionMatch" : [ { "input" : "bar", "expect" : false, "streamAtEnd" : false},
+	^ '{ 
+		"grammar" : "G {
+						rule = \"foo\" end}",
+		"matchContents" : [ { "input" : "bar", "expect" : false, "streamAtEnd" : false},
 							   { "input" : "foo", "expect" : true, "streamAtEnd" : true },
 							   { "input" : "foo1", "expect" : false, "streamAtEnd" : false } ],
 		 "syntacticExpressionMatch" : [ 

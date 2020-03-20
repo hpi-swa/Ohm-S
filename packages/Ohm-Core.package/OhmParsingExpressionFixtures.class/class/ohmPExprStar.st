@@ -1,21 +1,16 @@
-as yet unclassified
+fixtures
 ohmPExprStar
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : true },
-		                                 { "input" : "a", "expect" : true },
+	^ '{ 
+		"grammar" : "G {
+						ruleOne = (\"a\" \"b\")* }",
+		"matchContents" : [ { "input" : "", "expect" : true },
+		                                 { "input" : "ab", "expect" : true },
 		                                 { "input" : "ba", "expect" : true, "streamAtEnd" : false},
-		                                 { "input" : "aa", "expect" : true},
-		                                 { "input" : "aaa", "expect" : true},		
+		                                 { "input" : "abab", "expect" : true},
+		                                 { "input" : "aaa", "expect" : true, "streamAtEnd" : false},		
 		                                 { "input" : "b", "expect" : true, "streamAtEnd" : false},
-		 					   { "input" : "ab", "expect" : true, "streamAtEnd" : false } ],
-		"syntacticExpressionMatch" : [ 
-							   { "input" : " ", "expect" : true },
-		                                 { "input" : " a", "expect" : true },
-		                                 { "input" : " ba", "expect" : true, "streamAtEnd" : false},
-		                                 { "input" : " aa", "expect" : true},
-		                                 { "input" : " aaa", "expect" : true},		
-		                                 { "input" : " b", "expect" : true, "streamAtEnd" : false},
-		 					   { "input" : " ab", "expect" : true, "streamAtEnd" : false } ],
+		 					   { "input" : "ab", "expect" : true} ],
 		"matchInterval" : [	   { "input" : "", "expectInterval" : [[0,0],[0,0]] },
 		                                 { "input" : "a", "expectInterval" : [[0,0],[0,0]] },
 		                                 { "input" : "ba", "expectInterval" : [[0,0],[0,0]] },

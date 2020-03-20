@@ -1,7 +1,11 @@
-as yet unclassified
+fixtures
 ohmPExprApply
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : false },
+	^ '{ 
+		"grammar" : "G {
+						ruleOne = firstRule
+						firstRule = \"firstRule\" }",
+		"matchContents" : [ { "input" : "", "expect" : false },
 							   { "input" : "firstRule", "expect" : true },
 							   { "input" : "firstRule secondRule", "expect" : true, "streamAtEnd" : false } ],
 		"parameterizedExpressionMatch" :	[

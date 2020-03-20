@@ -1,4 +1,4 @@
-as yet unclassified
+fixtures
 leftRecursionIndirect
 
 	^ '{ "grammar" : "M { number = foo | digit

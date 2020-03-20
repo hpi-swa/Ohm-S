@@ -12,5 +12,5 @@ testSeqAltMatchesCombinedTerms
 												OhmPExprString newOn: '3' . } }.
 	self 
 		assertParsingExpression: altExpression 
-		compliesWithFixture: #expressionMatch
+		compliesWithFixture: #matchContents
 		fromFixtureSet: #ohmPExprAltSeq.

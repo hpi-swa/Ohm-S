@@ -1,11 +1,11 @@
-as yet unclassified
+fixtures
 leftRecursionNested
 
 	^ '{ "grammar" : "M {
 				            addExpr = addExprRec | mulExpr
-				            addExprRec = addExpr ''+'' mulExpr
+				            addExprRec = addExpr \"+\" mulExpr
 				            mulExpr = mulExprRec | priExpr
-				            mulExprRec = mulExpr ''*'' priExpr
+				            mulExprRec = mulExpr \"*\" priExpr
 				            priExpr = /[0-9]/
 				            sss = &addExpr addExpr }", 
 		"matchContents" : [    { "input" : "1", "expect" : true },

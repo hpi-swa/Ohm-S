@@ -1,7 +1,10 @@
-as yet unclassified
+fixtures
 ohmPExprOpt
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : true },
+	^ '{ 
+		"grammar" : "G {
+						ruleOne = \"dr\"? }",
+		"expressionMatch" : [ { "input" : "", "expect" : true },
 							   { "input" : "dr", "expect" : true },
 							   { "input" : "d", "expect" : true, "streamAtEnd" : false } ],
 		"matchInterval" : [ 	   { "input" : "", "expectInterval" : [[0,0]] },

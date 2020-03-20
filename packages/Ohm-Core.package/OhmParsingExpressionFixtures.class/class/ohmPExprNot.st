@@ -1,7 +1,10 @@
-as yet unclassified
+fixtures
 ohmPExprNot
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : true },
+	^ '{ 
+		"grammar" : "G {
+						ruleOne = ~\"hello\" \"bar\" }",
+		"expressionMatch" : [ { "input" : "", "expect" : true },
 							   { "input" : "hello world", "expect" : false, "streamAtEnd" : false },
 							   { "input" : "yello world", "expect" : true, "streamAtEnd" : false },
 							   { "input" : "yello", "expect" : true, "streamAtEnd" : false },

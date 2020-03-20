@@ -1,7 +1,8 @@
-as yet unclassified
+fixtures
 ohmPExprAlt
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : false },
+	^ '{ "grammar": "G { ruleOne = \"a\" | \"b\"}",
+	      "expressionMatch" : [ { "input" : "", "expect" : false },
 		                                 { "input" : "a", "expect" : "ok"},
 							   { "input" : "b", "expect" : "ok"},
 							   { "input" : "ab", "expect" : "ok", "streamAtEnd" : false} ],

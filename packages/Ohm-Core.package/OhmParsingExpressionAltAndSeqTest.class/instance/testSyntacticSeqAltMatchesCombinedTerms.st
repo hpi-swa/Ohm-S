@@ -13,5 +13,5 @@ testSyntacticSeqAltMatchesCombinedTerms
 	self 
 		assertParsingExpression: altExpression 
 		asSyntactic: true
-		compliesWithFixture: #syntacticExpressionMatch
-		fromFixtureSet: #ohmPExprAltSeq.
+		compliesWithFixture: #matchContents
+		fromFixtureSet: #ohmPExprAltSeqSyntactic.

@@ -2,9 +2,9 @@ tests
 testSyntacticManyPlusMatchesZeroOrMore
 
 	| plusExpression |
-	plusExpression := OhmPExprMany newPlusOn: (OhmPExprString newOn: 'a').
+	plusExpression := OhmPExprMany newPlusOn: (OhmPExprSeq newOn: { (OhmPExprString newOn: 'a') . (OhmPExprString newOn: 'b') }).
 	self 
 		assertParsingExpression: plusExpression
 		asSyntactic: true
-		compliesWithFixture: #syntacticExpressionMatch
-		fromFixtureSet: #ohmPExprPlus.
+		compliesWithFixture: #matchContents
+		fromFixtureSet: #ohmPExprPlusSyntactic.

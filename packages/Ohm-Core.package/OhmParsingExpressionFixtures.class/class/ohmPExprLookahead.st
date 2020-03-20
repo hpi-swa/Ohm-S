@@ -1,7 +1,9 @@
-as yet unclassified
+fixtures
 ohmPExprLookahead
 
-	^ '{ "expressionMatch" : [ { "input" : "", "expect" : false },
+	^ '{ "grammar" : "G {
+						ruleOne = &\"hello\" \"hello\" }",
+		"expressionMatch" : [ { "input" : "", "expect" : false },
 							   { "input" : "hello world", "expect" : true, "streamAtEnd" : false },
 							   { "input" : "yello world", "expect" : false, "streamAtEnd" : false },
 							   { "input" : "yello", "expect" : false, "streamAtEnd" : false },

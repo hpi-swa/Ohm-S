@@ -4,7 +4,7 @@
 	"instance" : {
 		"evalPExpr:on:asSyntactic:usingGrammar:" : "pre 11/16/2017 16:41",
 		"evalPExpr:on:asSyntactic:usingGrammar:andBindings:" : "pre 11/17/2017 17:52",
-		"testApplyAppliesAnotherRule" : "pre 12/3/2014 16:50",
+		"testApplyAppliesAnotherRule" : "pre 3/19/2020 14:57",
 		"testApplyArity" : "pre 1/6/2015 15:01",
 		"testApplyProducesIntervals" : "pre 1/6/2015 15:43",
 		"testCreateAnApply" : "pre 12/3/2014 16:41",

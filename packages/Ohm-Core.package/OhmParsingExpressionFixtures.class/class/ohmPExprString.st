@@ -1,8 +1,8 @@
-as yet unclassified
+fixtures
 ohmPExprString
 
 	^ '{ 
-           "grammar" : "M { foo = ''foo'' }",
+           "grammar" : "M { foo = \"foo\" }",
 		"expressionMatch" : 
 		[	{ "input" : "foo", "expect" : "ok" },
 			{ "input" : "foo1", "expect" : "ok", "streamAtEnd" : false},

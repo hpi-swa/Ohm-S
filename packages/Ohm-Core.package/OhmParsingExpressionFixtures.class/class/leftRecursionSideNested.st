@@ -1,7 +1,13 @@
-as yet unclassified
+fixtures
 leftRecursionSideNested
 
-	^ '{ "grammar" : "see test method", 
+	^ '{ "grammar" : "M {
+	  		ruleOne = addExpr          
+			addExpr = wrappedAddExpr | primaExpr
+			wrappedAddExpr = \">>\" addExpr \">>\" 
+			primaExpr = primaExprRec | priExpr
+			primaExprRec = primaExpr \"-\"
+	            priExpr = /[0-9]/ }", 
 		"matchContents" : [
 							   { "input" : "2+3", "expect" : true },
 							   { "input" : ">>2+3>>+4", "expect" : true },
