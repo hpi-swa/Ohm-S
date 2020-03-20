@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 storeSyntaxTestResult: aResult for: testSelector
 
 	| caseResults |
