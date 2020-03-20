@@ -2,11 +2,11 @@ fixtures
 ohmPExprAnything
 
 	 ^ '{ "grammar" : "M { }",
-        	"match" : [				{ "input" : 5,    "rule" : "_", "expect" : "ok"}, 
-                  	  				{ "input" : null, "rule" : "_", "expect" : "ok"} ],
-        	"matchContents" : [		{ "input" : "5",  "rule" : "_", "expect" : "ok"},
+        	"match" : [				{ "input" : 5,    "rule" : "_", "expect" : true}, 
+                  	  				{ "input" : null, "rule" : "_", "expect" : true} ],
+        	"matchContents" : [		{ "input" : "5",  "rule" : "_", "expect" : true},
                 						{ "input" : "", "rule" :   "_", "expect" : false} ],
-        	"matchListStream" : [	{"input" : ["123"],    "rule" : "_", "expect" : "ok" },
+        	"matchListStream" : [	{"input" : ["123"],    "rule" : "_", "expect" : true },
  								{"input" : ["123", 4], "rule" : "_", "expect" : false},
 								{"input" : [],         "rule" : "_", "expect" : false} ],
 		"matchInterval" : [		{"input" : "123",    "rule" : "_", "expectInterval" : [[1,1]] },

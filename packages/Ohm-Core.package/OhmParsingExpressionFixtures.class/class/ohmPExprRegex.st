@@ -1,7 +1,9 @@
 fixtures
 ohmPExprRegex
 
-	^ '{ "expressionMatch" : [ { "input" : "[0-9]", "expect" : false, "streamAtEnd" : false },
+	^ '{ 
+		"grammar" : "M { ruleOne = /[0-9]/ }",
+		"matchContents" : [ { "input" : "[0-9]", "expect" : false, "streamAtEnd" : false },
 		                                 { "input" : "4", "expect" : true},
 							   { "input" : "a", "expect" : false},
 							   { "input" : "4b", "expect" : true, "streamAtEnd" : false},

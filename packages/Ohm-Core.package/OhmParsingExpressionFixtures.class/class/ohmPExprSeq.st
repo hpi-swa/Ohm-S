@@ -9,7 +9,7 @@ ohmPExprSeq
 		                                 { "input" : "ab", "expect" : false },
 				                     { "input" : "abb", "expect" : false },
 		                                 { "input" : "abc", "expect" : false },
-							   { "input" : "abcz", "expect" : "ok"} ],
+							   { "input" : "abcz", "expect" : true} ],
 		"syntacticExpressionMatch" : [ 
 			 				   { "input" : " ", "expect" : false },
 		                                 { "input" : " a", "expect" : false },
@@ -17,7 +17,7 @@ ohmPExprSeq
 		                                 { "input" : " ab", "expect" : false },
 				                     { "input" : " abb", "expect" : false },
 		                                 { "input" : " abc", "expect" : false },
-							   { "input" : " abcz", "expect" : "ok"} ],
+							   { "input" : " abcz", "expect" : true} ],
 		"matchInterval" : [ 	   { "input" : "abcz", "expectInterval" : [[1,1],[2,3],[4,4]]},
 							   { "input" : "abcz1", "expectInterval" : [[1,1],[2,3],[4,4]]},
 							   { "input" : " abcz", "expectInterval" : [[2,2],[3,4],[5,5]]},

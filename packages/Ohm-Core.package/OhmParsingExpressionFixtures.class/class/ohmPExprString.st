@@ -4,20 +4,20 @@ ohmPExprString
 	^ '{ 
            "grammar" : "M { foo = \"foo\" }",
 		"expressionMatch" : 
-		[	{ "input" : "foo", "expect" : "ok" },
-			{ "input" : "foo1", "expect" : "ok", "streamAtEnd" : false},
+		[	{ "input" : "foo", "expect" : true },
+			{ "input" : "foo1", "expect" : true, "streamAtEnd" : false},
 			{ "input" : "bar", "expect" : false, "streamAtEnd" : false } ],
            "match" : 
-		[	{ "input" : "foo",   "rule" : "foo", "expect" : "ok"},
+		[	{ "input" : "foo",   "rule" : "foo", "expect" : true},
 			{ "input" : "foo1", "rule" : "foo", "expect" : true},
   			{ "input" : "bar",   "rule" : "foo", "expect" : false},
 			{ "input" : null,     "rule" : "foo", "expect" : false} ],
            "matchContents" : 
-		[ 	{"input" : "foo",  "rule" : "foo", "expect" : "ok"},
+		[ 	{"input" : "foo",  "rule" : "foo", "expect" : true},
 			{"input" : "foo1", "rule" : "foo", "expect" : false},
 			{"input" : "bar",  "rule" : "foo", "expect" : false} ],
            "matchListStream" :  
-		[	{"input" : ["foo"],        "rule" : "foo", "expect" : "ok" },
+		[	{"input" : ["foo"],        "rule" : "foo", "expect" : true },
     			{"input" : ["foo1"],       "rule" : "foo", "expect" : false},
 			{"input" : ["foo", "1"],   "rule" : "foo", "expect" : false},
 			{"input" : ["foo", "foo"], "rule" : "foo", "expect" : false},

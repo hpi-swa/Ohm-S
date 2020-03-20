@@ -3,7 +3,7 @@ assertGrammarResult: grammarResult matchesExpectationFrom: aFixture
 
 	| expectedValue |
 	expectedValue := aFixture at: #expect.
-	expectedValue = 'ok'
+	expectedValue 
 		ifTrue: [ self assert: grammarResult ]
 		ifFalse: [ self assert: expectedValue 
 					  equals: grammarResult 

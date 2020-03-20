@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"assertEvalIntervalResult:matchesExpectationFrom:" : "pre 1/6/2015 10:50",
-		"assertEvalResult:matchesExpectationFrom:" : "pre 3/20/2020 10:24",
+		"assertEvalResult:matchesExpectationFrom:" : "pre 3/20/2020 16:40",
 		"assertInput:matchesExpectationFrom:" : "pre 11/17/2017 17:30",
 		"assertNodeTreeOf:equals:" : "pre 3/20/2020 15:57",
 		"assertParsingExpression:asSyntactic:compliesWithFixture:fromFixtureSet:" : "pre 1/13/2015 13:55",

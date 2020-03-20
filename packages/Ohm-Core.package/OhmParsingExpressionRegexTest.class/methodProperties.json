@@ -4,6 +4,6 @@
 	"instance" : {
 		"testCreateARegex" : "pre 12/4/2014 10:29",
 		"testRegexArity" : "pre 1/6/2015 15:14",
-		"testRegexMatchesItsRegex" : "pre 12/4/2014 10:29",
+		"testRegexMatchesItsRegex" : "pre 3/20/2020 16:41",
 		"testRegexProducesIntervals" : "pre 1/5/2015 15:53",
 		"testRegexProducesTerminalNode" : "pre 1/7/2015 10:43" } }
