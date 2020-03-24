@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"grammar" ],
+		"grammar",
+		"dispatchCache",
+		"cachedSelectors" ],
 	"name" : "OhmAttributes",
 	"pools" : [
 		 ],

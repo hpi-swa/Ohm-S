@@ -4,13 +4,12 @@
 		"ruleNameToMessageName:" : "^pre 4/30/2015 09:28" },
 	"instance" : {
 		"applyListAttribute:on:" : "pre 5/5/2015 18:08",
-		"applySpecialAttribute:on:" : "pre 10/6/2017 19:09",
 		"defaultAttributeApplicable:on:" : "pre 5/4/2015 11:32",
 		"grammar" : "pre 1/19/2015 13:08",
-		"grammar:" : "pre 1/19/2015 13:08",
+		"grammar:" : "pre 3/24/2020 09:26",
+		"initialize" : "pre 3/24/2020 08:56",
 		"listExpression:" : "pre 1/21/2015 11:16",
-		"specialAttributeAvailable:" : "pre 5/4/2015 11:32",
-		"specialAttributes" : "pre 1/7/2015 14:04",
+		"selectors" : "pre 3/24/2020 09:27",
 		"terminalExpression:" : "pre 1/7/2015 14:22",
-		"tryToUseSpecialAttributesFor:asMessage:on:" : "pre 5/4/2015 11:30",
-		"value:" : "pre 7/25/2019 17:38" } }
+		"tryToUseSpecialAttributesFor:asMessage:on:" : "pre 3/24/2020 09:29",
+		"value:" : "pre 3/24/2020 10:06" } }
