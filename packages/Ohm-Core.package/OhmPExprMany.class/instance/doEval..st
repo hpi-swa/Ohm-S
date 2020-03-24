@@ -19,7 +19,7 @@ doEval: state
 		result
 			ifTrue: [	matchCount := matchCount + 1.
 					self putRow: row intoColumns: columns. ]
-			ifFalse: [ state inputStream setState: backtrackPosition ]
+			ifFalse: [state inputStream setState: backtrackPosition]
 	 ] doWhileTrue: [result].
 	
 	matchCount < self min

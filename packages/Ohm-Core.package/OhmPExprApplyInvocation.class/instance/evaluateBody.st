@@ -10,7 +10,7 @@ evaluateBody
 	state := OhmParsingState new
 				pushInput: self input;
 				grammar: grammar;
-				isSyntactic: (self isSyntactic: self ruleName );
+				isSyntactic: (self isSyntactic: self ruleName);
 				pushBindings: tmpBindings;
 				shouldRecordFailures: self shouldRecordFailures;
 				rightmostFailure: self duringFailureDescriptor;
@@ -20,6 +20,11 @@ evaluateBody
 	result := self ruleBody eval: state.
 
 	^ result 
-		ifTrue: [ (OhmNode newNamed: self ruleName forGrammar: self grammar andInput: self input startedAt: origPos withChildren: tmpBindings) ]
+		ifTrue: [OhmNode 
+					newNamed: self ruleName 
+					forGrammar: self grammar 
+					andInput: self input 
+					startedAt: origPos 
+					withChildren: tmpBindings]
 		ifFalse: [ #ohmFail ]
 		

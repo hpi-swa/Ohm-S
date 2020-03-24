@@ -13,7 +13,7 @@ growTheSeed: seed
 		self memoizeResult: self evaluateBody. "TODO here we need different handling"
 	 	self input setState: self originalPosition.
 	  	newMemo := self input getMemoizedResultFor: self ruleName. ] 
-			doWhileTrue: [ newMemo ~~ #ohmFail and: [newMemo position > memo position]].
+			doWhileTrue: [newMemo ~~ #ohmFail and: [newMemo position > memo position]].
 
 	self input setState: memo position.
 	^ memo node

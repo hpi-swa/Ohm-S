@@ -2,7 +2,7 @@ fixtures
 ohmPExprString
 
 	^ '{ 
-           "grammar" : "M { foo = \"foo\" }",
+           "grammar" : "M { ruleOne = \"foo\" }",
 		"expressionMatch" : 
 		[	{ "input" : "foo", "expect" : true },
 			{ "input" : "foo1", "expect" : true, "streamAtEnd" : false},

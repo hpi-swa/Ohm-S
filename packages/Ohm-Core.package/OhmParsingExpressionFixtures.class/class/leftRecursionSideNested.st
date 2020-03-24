@@ -2,9 +2,11 @@ fixtures
 leftRecursionSideNested
 
 	^ '{ "grammar" : "M {
-	  		ruleOne = addExpr          
-			addExpr = wrappedAddExpr | primaExpr
+			ruleOne = addExpr
+	            addExpr = normalAddExpr | wrappedAddExpr
 			wrappedAddExpr = \">>\" addExpr \">>\" 
+			normalAddExpr  = addExprRec \"+\" primaExpr
+			addExprRec = addExpr | primaExpr
 			primaExpr = primaExprRec | priExpr
 			primaExprRec = primaExpr \"-\"
 	            priExpr = /[0-9]/ }", 
