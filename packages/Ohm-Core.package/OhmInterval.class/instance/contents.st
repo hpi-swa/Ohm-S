@@ -1,6 +1,6 @@
 accessing
 contents
 
-	(self end > self stream contentStream size or: [self end = 0])
+	(self end > self stream size or: [self end = 0])
 		ifTrue: [^ ''].
-	^ self stream contentsFrom: self start to: self end
+	^ self stream contents copyFrom: self start to: self end

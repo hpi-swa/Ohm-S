@@ -13,8 +13,9 @@ doEval: state
 		ifTrue: [ state recordFailureOf: self at: start.
 				^ false ].
 	
-	state addNodeNamed: self class terminalRuleIdentifier 
-			startedAt: start 
-			withChildren: { matchResult }.
+	state 
+		addNodeNamed: self class terminalRuleIdentifier 
+		startedAt: start 
+		withChildren: { matchResult }.
 
 	^ true
