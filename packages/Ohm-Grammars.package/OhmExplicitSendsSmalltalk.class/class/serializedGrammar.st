@@ -36,9 +36,9 @@ ExecutableCode =
 	LocalVariableDeclarationList? Pragmas? MoreExecutableCode
 
 Expression =
-	BinaryMessageSend CascadedMessages -- binaryCascade
+	Operand CascadedMessages -- operandCascade
 	| UnaryMessageSend CascadedMessages -- unaryCascade
-	| Operand CascadedMessages -- operandCascade
+	| BinaryMessageSend CascadedMessages -- binaryCascade
 	| KeywordMessageSend
 	
 BinaryMessageSend =
