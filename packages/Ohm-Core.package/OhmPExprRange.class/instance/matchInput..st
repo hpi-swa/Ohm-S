@@ -1,4 +1,4 @@
-as yet unclassified
+evaluation
 matchInput: anInput
 
 	| char |
