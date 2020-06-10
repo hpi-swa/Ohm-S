@@ -42,4 +42,6 @@
 		"testGrammarParsesTheReturnOperator" : "pre 7/27/2015 16:55",
 		"testGrammarParsesTheTestItself" : "pre 7/27/2015 16:56",
 		"testGrammarParsesUnaryMessageChains" : "pre 7/27/2015 16:56",
-		"testGrammarParsesUnaryMethodHeaders" : "pre 7/27/2015 16:57" } }
+		"testGrammarParsesUnaryMessageSendsWithProblematicOperand" : "pre 6/10/2020 14:59",
+		"testGrammarParsesUnaryMethodHeaders" : "pre 7/27/2015 16:57",
+		"testGrammarParsesVariableNameCorrectly" : "pre 6/10/2020 14:47" } }

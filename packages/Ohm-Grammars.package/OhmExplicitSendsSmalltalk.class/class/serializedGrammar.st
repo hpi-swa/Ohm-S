@@ -137,8 +137,8 @@ ObjectArrayLiteralElement =
 	| Statement --finalExpression
 
 Operand =
-	Literal
-	| Reference
+	Reference
+	| Literal
 	| NestedExpression
 
 Pragma = 
