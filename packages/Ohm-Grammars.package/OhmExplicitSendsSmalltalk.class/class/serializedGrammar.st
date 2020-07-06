@@ -39,11 +39,11 @@ Expression =
 	Operand CascadedMessages -- operandCascade
 	| UnaryMessageSend CascadedMessages -- unaryCascade
 	| BinaryMessageSend CascadedMessages -- binaryCascade
-	| KeywordMessageSend
+	| KeywordMessageSend 
 	
 BinaryMessageSend =
 	BinaryMessageReceiver BinaryMessage?
-
+ 
 BinaryMessageReceiver =
 	BinaryMessageSend
 	| UnaryMessageSend
@@ -53,7 +53,7 @@ BinaryMessageArgument =
 	UnaryMessageSend
 
 UnaryMessageSend = 
-	UnaryMessageReceiver UnaryMessage -- message
+	UnaryMessageReceiver UnaryMessage ~";" -- message
 	| Operand -- base
 
 UnaryMessageReceiver =
@@ -108,9 +108,9 @@ LocalVariableDeclarationList =
 	"|" bindableIdentifier* "|"
 
 MessageChain =
-	KeywordMessage --keyword
-	| BinaryMessage BinaryMessageChain? KeywordMessage? --binary
-	| UnaryMessage UnaryMessageChain? BinaryMessageChain? KeywordMessage? --unary
+	KeywordMessage
+	| BinaryMessage  
+	| UnaryMessage 
 
 MethodDeclaration =
 	MethodHeader Pragmas ExecutableCode
