@@ -13,9 +13,6 @@ AssignmentOperation =
 BinaryMessage =
 	binaryMessageSelector BinaryMessageArgument
 
-BinaryMessageChain =
-	BinaryMessage+
-
 BinaryMethodHeader =
 	binaryMessageSelector bindableIdentifier
 
@@ -161,10 +158,7 @@ Statements =
 
 UnaryMessage =
 	~keyword UnaryMessageSelector
-
-UnaryMessageChain =
-	UnaryMessage+
-
+	
 UnaryMessageSelector =
 	identifier
 
