@@ -6,5 +6,6 @@
 		"testGrammarDistinguishesOperandAndUnaryCascades" : "pre 7/6/2020 12:19",
 		"testGrammarParsesBinaryMessageChains" : "pre 7/6/2020 12:28",
 		"testGrammarParsesCascadedMessages" : "pre 3/5/2020 18:06",
+		"testGrammarParsesConstantReferencesInExpressions" : "pre 7/6/2020 15:23",
 		"testGrammarParsesUnaryMessageChains" : "pre 7/6/2020 12:28",
 		"testGrammarParsesUnaryMessageSendsWithProblematicOperand" : "pre 6/10/2020 18:14" } }
