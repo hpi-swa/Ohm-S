@@ -209,7 +209,7 @@ decimalIntegerLiteral =
 	numberSigns? digit+
 
 exponent =
-	("e" | "d" | "q")? decimalIntegerLiteral
+	("e" | "d" | "q") decimalIntegerLiteral
 
 floatingPointLiteral =
 	radixFloatingPointLiteral

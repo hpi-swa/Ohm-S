@@ -22,7 +22,7 @@
 		"testGrammarParsesExecutableCode" : "pre 7/27/2015 17:02",
 		"testGrammarParsesExpression" : "pre 7/27/2015 16:48",
 		"testGrammarParsesFinalStatements" : "pre 7/27/2015 16:48",
-		"testGrammarParsesFloatingPoints" : "pre 7/27/2015 16:49",
+		"testGrammarParsesFloatingPoints" : "pre 7/6/2020 11:30",
 		"testGrammarParsesIdentifier" : "pre 7/27/2015 16:50",
 		"testGrammarParsesKeywordMessages" : "pre 7/27/2015 16:51",
 		"testGrammarParsesKeywordMethodHeaders" : "pre 7/27/2015 16:51",
