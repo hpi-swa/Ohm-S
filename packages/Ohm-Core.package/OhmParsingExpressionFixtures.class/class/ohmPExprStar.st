@@ -25,8 +25,8 @@ ohmPExprStar
 							   },
 							   { "input" : "",
 								"expectedTree" : {"ruleName" : "ruleOne", "children" : [ 
-									{"ruleName" : "_list", "children" : [ null ] } , 
-									{"ruleName" : "_list", "children" : [ null ] } ] 
+									{"ruleName" : "_list", "children" : null } , 
+									{"ruleName" : "_list", "children" : null } ] 
 								} 
 							   }] }'
         

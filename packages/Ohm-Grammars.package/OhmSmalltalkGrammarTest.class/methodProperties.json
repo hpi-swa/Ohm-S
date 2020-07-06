@@ -19,6 +19,7 @@
 		"testGrammarParsesCharacterLiterals" : "pre 10/7/2015 15:49",
 		"testGrammarParsesComplicatedNumbers" : "pre 10/7/2015 15:49",
 		"testGrammarParsesConstantReferences" : "pre 10/7/2015 15:49",
+		"testGrammarParsesConstantReferencesNotVariables" : "pre 7/6/2020 14:53",
 		"testGrammarParsesExecutableCode" : "pre 7/27/2015 17:02",
 		"testGrammarParsesExpression" : "pre 7/27/2015 16:48",
 		"testGrammarParsesFinalStatements" : "pre 7/27/2015 16:48",

@@ -1,9 +1,10 @@
 {
 	"class" : {
-		"ParsingResults" : "pre 5/21/2017 17:50",
+		"ParsingResults" : "pre 7/2/2020 09:05",
 		"ParsingResultsForCase:" : "pre 5/21/2017 17:50",
 		"ResetParsingResults" : "pre 5/21/2017 17:50",
-		"cleanUp" : "pre 3/20/2020 14:39",
+		"cleanUp" : "pre 7/2/2020 08:53",
+		"shutDown:" : "pre 7/2/2020 08:51",
 		"storeSyntaxTestResult:for:" : "pre 5/21/2017 18:06" },
 	"instance" : {
 		"parseAndStoreResult:ifSuccessful:" : "pre 5/21/2017 17:50",

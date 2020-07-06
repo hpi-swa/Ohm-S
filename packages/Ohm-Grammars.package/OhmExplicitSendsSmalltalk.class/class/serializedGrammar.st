@@ -86,6 +86,7 @@ KeywordPragma =
 
 Literal =
 	constantReference
+	| pseudoVariableReference
 	| scaledDecimalLiteral
 	| floatingPointLiteral
 	| integerLiteral
@@ -134,8 +135,8 @@ ObjectArrayLiteralElement =
 	| Statement --finalExpression
 
 Operand =
-	Reference
-	| Literal
+	Literal
+	| Reference
 	| NestedExpression
 
 Pragma = 
@@ -178,7 +179,7 @@ binarySelectorChar =
 	"~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
 
 bindableIdentifier =
-	~(reservedIdentifier space) identifier
+	~reservedIdentifier identifier
 
 blockArgument =
 	":" space* letter alnum*
@@ -195,9 +196,7 @@ comment =
 	"\"" (~"\"" any)* "\""
 
 constantReference =
-	"true"
-	| "false"
-	| "nil"
+	("true" | "false" | "nil") ~(alnum | "_")
 
 decimalIntegerLiteral =
 	numberSigns? digit+
@@ -244,7 +243,7 @@ pragmaLiteral =
 	~pragmaKey ~">" literalArrayLiteralElement
 
 pseudoVariableReference = 
-	"self" | "super" | "thisContext"
+	("self" | "super" | "thisContext") ~(alnum | "_")
 
 radix =
 	decimalIntegerLiteral

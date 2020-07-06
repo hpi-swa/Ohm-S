@@ -112,8 +112,8 @@ ObjectArrayLiteralElement =
 	| Statement --finalExpression
 
 Operand =
-	Reference
-	| Literal
+	Literal
+	| Reference
 	| NestedExpression
 
 Pragma = 
@@ -159,7 +159,7 @@ binarySelectorChar =
 	"~" | "!" | "@" | "%" | "&" | "*" | "-" | "+" | "=" | "|" | "\\" | "<" | ">" | "," | "?" | "/"
 
 bindableIdentifier =
-	~(reservedIdentifier space) identifier
+	~reservedIdentifier identifier
 
 blockArgument =
 	":" space* letter alnum*
@@ -176,9 +176,7 @@ comment =
 	"\"" (~"\"" any)* "\""
 
 constantReference =
-	"true"
-	| "false"
-	| "nil"
+	("true" | "false" | "nil") ~(alnum | "_")
 
 decimalIntegerLiteral =
 	numberSigns? digit+
@@ -204,6 +202,7 @@ literalArrayLiteralElement =
 	floatingPointLiteral
 	| integerLiteral
 	| constantReference
+	| pseudoVariableReference
 	| stringLiteral
 	| ByteArrayLiteral
 	| symbolInArrayLiteral
@@ -225,7 +224,7 @@ pragmaLiteral =
 	~pragmaKey ~">" literalArrayLiteralElement
 
 pseudoVariableReference = 
-	"self" | "super" | "thisContext"
+	("self" | "super" | "thisContext") ~(alnum | "_")
 
 radix =
 	decimalIntegerLiteral
