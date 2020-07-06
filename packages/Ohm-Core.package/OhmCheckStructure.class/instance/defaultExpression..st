@@ -9,7 +9,7 @@ defaultExpression: aNode
 
 	nonPrimitiveChildren := aNode children reject: [:n | n ruleName = OhmParsingExpression terminalRuleIdentifier].
 	"Check whether substructure can be valid at all"
-	((aNode name = self structure first) and: [nonPrimitiveChildren size = (self structure size - 1)])
+	((aNode ruleName = self structure first) and: [nonPrimitiveChildren size = (self structure size - 1)])
 		ifFalse: [^ false].
 
 	^ (1 to: nonPrimitiveChildren size)
