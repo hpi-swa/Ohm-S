@@ -34,15 +34,15 @@ ExecutableCode =
 
 Expression =
 	Operand CascadedMessages -- operandCascade
-	| UnaryMessageSend CascadedMessages -- unaryCascade
-	| BinaryMessageSend CascadedMessages -- binaryCascade
+	| UnaryMessageReceiver CascadedMessages -- unaryCascade
+	| BinaryMessageReceiver CascadedMessages -- binaryCascade
 	| KeywordMessageSend 
 	
 BinaryMessageSend =
 	BinaryMessageReceiver BinaryMessage?
  
 BinaryMessageReceiver =
-	BinaryMessageSend
+	BinaryMessageSend ~";"
 	| UnaryMessageSend
 	| Operand
 
@@ -50,11 +50,11 @@ BinaryMessageArgument =
 	UnaryMessageSend
 
 UnaryMessageSend = 
-	UnaryMessageReceiver UnaryMessage ~";" -- message
+	UnaryMessageReceiver UnaryMessage -- message
 	| Operand -- base
 
 UnaryMessageReceiver =
-	UnaryMessageSend
+	UnaryMessageSend ~";"
 	| Operand
 
 KeywordMessageSend = 
