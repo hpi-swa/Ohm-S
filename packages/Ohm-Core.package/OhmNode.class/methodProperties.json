@@ -12,8 +12,12 @@
 		"interval:" : "pre 1/5/2015 15:38",
 		"isListNode" : "pre 3/2/2018 16:08",
 		"isTerminalNode" : "pre 3/2/2018 16:17",
+		"nextParentWithChildFurtherLeft" : "pre 7/10/2020 10:50",
+		"nextParentWithChildFurtherLeftThan:" : "pre 7/10/2020 10:52",
 		"parent" : "pre 1/21/2015 15:03",
 		"parent:" : "pre 1/21/2015 15:03",
 		"printStringLimitedTo:" : "pre 6/9/2015 13:39",
 		"ruleName" : "pre 1/6/2015 17:15",
-		"ruleName:" : "pre 1/6/2015 17:15" } }
+		"ruleName:" : "pre 1/6/2015 17:15",
+		"skippedSpacesNodes" : "pre 7/10/2020 11:17",
+		"skippedSpacesString" : "pre 7/10/2020 11:15" } }

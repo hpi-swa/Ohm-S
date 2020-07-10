@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "pre 7/10/2020 11:14",
+		"testSkippedSpacesNormalCase" : "pre 7/10/2020 11:15",
+		"testSkippedSpacesNormalCaseNodes" : "pre 7/10/2020 11:19" } }
