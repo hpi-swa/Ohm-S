@@ -1,4 +1,0 @@
-treeNavigation
-nextParentWithChildFurtherLeft
-
-	^ self parent nextParentWithChildFurtherLeftThan: self

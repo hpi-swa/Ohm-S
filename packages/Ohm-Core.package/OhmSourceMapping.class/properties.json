@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ruleName",
-		"grammar",
-		"interval",
-		"children",
-		"parent",
 		"sourceMap" ],
-	"name" : "OhmNode",
+	"name" : "OhmSourceMapping",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "OhmSemanticAction",
 	"type" : "normal" }
