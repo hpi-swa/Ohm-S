@@ -1,7 +1,6 @@
 accessing
 doEval: state
 
-	"TODO: syntactic handling"
 	"TODO: syntactic tests"
 
 	| originalInputState result input |

@@ -7,4 +7,4 @@ testGrammarParsesCascadedMessages
 	self shouldParseAll: #(
 		'self negated firstMessage: 2; yourself'
 		'self negated firstMessage: 2 negated; yourself'
-		'self negated firstMessage; anotherMessage: 2 negated; yourself' )
+		'self negated firstMessage; anotherMessage: 2 negated; yourself')

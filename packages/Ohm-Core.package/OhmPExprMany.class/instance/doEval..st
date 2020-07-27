@@ -2,16 +2,12 @@ accessing
 doEval: state
 
 	| originalInputState matchCount result columns row |
-	
 	originalInputState := state inputStream getState.
-	
-	self syntacticRuleHandling: state.
 	columns := (1 to: self arity) collect:	[ :n | OrderedCollection new ].
 
 	matchCount := 0.
 	[	| backtrackPosition | 
 	 	 backtrackPosition := state inputStream getState.
-		self syntacticRuleHandling: state.
 		row := OrderedCollection new.
 		state pushBindings: row.
 		result := self term eval: state.

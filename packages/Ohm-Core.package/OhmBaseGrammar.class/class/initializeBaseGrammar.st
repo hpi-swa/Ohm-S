@@ -9,7 +9,7 @@ initializeBaseGrammar
 	OhmInstance superGrammar: OhmInstance.
 	  
 	{    #any -> OhmPExprAnything new .
-		#end -> (OhmPExprNot newOn: (OhmPExprApply newOn: #any)) .
+		#end -> (OhmPExprSeq newOn: {OhmPExprApply newOn: #spaces . OhmPExprNot newOn: (OhmPExprApply newOn: #any)}) .
 		#space -> (OhmPExprRange newFrom: Character null to: Character space) .
 		#spaces -> (OhmPExprMany newStarOn: (OhmPExprApply newOn: #space)).
 		 } do: [:assoc | 

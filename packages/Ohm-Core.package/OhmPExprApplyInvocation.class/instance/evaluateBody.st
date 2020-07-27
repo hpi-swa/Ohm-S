@@ -3,6 +3,7 @@ evaluateBody
 
 	| tmpBindings result origPos state |
 	tmpBindings := OrderedCollection new.
+	self state isSyntactic ifTrue: [self grammar skipSpaces: self state].
 	origPos := self input getState.
 	self beforeFailureDescriptor: self state rightmostFailure.
 	self duringFailureDescriptor: OhmFailureDescriptor new.
@@ -15,8 +16,6 @@ evaluateBody
 				shouldRecordFailures: self shouldRecordFailures;
 				rightmostFailure: self duringFailureDescriptor;
 				idOfParseProcess: self state idOfParseProcess.
-	(self isSyntactic: self ruleName)
-		ifTrue: [self grammar skipSpaces: state].
 	result := self ruleBody eval: state.
 
 	^ result 
