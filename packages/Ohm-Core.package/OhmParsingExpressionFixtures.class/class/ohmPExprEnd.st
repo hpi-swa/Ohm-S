@@ -15,5 +15,5 @@ ohmPExprEnd
 				{ "input" : "foo", "expectedTree" : { 
 					"ruleName" : "ruleOne", 
 					"children" : [ 
-						{"ruleName" : "_terminal", "children" : null} , {"ruleName" : "end", "children": [] } ] } } ]  }'
+						{"ruleName" : "_terminal", "children" : null} , {"ruleName" : "end", "children": [{"ruleName" : "spaces", "children" : null}] } ] } } ]  }'
         

@@ -6,5 +6,5 @@ testGrammarDistinguishesOperandAndUnaryCascades
 		shouldParse: 'self new test; test' to: #(
 			Expression
 				(Expression_unaryCascade
-					(UnaryMessageSend 'self new ')
+					(UnaryMessageSend 'self new')
 					(CascadedMessages 'test; test')))

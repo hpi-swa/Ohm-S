@@ -5,7 +5,7 @@ ohmPExprPlusSyntactic
 		"grammar" : "G {
 						RuleOne = (\"a\" \"b\")+ }",
 		"matchContents" : [ 
-			 				   { "input" : " ", "expect" : false },
+			 				   { "input" : " ", "expect" : false, "streamAtEnd" : false},
 		                                 { "input" : " ab", "expect" : true },
 		                                 { "input" : " ba", "expect" : false, "streamAtEnd" : false},
 		                                 { "input" : " abab", "expect" : true},
