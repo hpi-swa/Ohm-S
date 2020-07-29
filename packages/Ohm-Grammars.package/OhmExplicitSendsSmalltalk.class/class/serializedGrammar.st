@@ -36,7 +36,7 @@ Expression =
 	Operand CascadedMessages -- operandCascade
 	| UnaryMessageReceiver CascadedMessages -- unaryCascade
 	| BinaryMessageReceiver CascadedMessages -- binaryCascade
-	| KeywordMessageSend 
+	| KeywordMessageSend --base
 	
 BinaryMessageSend =
 	BinaryMessageReceiver BinaryMessage?
@@ -143,7 +143,8 @@ Pragma =
 	"<" PragmaValues ">"
 
 PragmaValues =
-	KeywordPragma+ | unaryPragma
+	KeywordPragma+ --keyword
+	| unaryPragma --unary
 
 Pragmas =
 	Pragma*
