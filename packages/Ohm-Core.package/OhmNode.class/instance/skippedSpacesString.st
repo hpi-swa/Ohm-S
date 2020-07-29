@@ -18,5 +18,5 @@ skippedSpacesString
 	
 	"The following is a hack as we should not access the stream directly"
 	^ self interval stream contents 
-		copyFrom: spacesInterval start
-		to: spacesInterval stop
+		copyFrom: spacesInterval first
+		to: spacesInterval last
