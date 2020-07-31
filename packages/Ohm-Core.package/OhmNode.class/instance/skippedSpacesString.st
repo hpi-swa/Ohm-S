@@ -12,7 +12,8 @@ skippedSpacesString
 	even better #findLast:upTo: --pre"
 	reversedOwnIntervalStart := reversePosition value: self interval start.
 	searchArea := reversedMap copyFrom: reversedOwnIntervalStart + 1 to: reversedMap size.
-	previousNodeIntervalEnd := reversedOwnIntervalStart + (searchArea findFirst: [:nodes | nodes last ~~ enclosingRule]).
+	previousNodeIntervalEnd := reversedOwnIntervalStart + (searchArea findFirst: [:nodes | 
+		nodes notEmpty and: [nodes last ~~ enclosingRule]]).
 	previousNodeIntervalEnd := reversePosition value: previousNodeIntervalEnd.
 	spacesInterval := previousNodeIntervalEnd + 1 to: self interval start - 1.
 	
