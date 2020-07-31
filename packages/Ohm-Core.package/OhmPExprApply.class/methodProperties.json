@@ -13,6 +13,7 @@
 		"doEval:" : "pre 7/20/2015 14:26",
 		"initialize" : "pre 11/17/2017 20:47",
 		"innerNodesAt:" : "pre 7/20/2015 14:39",
+		"isSyntactic" : "pre 7/31/2020 09:20",
 		"nodesResultingInCST" : "pre 6/1/2015 14:48",
 		"replaceParametersWithArguments:" : "pre 11/17/2017 20:48",
 		"ruleBodyOn:" : "pre 7/26/2019 10:26",

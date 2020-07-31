@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"evalPExpr:on:asSyntactic:usingGrammar:" : "pre 11/16/2017 16:41",
+		"evalPExpr:on:asSyntactic:usingGrammar:andBindings:" : "pre 7/31/2020 09:13",
+		"testApplyProducesIntervals" : "pre 7/31/2020 09:14" } }
