@@ -14,9 +14,15 @@ skippedSpacesString
 	searchArea := reversedMap copyFrom: reversedOwnIntervalStart + 1 to: reversedMap size.
 	previousNodeIntervalEnd := reversedOwnIntervalStart + (searchArea findFirst: [:nodes | 
 		nodes notEmpty and: [nodes last ~~ enclosingRule]]).
-	previousNodeIntervalEnd := reversePosition value: previousNodeIntervalEnd.
-	spacesInterval := previousNodeIntervalEnd + 1 to: self interval start - 1.
-	
+	previousNodeIntervalEnd = reversedOwnIntervalStart 
+		ifTrue: [
+			"We found no other node, we are either the main node for the complete string, 
+			or there are no other nodes in front of us"
+			spacesInterval := 1 to: self interval start - 1]
+		ifFalse: [
+			previousNodeIntervalEnd := reversePosition value: previousNodeIntervalEnd.
+			spacesInterval := previousNodeIntervalEnd + 1 to: self interval start - 1].
+
 	"The following is a hack as we should not access the stream directly"
 	^ self interval stream contents 
 		copyFrom: spacesInterval first
