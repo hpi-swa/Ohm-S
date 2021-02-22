@@ -20,7 +20,7 @@
 		"testGrammarParsesComplicatedNumbers" : "pre 10/7/2015 15:49",
 		"testGrammarParsesConstantReferenceAsLiteral" : "pre 7/6/2020 15:13",
 		"testGrammarParsesConstantReferences" : "pre 7/6/2020 15:13",
-		"testGrammarParsesConstantReferencesInExpressions" : "pre 7/6/2020 15:15",
+		"testGrammarParsesConstantReferencesInExpressions" : "pre 2/22/2021 17:23",
 		"testGrammarParsesConstantReferencesNotVariables" : "pre 7/6/2020 14:53",
 		"testGrammarParsesExecutableCode" : "pre 7/27/2015 17:02",
 		"testGrammarParsesExpression" : "pre 7/27/2015 16:48",

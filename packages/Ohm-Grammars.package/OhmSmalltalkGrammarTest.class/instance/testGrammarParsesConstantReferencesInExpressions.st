@@ -1,6 +1,6 @@
 tests
 testGrammarParsesConstantReferencesInExpressions
-
+	
 	startRule := #Expression.
 	self shouldParse: 'nil+3' to: #(
 			Expression 

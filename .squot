@@ -1,7 +1,7 @@
 OrderedDictionary {
-	'packages\/Ohm-Grammars.package' : #SquotCypressCodeSerializer,
-	'packages\/Ohm-Support.package' : #SquotCypressCodeSerializer,
-	'packages\/Ohm-Semantics.package' : #SquotCypressCodeSerializer,
-	'packages\/Ohm-Core.package' : #SquotCypressCodeSerializer,
-	'packages\/BaselineOfOhm.package' : #SquotCypressCodeSerializer
+	'packages/Ohm-Grammars.package' : #SquotCypressCodeSerializer,
+	'packages/Ohm-Support.package' : #SquotCypressCodeSerializer,
+	'packages/Ohm-Semantics.package' : #SquotCypressCodeSerializer,
+	'packages/Ohm-Core.package' : #SquotCypressCodeSerializer,
+	'packages/BaselineOfOhm.package' : #SquotCypressCodeSerializer
 }
