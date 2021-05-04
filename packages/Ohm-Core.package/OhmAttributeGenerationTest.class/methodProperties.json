@@ -10,6 +10,7 @@
 		"fixtureRuleFoo:" : "pre 1/13/2015 16:01",
 		"setUp" : "pre 5/20/2017 16:55",
 		"tearDown" : "pre 4/22/2015 14:13",
+		"testAttributesCanPreserveTheUnderscoreInlineMessageNames" : "pre 5/4/2021 17:37",
 		"testBindingsAreEvaluatedLazily" : "pre 5/20/2017 16:55",
 		"testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributes" : "pre 11/17/2017 17:00",
 		"testBindingsAreEvaluatedLazilyAlsoWithSynthesizedAttributesAndCached" : "pre 5/20/2017 16:56",
