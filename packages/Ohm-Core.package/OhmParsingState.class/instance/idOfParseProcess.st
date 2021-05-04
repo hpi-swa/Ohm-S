@@ -1,4 +1,4 @@
 accessing
 idOfParseProcess
 	
-	^ idOfParseProcess ifNil: [self] 
+	^ idOfParseProcess ifNil: [idOfParseProcess := Object new] 

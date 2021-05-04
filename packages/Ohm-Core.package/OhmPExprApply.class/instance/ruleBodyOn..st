@@ -1,10 +1,10 @@
 accessing
 ruleBodyOn: state
 	
-	cachedRuleBodyGrammar ~= state  
+	cachedRuleBodyParseId ~= state idOfParseProcess  
 		ifTrue: [cachedRuleBody := nil].	
 	cachedRuleBody ifNil: [
 		cachedRuleBody := (state grammar ruleNamed: ruleName asSymbol)
 			replaceParametersWithArguments: self arguments.
-		cachedRuleBodyGrammar := state.].
+		cachedRuleBodyParseId := state idOfParseProcess.].
 	^ cachedRuleBody
