@@ -1,4 +1,4 @@
-# Ohm/S [![Master Build Status](https://github.com/hpi-swa/Ohm-S/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/hpi-swa/Ohm-S/actions/workflows/main.yml) [![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
+# Ohm/S [![Master Build Status](https://img.shields.io/github/workflow/status/hpi-swa/Ohm-S/tests/master?logo=github)](https://github.com/hpi-swa/Ohm-S/actions/workflows/main.yml) [![Coverage Status](https://coveralls.io/repos/github/hpi-swa/Ohm-S/badge.svg)](https://coveralls.io/github/hpi-swa/Ohm-S)
 
 Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm](https://github.com/cdglabs/ohm). It currently reflects the state of Ohm/JS from around version v0.86. A notable difference is that there are currently no parameterized rules and actions. Beside that, Ohm/S changes the lookup of rules from supergrammars from compile-time to matching-time. Further, Ohm/S grammars can be installed as meta-objects in the Smalltalk image similar to Smalltalk classes.
 
