@@ -11,7 +11,7 @@ jobs:
         # Select platform(s)
         os: [ ubuntu-latest ]
         # Select compatible Smalltalk image(s)
-        smalltalk: [ Squeak64-trunk, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1, Squeak64-5.0]
+        smalltalk: [ Squeak64-trunk, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1, Squeak32-5.0]
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
