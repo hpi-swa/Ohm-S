@@ -1,0 +1,27 @@
+on: [push, pull_request]
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # Select platform(s)
+        os: [ ubuntu-latest ]
+        # Select compatible Smalltalk image(s)
+        smalltalk: [ Squeak64-trunk, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1, Squeak64-5.0]
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-version: ${{ matrix.smalltalk }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: smalltalkci -s ${{ matrix.smalltalk }}
+        timeout-minutes: 15
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
