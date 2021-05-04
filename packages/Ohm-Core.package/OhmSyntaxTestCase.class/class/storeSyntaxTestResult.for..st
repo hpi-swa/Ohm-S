@@ -1,8 +1,8 @@
 accessing
 storeSyntaxTestResult: aResult for: testSelector
-
-	| caseResults |
-	caseResults := self ParsingResultsForCase: self.
-	(caseResults at: testSelector ifAbsentPut: [OrderedCollection new])
-		add: aResult
 	
+	| caseResults |
+	self shouldStoreTestParseResults ifTrue: [
+		caseResults := self ParsingResultsForCase: self.
+		(caseResults at: testSelector ifAbsentPut: [OrderedCollection new])
+			add: aResult]

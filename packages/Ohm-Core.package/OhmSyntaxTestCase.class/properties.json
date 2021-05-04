@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ParsingResults" ],
+		"ParsingResults",
+		"ShouldStoreTestParseResults" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"grammar",

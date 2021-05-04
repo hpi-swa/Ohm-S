@@ -1,13 +1,16 @@
 {
 	"class" : {
 		"ParsingResults" : "pre 7/2/2020 09:05",
-		"ParsingResultsForCase:" : "pre 5/21/2017 17:50",
+		"ParsingResultsForCase:" : "pre 5/4/2021 16:20",
 		"ResetParsingResults" : "pre 5/21/2017 17:50",
-		"cleanUp" : "pre 7/2/2020 08:53",
+		"buildSuiteFromMethods:" : "pre 5/4/2021 16:26",
+		"cleanUp" : "pre 5/4/2021 16:09",
+		"shouldStoreTestParseResults" : "pre 5/4/2021 16:18",
+		"shouldStoreTestParseResults:" : "pre 5/4/2021 16:17",
 		"shutDown:" : "pre 7/2/2020 08:51",
-		"storeSyntaxTestResult:for:" : "pre 5/21/2017 18:06" },
+		"storeSyntaxTestResult:for:" : "pre 5/4/2021 16:18" },
 	"instance" : {
-		"parseAndStoreResult:ifSuccessful:" : "pre 5/21/2017 17:50",
+		"parseAndStoreResult:ifSuccessful:" : "pre 5/4/2021 16:19",
 		"shouldParse:" : "pre 1/28/2020 10:09",
 		"shouldParse:to:" : "pre 5/21/2017 17:51",
 		"shouldParseAll:" : "pre 7/27/2015 16:41",

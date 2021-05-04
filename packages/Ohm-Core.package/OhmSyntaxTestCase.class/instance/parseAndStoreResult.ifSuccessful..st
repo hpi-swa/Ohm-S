@@ -2,7 +2,7 @@ asserting
 parseAndStoreResult: aString ifSuccessful: storeOnSuccess
 	
 	| result |
-	[ result :=  grammar match: aString startingFrom: startRule]
+	[result :=  grammar match: aString startingFrom: startRule]
 		on: OhmMatchFailure
 		do: [:failure | result := failure].
 
