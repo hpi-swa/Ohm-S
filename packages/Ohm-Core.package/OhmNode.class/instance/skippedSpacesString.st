@@ -1,5 +1,6 @@
 accessing
 skippedSpacesString
+	
 	"This is calculated on demand as most semantics don't need it.
 	This is work in progress!"
 	
@@ -9,9 +10,8 @@ skippedSpacesString
 	enclosingRule := self enclosingRule.
 	reversePosition := [:originalPosition | (reversedMap size - originalPosition) + 1].
 	
-	previousNodeIntervalEnd := reversedMap 
-		findFirst: [:nodes | nodes last ~~ enclosingRule] 
-		startingAt: (reversePosition value: self interval start) + 1.
+	previousNodeIntervalEnd := (reversedMap allButFirst: (reversePosition value: self interval start))
+		findFirst: [:nodes | nodes last ~~ enclosingRule].
 	previousNodeIntervalEnd := reversePosition value: previousNodeIntervalEnd.
 	spacesInterval := previousNodeIntervalEnd + 1 to: self interval start - 1.
 	
