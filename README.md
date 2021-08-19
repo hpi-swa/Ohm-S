@@ -10,7 +10,7 @@ Ohm/S is a Squeak/Smalltalk implementation of the metaprogramming framework [Ohm
 ```Smalltalk
 Metacello new
   baseline: 'Ohm';
-  repository: 'github://hpi-swa/Ohm-S/packages';
+  repository: 'github://hpi-swa/Ohm-S:master/packages';
   load.
 ```
 
