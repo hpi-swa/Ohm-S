@@ -1,6 +1,6 @@
 tests
 testComplexSerialization
-
+	
 	| g description |
 
 	g := OhmCompiler compileGrammarDefinition: 'G {
@@ -12,7 +12,6 @@ testComplexSerialization
 	}'.
 
 	description := 'G <: BuiltInRules {
-
 Bar = foo | foobaz
 
 foo = "f"

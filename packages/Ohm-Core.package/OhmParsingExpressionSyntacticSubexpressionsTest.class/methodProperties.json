@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"evalPExpr:on:asSyntactic:usingGrammar:" : "pre 1/20/2015 15:57",
+		"evalPExpr:on:asSyntactic:usingGrammar:" : "pre 9/7/2021 15:43",
+		"evalPExpr:on:asSyntactic:usingGrammar:andBindings:" : "pre 9/7/2021 15:48",
+		"setUp" : "pre 9/7/2021 15:48",
+		"testSyntacticSeqInRuleWithNot" : "pre 9/7/2021 15:46",
 		"testSyntacticSeqRemovesSpaceInBetween" : "pre 12/4/2014 19:04" } }

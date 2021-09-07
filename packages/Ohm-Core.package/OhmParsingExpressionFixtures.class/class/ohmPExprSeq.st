@@ -1,6 +1,6 @@
 fixtures
 ohmPExprSeq
-
+	
 	^ '{ 
 		"grammar" : "G { ruleOne = \"a\" \"bc\" \"z\" }",
 		"expressionMatch" : [ { "input" : "", "expect" : false },
@@ -20,7 +20,6 @@ ohmPExprSeq
 							   { "input" : " abcz", "expect" : true} ],
 		"matchInterval" : [ 	   { "input" : "abcz", "expectInterval" : [[1,1],[2,3],[4,4]]},
 							   { "input" : "abcz1", "expectInterval" : [[1,1],[2,3],[4,4]]},
-							   { "input" : " abcz", "expectInterval" : [[2,2],[3,4],[5,5]]},
 							   { "input" : "abcz ", "expectInterval" : [[1,1],[2,3],[4,4]]} ],
 		"matchTree" : [ 	   	   { "input" : "abcz", 
 								"expectedTree" : {"ruleName" : "ruleOne", 

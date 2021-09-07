@@ -1,6 +1,6 @@
 fixtures
 ohmPExprAltSeqSyntactic
-
+	
 	^ '{ 
 		"grammar" : "G {
 						RuleOne = \"a\" \"b\" \"c\" | \"1\" \"2\" \"3\"}",

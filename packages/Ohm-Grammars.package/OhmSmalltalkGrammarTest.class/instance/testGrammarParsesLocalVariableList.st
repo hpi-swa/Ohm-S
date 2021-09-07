@@ -1,9 +1,9 @@
 tests
 testGrammarParsesLocalVariableList
-	
+	
 	| ruleName |
 	ruleName := #LocalVariableDeclarationList.
-	{ '||' . '|a|' . {' | a | ' . ' | a |'} . '| ab bc |' . '|ab bc cd|' }
+	{ '||' . '|a|' . {' | a | ' . '| a |'} . '| ab bc |' . '|ab bc cd|' }
 		do: [ :inputStringOrArray | |r input expected|
 			(inputStringOrArray isKindOf: Array) 
 				ifTrue: [ input := inputStringOrArray first.

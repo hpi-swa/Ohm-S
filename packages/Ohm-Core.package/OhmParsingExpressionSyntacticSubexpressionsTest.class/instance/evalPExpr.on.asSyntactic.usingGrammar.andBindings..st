@@ -1,5 +1,5 @@
 tests
-evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar
+evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar andBindings: bindings
 	
 	| rules state | 
 
@@ -12,7 +12,7 @@ evalPExpr: pexpr on: input asSyntactic: isSyntactic usingGrammar: aGrammar
 	state
 		grammar: (OhmGrammar newWithName: 'FirstGrammar' ruleDictionary: rules);
 		pushInput: input;
-		pushBindings: OrderedCollection new;
+		pushBindings: bindings;
 		shouldRecordFailures: false;
 		isSyntactic: isSyntactic. 
 

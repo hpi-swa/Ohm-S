@@ -1,11 +1,11 @@
 fixtures
 ohmPExprStarSyntactic
-
+	
 	^ '{ 
 		"grammar" : "G {
 						RuleOne = \"a\"* }",
 		"matchContents" : [ 
-							   { "input" : " ", "expect" : true },
+							   { "input" : " ", "expect" : true, "streamAtEnd" : false},
 		                                 { "input" : " a", "expect" : true },
 		                                 { "input" : " ba", "expect" : true, "streamAtEnd" : false},
 		                                 { "input" : " aa", "expect" : true},

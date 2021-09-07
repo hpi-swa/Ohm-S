@@ -1,12 +1,11 @@
 converting
 grammarDefinitionString
-
-	^ (self grammarDefinitionAsString , ' {' , 
-		(((self rules sorted: [:a :b | a ruleName < b ruleName]) 
-			select: [:r | r isInlineRule not]) 
-				inject: '' 
-				into: [ :rules :rule | 
-					rules withoutTrailingBlanks
-					, Character cr , Character cr
-					, (rule textualRepresentation ifNil: [ '' ]) ]) withoutTrailingBlanks
-	, '}')
+	
+	^ String streamContents: [:stream |
+		stream << self grammarDefinitionAsString.
+		stream << ' {'; cr.
+		((self rules sorted: [:a :b | a ruleName < b ruleName])
+			select: [:r | r isInlineRule not])
+			do: [:rule | stream << rule textualRepresentation withBlanksTrimmed]
+			separatedBy: [stream cr; cr].
+		stream << '}' ]

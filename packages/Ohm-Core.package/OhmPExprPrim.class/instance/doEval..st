@@ -1,13 +1,10 @@
 evaluation
 doEval: state
-
-	"TODO: syntactic handling"
-	"TODO: syntactic tests"
-
+	
 	| matchResult start |
 
+	self syntacticRuleHandling: state.
 	start := state inputStream getState.
-	
 	matchResult := self matchInput: state inputStream.
 	matchResult == #ohmFail
 		ifTrue: [ state recordFailureOf: self at: start.

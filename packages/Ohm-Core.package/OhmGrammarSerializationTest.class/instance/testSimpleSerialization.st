@@ -1,6 +1,6 @@
 tests
 testSimpleSerialization
-
+	
 	| g description |
 
 	g := OhmCompiler compileGrammarDefinition: 'G {
@@ -8,6 +8,5 @@ testSimpleSerialization
 	}'.
 
 	description := 'G <: BuiltInRules {
-
 foo = "f"}'.
 	self assert: description equals: g grammarDefinitionString.

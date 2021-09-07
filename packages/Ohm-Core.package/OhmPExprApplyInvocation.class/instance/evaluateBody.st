@@ -1,13 +1,15 @@
 evaluation
 evaluateBody
-
-	| tmpBindings result origPos state |
+	
+	| tmpBindings result origPos newState |
 	tmpBindings := OrderedCollection new.
+	((self isSyntactic: self ruleName) or: [state isSyntactic])
+		ifTrue: [self grammar skipSpaces: state].
 	origPos := self input getState.
 	self beforeFailureDescriptor: self state rightmostFailure.
 	self duringFailureDescriptor: OhmFailureDescriptor new.
 
-	state := OhmParsingState new
+	newState := OhmParsingState new
 				pushInput: self input;
 				grammar: grammar;
 				isSyntactic: (self isSyntactic: self ruleName);
@@ -15,9 +17,7 @@ evaluateBody
 				shouldRecordFailures: self shouldRecordFailures;
 				rightmostFailure: self duringFailureDescriptor;
 				idOfParseProcess: self state idOfParseProcess.
-	(self isSyntactic: self ruleName)
-		ifTrue: [self grammar skipSpaces: state].
-	result := self ruleBody eval: state.
+	result := self ruleBody eval: newState.
 
 	^ result 
 		ifTrue: [OhmNode 
