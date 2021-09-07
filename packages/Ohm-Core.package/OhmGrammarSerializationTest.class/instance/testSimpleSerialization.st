@@ -1,6 +1,6 @@
 tests
 testSimpleSerialization
-	
+	
 	| g description |
 
 	g := OhmCompiler compileGrammarDefinition: 'G {

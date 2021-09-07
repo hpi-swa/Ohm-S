@@ -1,6 +1,6 @@
 tests
 testUndefinedSuperGrammar
-	
+
 	self testOnGrammar:  'G1 <: G2 {}' 
 		in: 'inheritanceTestNameSpace1'
 		throws: OhmUndeclaredGrammarError 

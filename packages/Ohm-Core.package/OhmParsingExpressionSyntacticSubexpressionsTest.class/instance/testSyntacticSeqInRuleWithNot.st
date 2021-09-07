@@ -1,6 +1,6 @@
 tests
 testSyntacticSeqInRuleWithNot
-	
+	
 	| expression |
 	additionalRules := Dictionary newFrom: {
 		#SyntacticRule -> (OhmPExprSeq newOn: {OhmPExprString newOn: 'a' . OhmPExprNot newOn: (OhmPExprString newOn: 'b')}) }.
