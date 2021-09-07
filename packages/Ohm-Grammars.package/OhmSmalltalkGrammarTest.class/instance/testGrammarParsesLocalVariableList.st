@@ -1,6 +1,6 @@
 tests
 testGrammarParsesLocalVariableList
-	
+	
 	| ruleName |
 	ruleName := #LocalVariableDeclarationList.
 	{ '||' . '|a|' . {' | a | ' . '| a |'} . '| ab bc |' . '|ab bc cd|' }
