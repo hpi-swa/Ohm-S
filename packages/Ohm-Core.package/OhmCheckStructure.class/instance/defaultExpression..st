@@ -1,11 +1,13 @@
 standard attributes
 defaultExpression: aNode
-
+	
 	| tempStructure nonPrimitiveChildren|
 	
 	"Check for a value"
 	(self structure size = 2 and: [self structure second isString])
-		ifTrue: [ ^ aNode interval contents = self structure second].
+		ifTrue: [
+			^ (aNode interval contents = self structure second) and: [
+				aNode ruleName = self structure first]].
 
 	nonPrimitiveChildren := aNode children reject: [:n | n ruleName = OhmParsingExpression terminalRuleIdentifier].
 	"Check whether substructure can be valid at all"
