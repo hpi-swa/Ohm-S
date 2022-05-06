@@ -1,7 +1,8 @@
 {
 	"class" : {
+		"originalRuleNameAsMessageName:" : "pre 5/4/2021 17:43",
 		"possibleActionsForRule:" : "pre 5/5/2015 20:32",
-		"ruleNameToMessageName:" : "^pre 4/30/2015 09:28" },
+		"ruleNameToMessageName:" : "pre 5/4/2021 17:39" },
 	"instance" : {
 		"applyListAttribute:on:" : "pre 5/5/2015 18:08",
 		"defaultAttributeApplicable:on:" : "pre 5/4/2015 11:32",
@@ -12,4 +13,5 @@
 		"selectors" : "pre 3/24/2020 09:27",
 		"terminalExpression:" : "pre 1/7/2015 14:22",
 		"tryToUseSpecialAttributesFor:asMessage:on:" : "pre 3/24/2020 09:29",
-		"value:" : "pre 7/7/2020 16:27" } }
+		"value:" : "pre 5/4/2021 17:42",
+		"wantsOriginalInlineRuleNames" : "pre 5/4/2021 17:42" } }
