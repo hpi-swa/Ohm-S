@@ -1,28 +1,28 @@
-name: tests
-on: [push, pull_request, workflow_dispatch]
+name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+on: [ push, pull_request, workflow_dispatch ]
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # Select platform(s)
         os: [ ubuntu-latest ]
-        # Select compatible Smalltalk image(s)
-        smalltalk: [ Squeak64-trunk, Squeak64-5.3, Squeak64-5.2, Squeak64-5.1, Squeak32-5.0]
+        smalltalk: [ Squeak64-trunk, Squeak64-6.0, Squeak64-5.3, Squeak32-5.2, Squeak32-5.1 ]
+        # Since git/s does not deal with platforms really,
+        # only run the latest versions on Windows and macOS.
+        include:
+          - os: macos-latest
+            smalltalk: Squeak64-trunk
+          - os: windows-latest
+            smalltalk: Squeak64-trunk
+      fail-fast: false # Do not let failures on Squeak 5.2 stop other jobs.
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
-          smalltalk-version: ${{ matrix.smalltalk }}
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          smalltalk-image: ${{ matrix.smalltalk }}
       - run: smalltalkci -s ${{ matrix.smalltalk }}
+        shell: bash
         timeout-minutes: 15
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
